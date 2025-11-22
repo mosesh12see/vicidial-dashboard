@@ -1,0 +1,13 @@
+# Ignore sensitive files
+*.py
+*.env
+*.txt
+config/
+credentials/
+api/
+secrets/
+
+# Keep only HTML and documentation
+!*.html
+!*.md
+!README.md
