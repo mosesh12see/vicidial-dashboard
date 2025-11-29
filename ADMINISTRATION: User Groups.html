@@ -1,0 +1,399 @@
+<html>
+<head>
+<!-- VERSION: 2.14-858a   BUILD: 220513-0819   ADD: 100000   PHP_SELF: /vicidial/admin.php-->
+<META NAME="ROBOTS" CONTENT="NONE">
+<META NAME="COPYRIGHT" CONTENT="&copy; 2022 ViciDial Group">
+<META NAME="AUTHOR" CONTENT="ViciDial Group">
+<script language="JavaScript" src="calendar_db.js"></script>
+<script language="JavaScript" src="help.js"></script>
+<div id='HelpDisplayDiv' class='help_info' style='display:none;'></div><link rel="stylesheet" href="calendar.css">
+<link rel="stylesheet" type="text/css" href="vicidial_stylesheet.php">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<title>ADMINISTRATION: User Groups</title>
+<script language="Javascript">
+var field_name = '';
+var user = 'capadmin';
+var epoch = '1764304655';
+
+	
+	var weak = new Image();
+	weak.src = "images/weak.png";
+	var medium = new Image();
+	medium.src = "images/medium.png";
+	var strong = new Image();
+	strong.src = "images/strong.png";
+
+	function pwdChanged(pwd_field_str, pwd_img_str, pwd_len_field, pwd_len_min) 
+		{
+		var pwd_field = document.getElementById(pwd_field_str);
+		var pwd_field_value = pwd_field.value;
+		var pwd_img = document.getElementById(pwd_img_str);
+		var pwd_len = pwd_field_value.length
+
+	//	var strong_regex = new RegExp( "^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])", "g" );
+	//	var medium_regex = new RegExp( "^(?=.{6,})(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9]))).*$", "g" );
+		var strong_regex = new RegExp( "^(?=.{20,})(?=.*[a-zA-Z])(?=.*[0-9])", "g" );
+		var medium_regex = new RegExp( "^(?=.{10,})(?=.*[a-zA-Z])(?=.*[0-9])", "g" );
+
+		if (strong_regex.test(pwd_field.value) ) 
+			{
+			if (pwd_img.src != strong.src)
+				{pwd_img.src = strong.src;}
+			} 
+		else if (medium_regex.test( pwd_field.value) ) 
+			{
+			if (pwd_img.src != medium.src) 
+				{pwd_img.src = medium.src;}
+			}
+		else 
+			{
+			if (pwd_img.src != weak.src) 
+				{pwd_img.src = weak.src;}
+			}
+		if ( (pwd_len_min > 0) && (pwd_len_min > pwd_len) )
+			{document.getElementById(pwd_len_field).innerHTML = "<font color=red><b>" + pwd_len + "</b></font>";}
+		else
+			{document.getElementById(pwd_len_field).innerHTML = "<font color=black><b>" + pwd_len + "</b></font>";}
+		}
+
+	function openNewWindow(url) 
+		{
+		window.open (url,"",'width=620,height=300,scrollbars=yes,menubar=yes,address=yes');
+		}
+	function scriptInsertField() 
+		{
+		openField = '--A--';
+		closeField = '--B--';
+		var textBox = document.scriptForm.script_text;
+		var scriptIndex = document.getElementById("selectedField").selectedIndex;
+		var insValue =  document.getElementById('selectedField').options[scriptIndex].value;
+		if (document.selection) 
+			{
+			//IE
+			textBox = document.scriptForm.script_text;
+			insValue = document.scriptForm.selectedField.options[document.scriptForm.selectedField.selectedIndex].text;
+			textBox.focus();
+			sel = document.selection.createRange();
+			sel.text = openField + insValue + closeField;
+			} 
+		else if (textBox.selectionStart || textBox.selectionStart == 0) 
+			{
+			//Mozilla
+			var startPos = textBox.selectionStart;
+			var endPos = textBox.selectionEnd;
+			textBox.value = textBox.value.substring(0, startPos)
+			+ openField + insValue + closeField
+			+ textBox.value.substring(endPos, textBox.value.length);
+			}
+		else 
+			{
+			textBox.value += openField + insValue + closeField;
+			}
+		}
+
+		var pass = 'cEi11';
+
+	mouseY=0;
+	function getMousePos(event) {
+		mouseY=event.pageY;
+	}
+	document.addEventListener("click", getMousePos);
+
+	function launch_chooser(fieldname,stage)
+		{
+
+		var h = window.innerHeight;		
+		var vposition=mouseY;
+
+		var audiolistURL = "./non_agent_api.php";
+		var audiolistQuery = "source=admin&function=sounds_list&user=" + user + "&pass=" + pass + "&format=selectframe&stage=" + stage + "&comments=" + fieldname;
+		var Iframe_content = '<IFRAME SRC="' + audiolistURL + '?' + audiolistQuery + '"  style="width:740;height:440;background-color:white;" scrolling="NO" frameborder="0" allowtransparency="true" id="audio_chooser_frame' + epoch + '" name="audio_chooser_frame" width="740" height="460" STYLE="z-index:2"> </IFRAME>';
+
+		document.getElementById("audio_chooser_span").style.position = "absolute";
+		document.getElementById("audio_chooser_span").style.left = "220px";
+		document.getElementById("audio_chooser_span").style.top = vposition + "px";
+		document.getElementById("audio_chooser_span").style.visibility = 'visible';
+		document.getElementById("audio_chooser_span").innerHTML = Iframe_content;
+		}
+
+	function launch_moh_chooser(fieldname,stage)
+		{
+
+		var h = window.innerHeight;		
+		var vposition=mouseY;
+
+		var audiolistURL = "./non_agent_api.php";
+		var audiolistQuery = "source=admin&function=moh_list&user=" + user + "&pass=" + pass + "&format=selectframe&stage=" + stage + "&comments=" + fieldname;
+		var Iframe_content = '<IFRAME SRC="' + audiolistURL + '?' + audiolistQuery + '"  style="width:740;height:440;background-color:white;" scrolling="NO" frameborder="0" allowtransparency="true" id="audio_chooser_frame' + epoch + '" name="audio_chooser_frame" width="740" height="460" STYLE="z-index:2"> </IFRAME>';
+
+		document.getElementById("audio_chooser_span").style.position = "absolute";
+		document.getElementById("audio_chooser_span").style.left = "220px";
+		document.getElementById("audio_chooser_span").style.top = vposition + "px";
+		document.getElementById("audio_chooser_span").style.visibility = 'visible';
+		document.getElementById("audio_chooser_span").innerHTML = Iframe_content;
+		}
+
+	function launch_vm_chooser(fieldname,stage)
+		{
+
+		var h = window.innerHeight;		
+		var vposition=mouseY;
+
+		var audiolistURL = "./non_agent_api.php";
+		var audiolistQuery = "source=admin&function=vm_list&user=" + user + "&pass=" + pass + "&format=selectframe&stage=" + stage + "&comments=" + fieldname;
+		var Iframe_content = '<IFRAME SRC="' + audiolistURL + '?' + audiolistQuery + '"  style="width:740;height:440;background-color:white;" scrolling="NO" frameborder="0" allowtransparency="true" id="audio_chooser_frame' + epoch + '" name="audio_chooser_frame" width="740" height="460" STYLE="z-index:2"> </IFRAME>';
+
+		document.getElementById("audio_chooser_span").style.position = "absolute";
+		document.getElementById("audio_chooser_span").style.left = "220px";
+		document.getElementById("audio_chooser_span").style.top = vposition + "px";
+		document.getElementById("audio_chooser_span").style.visibility = 'visible';
+		document.getElementById("audio_chooser_span").innerHTML = Iframe_content;
+		}
+
+	function close_chooser()
+		{
+		document.getElementById("audio_chooser_span").style.visibility = 'hidden';
+		document.getElementById("audio_chooser_span").innerHTML = '';
+		}
+
+	function user_submit()
+		{
+		var user_field = document.getElementById("user");
+		user_field.disabled = false;
+		document.userform.submit();
+		}
+
+	function play_browser_sound(temp_element,temp_volume)
+		{
+		var taskIndex = document.getElementById(temp_element).selectedIndex;
+		var taskValue = document.getElementById(temp_element).options[taskIndex].value;
+		var temp_selected_element = 'BAS_' + taskValue;
+		if ( (taskValue != '---NONE---') && (taskValue != '---DISABLED---') && (taskValue != '') )
+			{
+			var temp_audio = document.getElementById(temp_selected_element);
+			var taskVolIndex = document.getElementById(temp_volume).selectedIndex;
+			var taskVolValue = document.getElementById(temp_volume).options[taskVolIndex].value;
+			var temp_js_volume = (taskVolValue * .01);
+			temp_audio.volume = temp_js_volume;
+		//	alert(temp_selected_element + ' ' + temp_js_volume);
+			temp_audio.play();
+			}
+		}
+	</script>
+
+<style type="text/css">
+<!--
+
+
+
+.auraltext
+	{
+	position: absolute;
+	font-size: 0;
+	left: -1000px;
+	}
+.chart_td
+	{background-image: url(images/gridline58.gif); background-repeat: repeat-x; background-position: left top; border-left: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5; padding:0; border-bottom: 1px solid #e5e5e5; background-color:transparent;}
+
+.head_style
+	{
+	background-color: 333333;
+	}
+.head_style:hover{background-color: #262626;}
+
+.head_style_selected
+	{
+	background-color: AEC866;
+	}
+.head_style_selected:hover{background-color: AEC866;}
+
+.subhead_style
+	{
+	background-color: #E6E6E6;
+	}
+.subhead_style:hover{background-color: white;}
+
+.subhead_style_selected
+	{
+	background-color: #C6C6C6;
+	}
+.subhead_style_selected:hover{background-color: #C6C6C6;}
+
+.adminmenu_style_selected
+	{
+	background-color: white;
+	}
+.adminmenu_style_selected:hover{background-color: #E6E6E6;}
+
+.records_list_x
+	{
+	background-color: #BCD180;
+	}
+.records_list_x:hover{background-color: #E6E6E6;}
+
+.records_list_y
+	{
+	background-color: #AEC866;
+	}
+.records_list_y:hover{background-color: #E6E6E6;}
+
+
+.horiz_line
+	{
+	height: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #E6E6E6;
+	font-size: 1px;
+	}
+.horiz_line_grey
+	{
+	height: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #9E9E9E;
+	font-size: 1px;
+	}
+
+.sub_sub_head_links
+	{
+	font-family:HELVETICA;
+	font-size:11;
+	color:BLACK;
+	}
+
+-->
+
+</style>
+
+</head>
+<BODY BGCOLOR=white marginheight=0 marginwidth=0 leftmargin=0 topmargin=0>
+<!-- INTERNATIONALIZATION-LINKS-PLACEHOLDER-VICIDIAL -->
+<CENTER>
+
+<TABLE BGCOLOR=white cellpadding=0 cellspacing=0>
+<!-- BEGIN SIDEBAR NAVIGATION -->
+<TR><TD VALIGN=TOP WIDTH=170 BGCOLOR=#333333 ALIGN=CENTER VALIGN=MIDDLE>
+<A HREF="./admin.php"><IMG SRC="./images/vicidial_admin_web_logo.png" WIDTH=170 HEIGHT=45 BORDER=0 ALT="System logo"></A>
+<B><FONT FACE="ARIAL,HELVETICA" COLOR=white>ADMINISTRATION</FONT></B><BR>
+
+	<TABLE CELLPADDING=2 CELLSPACING=0 BGCOLOR=#333333 WIDTH=160>
+		<!-- REPORTS NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=999999';"><TD ALIGN=LEFT CLASS="head_style">
+	<a href="/vicidial/admin.php?ADD=999999" STYLE="text-decoration:none;"><img src="images/icon_reports.png" border=0 alt="Reports" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE"> Reports </a>
+	</TD></TR>
+
+	<!-- USERS NAVIGATION -->
+	<TR WIDTH=100%><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR WIDTH=160 BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=0A';"><TD ALIGN=LEFT CLASS="head_style" WIDTH=160>
+	<a href="/vicidial/admin.php?ADD=0A" STYLE="text-decoration:none;"><img src="images/icon_users.png" border=0 alt="Users" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE">Users</a>
+	</TD></TR>
+		<!-- CAMPAIGNS NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=10';"><TD ALIGN=LEFT CLASS="head_style">
+	<a href="/vicidial/admin.php?ADD=10" STYLE="text-decoration:none;"><img src="images/icon_campaigns.png" border=0 alt="Campaigns" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE">Campaigns</a>
+	</TD></TR>
+		<!-- LISTS NAVIGATION -->
+			<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+		<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=100';"><TD ALIGN=LEFT CLASS="head_style"><a href="/vicidial/admin.php?ADD=100" STYLE="text-decoration:none;"><img src="images/icon_lists.png" border=0 alt="Lists" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE">Lists</a></TD></TR>
+			<!-- SCRIPTS NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=1000000';"><TD ALIGN=LEFT CLASS="head_style">
+	<a href="/vicidial/admin.php?ADD=1000000" STYLE="text-decoration:none;"><img src="images/icon_scripts.png" border=0 alt="Scripts" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE"> Scripts </a>
+	</TD></TR>
+		<!-- FILTERS NAVIGATION -->
+			<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+		<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=10000000';"><TD ALIGN=LEFT CLASS="head_style"><a href="/vicidial/admin.php?ADD=10000000" STYLE="text-decoration:none;"><img src="images/icon_filters.png" border=0 alt="Filters" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE"> Filters </a></TD></TR>
+			<!-- INGROUPS NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=1001';"><TD ALIGN=LEFT CLASS="head_style">
+	<a href="/vicidial/admin.php?ADD=1001" STYLE="text-decoration:none;"><img src="images/icon_inbound.png" border=0 alt="Inbound" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE"> Inbound </a>
+	</TD></TR>
+		<!-- USERGROUPS NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=100000';"><TD ALIGN=LEFT CLASS="head_style_selected">
+	<a href="/vicidial/admin.php?ADD=100000" STYLE="text-decoration:none;"><img src="images/icon_black_usergroups.png" border=0 alt="User Groups" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:BLACK"><b> User Groups </a>
+	</TD></TR>
+			<TR CLASS="subhead_style_selected" onclick="window.document.location='/vicidial/admin.php?ADD=100000';"><TD ALIGN=LEFT> &nbsp; 
+		<a href="/vicidial/admin.php?ADD=100000" STYLE="text-decoration:none;"><FONT STYLE="font-family:HELVETICA;font-size:11;color:BLACK;"> Show User Groups </a>
+		</TR><TR CLASS="subhead_style" onclick="window.document.location='/vicidial/admin.php?ADD=111111';"><TD ALIGN=LEFT> &nbsp; 
+				<a href="/vicidial/admin.php?ADD=111111" STYLE="text-decoration:none;"><FONT STYLE="font-family:HELVETICA;font-size:11;color:BLACK;"> Add A New User Group </a>
+		</TR><TR CLASS="subhead_style" onclick="window.document.location='group_hourly_stats.php';"><TD ALIGN=LEFT> &nbsp; 
+				<a href="group_hourly_stats.php" STYLE="text-decoration:none;"><FONT STYLE="font-family:HELVETICA;font-size:11;color:BLACK;"> Group Hourly Report </a>
+		</TR><TR CLASS="subhead_style" onclick="window.document.location='user_group_bulk_change.php';"><TD ALIGN=LEFT> &nbsp; 
+		<a href="user_group_bulk_change.php" STYLE="text-decoration:none;"><FONT STYLE="font-family:HELVETICA;font-size:11;color:BLACK;"> Bulk Group Change </a>
+		</TD></TR>
+			<!-- REMOTEAGENTS NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=10000';"><TD ALIGN=LEFT CLASS="head_style">
+	<a href="/vicidial/admin.php?ADD=10000" STYLE="text-decoration:none;"><img src="images/icon_remoteagents.png" border=0 alt="Remote Agents" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE"> Remote Agents </a>
+	</TD></TR>
+		<!-- ADMIN NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=999998';"><TD ALIGN=LEFT CLASS="head_style">
+	<a href="/vicidial/admin.php?ADD=999998" STYLE="text-decoration:none;"><img src="images/icon_admin.png" border=0 alt="Admin" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE"> Admin </a>
+	</TD></TR>
+		<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	</TABLE>
+	<BR>&nbsp;
+</TD><TD VALIGN=TOP WIDTH=770 BGCOLOR=#D6E3B2>
+<!-- END SIDEBAR NAVIGATION -->
+
+<span style="position:absolute;left:300px;top:30px;z-index:1;visibility:hidden;" id="audio_chooser_span">
+
+</span>
+
+<TABLE BGCOLOR=#D6E3B2 cellpadding=2 cellspacing=0 WIDTH=770 HEIGHT=15>
+<TR BGCOLOR=#333333><TD ALIGN=LEFT BGCOLOR=#333333><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B><a href="../vicidial/welcome.php" STYLE="text-decoration:none;"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=1>HOME</a> | <A HREF="../agc/timeclock.php?referrer=admin" STYLE="text-decoration:none;"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=1> Timeclock</A> | <a href="manager_chat_interface.php" STYLE="text-decoration:none;"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=1> Chat</a> | <a href="/vicidial/admin.php?force_logout=1" STYLE="text-decoration:none;"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=1>Logout</a> <FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=1>(capadmin)</FONT>
+
+
+</TD><TD ALIGN=RIGHT><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B>Thursday November 27, 2025 20:37:35 PM &nbsp; </B></TD></TR>
+
+<TR BGCOLOR=#333333>
+
+
+
+
+
+
+
+</TR>
+	<TR><TD ALIGN=LEFT COLSPAN=2 HEIGHT=2 BGCOLOR=#333333></TD></TR>
+<TR><TD ALIGN=LEFT COLSPAN=2>
+<TABLE><TR><TD>
+<FONT FACE="ARIAL,HELVETICA" COLOR=BLACK SIZE=2><img src="images/icon_black_usergroups.png" alt="User Groups" width=42 height=42> USER GROUPS LISTINGS:
+<center><TABLE width=750 cellspacing=0 cellpadding=1>
+<tr bgcolor=black><td><font size=1 color=white align=left><B>USER GROUP</B></td><td><font size=1 color=white><B>GROUP NAME</B></td><td><font size=1 color=white><B>USERS</B></td><td><font size=1 color=white><B>ACTIVE</B></td><td><font size=1 color=white><B>2ND</B></td><td><font size=1 color=white><B>FORCE TIMECLOCK &nbsp; </B></td><td align=center><font size=1 color=white><B>MODIFY</B></td></tr>
+<tr class="records_list_y" onclick="window.document.location='/vicidial/admin.php?ADD=311111&user_group=ADMIN'"><td><a href="/vicidial/admin.php?ADD=311111&user_group=ADMIN"><font size=1 color=black>ADMIN</a></td><td><font size=1> VICIDIAL ADMINISTRATORS</td><td><font size=1> 5</td><td><font size=1> 3</td><td><font size=1> 0</td><td><font size=1> N</td><td align=center><font size=1><a href="/vicidial/admin.php?ADD=311111&user_group=ADMIN">MODIFY</a></td></tr>
+<tr class="records_list_x" onclick="window.document.location='/vicidial/admin.php?ADD=311111&user_group=AGENTS'"><td><a href="/vicidial/admin.php?ADD=311111&user_group=AGENTS"><font size=1 color=black>AGENTS</a></td><td><font size=1> AGENTS</td><td><font size=1> 38</td><td><font size=1> 38</td><td><font size=1> 0</td><td><font size=1> N</td><td align=center><font size=1><a href="/vicidial/admin.php?ADD=311111&user_group=AGENTS">MODIFY</a></td></tr>
+<tr class="records_list_y" onclick="window.document.location='/vicidial/admin.php?ADD=311111&user_group=Arizona'"><td><a href="/vicidial/admin.php?ADD=311111&user_group=Arizona"><font size=1 color=black>Arizona</a></td><td><font size=1> NOT ARIZONA</td><td><font size=1> 0</td><td><font size=1> 0</td><td><font size=1> 0</td><td><font size=1> N</td><td align=center><font size=1><a href="/vicidial/admin.php?ADD=311111&user_group=Arizona">MODIFY</a></td></tr>
+<tr class="records_list_x" onclick="window.document.location='/vicidial/admin.php?ADD=311111&user_group=BWADMIN'"><td><a href="/vicidial/admin.php?ADD=311111&user_group=BWADMIN"><font size=1 color=black>BWADMIN</a></td><td><font size=1> Byteworth Administrators</td><td><font size=1> 1</td><td><font size=1> 1</td><td><font size=1> 0</td><td><font size=1> N</td><td align=center><font size=1><a href="/vicidial/admin.php?ADD=311111&user_group=BWADMIN">MODIFY</a></td></tr>
+<tr class="records_list_y" onclick="window.document.location='/vicidial/admin.php?ADD=311111&user_group=CIDCHANGER'"><td><a href="/vicidial/admin.php?ADD=311111&user_group=CIDCHANGER"><font size=1 color=black>CIDCHANGER</a></td><td><font size=1> CIDCHANGER</td><td><font size=1> 0</td><td><font size=1> 0</td><td><font size=1> 0</td><td><font size=1> N</td><td align=center><font size=1><a href="/vicidial/admin.php?ADD=311111&user_group=CIDCHANGER">MODIFY</a></td></tr>
+<tr class="records_list_x" onclick="window.document.location='/vicidial/admin.php?ADD=311111&user_group=ecofuturegroup'"><td><a href="/vicidial/admin.php?ADD=311111&user_group=ecofuturegroup"><font size=1 color=black>ecofuturegroup</a></td><td><font size=1> ecofuturegroup</td><td><font size=1> 1</td><td><font size=1> 0</td><td><font size=1> 0</td><td><font size=1> N</td><td align=center><font size=1><a href="/vicidial/admin.php?ADD=311111&user_group=ecofuturegroup">MODIFY</a></td></tr>
+<tr class="records_list_y" onclick="window.document.location='/vicidial/admin.php?ADD=311111&user_group=FrontDesk'"><td><a href="/vicidial/admin.php?ADD=311111&user_group=FrontDesk"><font size=1 color=black>FrontDesk</a></td><td><font size=1> Gabriel</td><td><font size=1> 1</td><td><font size=1> 1</td><td><font size=1> 0</td><td><font size=1> N</td><td align=center><font size=1><a href="/vicidial/admin.php?ADD=311111&user_group=FrontDesk">MODIFY</a></td></tr>
+<tr class="records_list_x" onclick="window.document.location='/vicidial/admin.php?ADD=311111&user_group=MONITOR'"><td><a href="/vicidial/admin.php?ADD=311111&user_group=MONITOR"><font size=1 color=black>MONITOR</a></td><td><font size=1> MONITOR</td><td><font size=1> 1</td><td><font size=1> 1</td><td><font size=1> 0</td><td><font size=1> N</td><td align=center><font size=1><a href="/vicidial/admin.php?ADD=311111&user_group=MONITOR">MODIFY</a></td></tr>
+<tr class="records_list_y" onclick="window.document.location='/vicidial/admin.php?ADD=311111&user_group=Phil'"><td><a href="/vicidial/admin.php?ADD=311111&user_group=Phil"><font size=1 color=black>Phil</a></td><td><font size=1> Phil</td><td><font size=1> 1</td><td><font size=1> 0</td><td><font size=1> 0</td><td><font size=1> N</td><td align=center><font size=1><a href="/vicidial/admin.php?ADD=311111&user_group=Phil">MODIFY</a></td></tr>
+<tr class="records_list_x" onclick="window.document.location='/vicidial/admin.php?ADD=311111&user_group=QualityAir'"><td><a href="/vicidial/admin.php?ADD=311111&user_group=QualityAir"><font size=1 color=black>QualityAir</a></td><td><font size=1> QualityAir</td><td><font size=1> 1</td><td><font size=1> 0</td><td><font size=1> 0</td><td><font size=1> N</td><td align=center><font size=1><a href="/vicidial/admin.php?ADD=311111&user_group=QualityAir">MODIFY</a></td></tr>
+<tr class="records_list_y" onclick="window.document.location='/vicidial/admin.php?ADD=311111&user_group=Reports'"><td><a href="/vicidial/admin.php?ADD=311111&user_group=Reports"><font size=1 color=black>Reports</a></td><td><font size=1> Reports</td><td><font size=1> 2</td><td><font size=1> 2</td><td><font size=1> 0</td><td><font size=1> N</td><td align=center><font size=1><a href="/vicidial/admin.php?ADD=311111&user_group=Reports">MODIFY</a></td></tr>
+<tr class="records_list_x" onclick="window.document.location='/vicidial/admin.php?ADD=311111&user_group=Shane'"><td><a href="/vicidial/admin.php?ADD=311111&user_group=Shane"><font size=1 color=black>Shane</a></td><td><font size=1> Shane</td><td><font size=1> 1</td><td><font size=1> 0</td><td><font size=1> 0</td><td><font size=1> N</td><td align=center><font size=1><a href="/vicidial/admin.php?ADD=311111&user_group=Shane">MODIFY</a></td></tr>
+<tr class="records_list_y" onclick="window.document.location='/vicidial/admin.php?ADD=311111&user_group=VERIFIER'"><td><a href="/vicidial/admin.php?ADD=311111&user_group=VERIFIER"><font size=1 color=black>VERIFIER</a></td><td><font size=1> VERIFIER</td><td><font size=1> 0</td><td><font size=1> 0</td><td><font size=1> 0</td><td><font size=1> N</td><td align=center><font size=1><a href="/vicidial/admin.php?ADD=311111&user_group=VERIFIER">MODIFY</a></td></tr>
+</TABLE></center>
+</TD></TR></TABLE></center>
+</TD></TR></TABLE></center>
+</TD></TR>
+<TR><TD bgcolor=#333333 ALIGN=CENTER>
+<FONT STYLE="font-family:HELVETICA;font-size:9;color:white;"><br><br><!-- RUNTIME: 0 seconds<BR> -->VERSION: 2.14-858a<BR>BUILD: 220513-0819
+<BR><a href="/vicidial/admin.php?ADD=999995"><font color=white>&copy; 2022 ViciDial Group</font></a><BR><img src="images/pixel.gif"></FONT>
+
+</TD><TD BGCOLOR=#D6E3B2>
+</TD></TR><TABLE>
+</body>
+<script language="Javascript">
+if (!window.A_TCALSIDX)
+	{
+	if (document.addEventListener)
+		window.removeEventListener('scroll', f_tcalHideAll);
+	if (window.attachEvent)
+		window.detachEvent('onscroll', f_tcalHideAll);
+	}
+</script>
+</html>
