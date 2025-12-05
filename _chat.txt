@@ -1,0 +1,821 @@
+[11/4/25, 2:29:53 PM] S.E.E. Tech/Server Support: ‎Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them.
+[11/4/25, 2:29:53 PM] Zach Harmon: ‎Zach Harmon created group “S.E.E. Tech/Server Support”
+[11/4/25, 2:29:53 PM] S.E.E. Tech/Server Support: ‎Zach Harmon added you
+[11/4/25, 2:31:53 PM] Zach Harmon: Kevan here is Moses who is now running my company. He has been using his AI assistant Claude to analyze the vici as well as perform some operations.
+
+He is currently testing the creation of new campaign, via copy function.
+
+We need your help to verify the initial steps so eventually this AI can complete all functions.
+[11/4/25, 2:32:34 PM] Zach Harmon: As well as all support going forward we will do it through here!
+[11/4/25, 2:53:45 PM] Moses Herrera: Thank you i created a campaign Colorado Claude , i think i have it all configured and good to go other than few last steps with data and DiDs
+[11/4/25, 3:26:48 PM] Zach Harmon: He also thinks he has it set up already for a remote agent.
+[11/4/25, 3:27:11 PM] Zach Harmon: Specifically for remote agent - is what he needs for this campaign.
+[11/4/25, 3:31:17 PM] ~ Kevan: I see the campaign 4001 that was made, but the Survey section still shows to be a message from Saint Louis and set to goto the StLouis Call Menu
+[11/4/25, 3:31:42 PM] ~ Kevan: Also, with using a remote agent to make the campaign dial. When someone presses 1, what are you wanting to happen? ‎<This message was edited>
+[11/4/25, 4:32:41 PM] Moses Herrera: someoen press 1 it goes to remote agent
+[11/4/25, 4:46:20 PM] Zach Harmon: He wants the IVR call menu to go to remote agent instead of live local agent, like we setup in the past ‎<This message was edited>
+[11/4/25, 5:05:28 PM] ~ Kevan: okay so remote agent will be a phone number it goes to where an agent will answer
+[11/4/25, 5:05:51 PM] Moses Herrera: yes sir
+[11/4/25, 5:34:12 PM] Zach Harmon: Yes
+[11/4/25, 5:34:19 PM] Zach Harmon: We need to program it properly
+[11/4/25, 5:34:35 PM] Zach Harmon: And teach claude how to do it
+[11/4/25, 5:41:10 PM] ~ Kevan: I dont have the time today to train on that, but tomorrow I will send screenshots and explain how to set. Its been quite awhile since we setup to goto outside agent and will also have to do some testing to see what method will be best since we dont really do any support for P1 stuff anymore, so gotta refresh myself on it. ‎<This message was edited>
+[11/4/25, 5:42:45 PM] ~ Kevan: You can get the audio file uploaded and set in the survey section of the campaign, so that when i do go through it and testing i can configure it properly based on what the audio file says on what buttons to press and such.
+[11/4/25, 5:43:19 PM] Moses Herrera: Yes
+[11/4/25, 6:37:33 PM] Zach Harmon: I think you can even give Claude detailed written instructions ?
+[11/4/25, 6:38:02 PM] Moses Herrera: Yes totally
+[11/4/25, 6:38:18 PM] Moses Herrera: I just need instructions
+[11/4/25, 6:38:21 PM] Zach Harmon: Kevan I will show him how to setup normal p1 inbound campaigns. 
+
+But we need support on remote agents specifically. Its been a while I don’t recall everything
+
+Remote agents to connect to the P1 campaigns as if they were local agents. Route to a specific number etc. ‎<This message was edited>
+[11/4/25, 6:41:50 PM] Moses Herrera: Yes 👍
+[11/4/25, 6:43:26 PM] ~ Kevan: Okay, yeah, i will give instructions on that tomorrow after I get some time to do some testing and see what method was best on having the calls goto the outside line when someone presses 1 using remote agent to have it dial. ‎<This message was edited>
+[11/4/25, 7:50:19 PM] Moses Herrera: perfect send it over when you can
+[11/5/25, 11:02:36 AM] Moses Herrera: or what we can do is with exsiting colraedo campaing just add a new number to take them no? whats the easiest way, i do think keeping things seperate to track would be cleaner so claude colorado moses campaign going to our remote agent number works, that number can take up to many many calls at once btw that i have already in moses claude co campaign
+[11/5/25, 11:07:17 AM] ~ Kevan: Ill have some time to go through and test and setup for remote agent this afternoon prob in 2-3 hours and ill get that info over to you. 
+
+This is campaign 4001 right?
+[11/5/25, 11:09:05 AM] Moses Herrera: 3466425246 is the nubmer for optins, and yes its 4001 campaing
+[11/5/25, 11:09:16 AM] Moses Herrera: Thank you Kevan
+[11/5/25, 11:10:11 AM] ~ Kevan: okay, and I dont see the audio file or ingroup / call menus setup for it. Have yall gone over that stuff yet?
+[11/5/25, 11:13:11 AM] Zach Harmon: No it will be the same ivr for inbound campaign
+[11/5/25, 11:13:43 AM] ~ Kevan: Its set for StLouis audio file and call menu right now is why I ask
+[11/5/25, 11:14:19 AM] ~ Kevan: Can you configure it as needed so when I go in there, it will be ready for me to configure the remote agent transfer part
+[11/5/25, 11:28:13 AM] Zach Harmon: I dont understand
+[11/5/25, 11:28:28 AM] Zach Harmon: We want the remote agent to be an extension to the normal inbound campaign
+[11/5/25, 11:29:22 AM] Zach Harmon: I think in the past we only used it for outbound dialing. Like predictive dialing. Not sure if we ever used it for inbound
+[11/5/25, 11:29:32 AM] Zach Harmon: For p1 i mean. Not inbound
+[11/5/25, 11:29:39 AM] ~ Kevan: Right, so when someone presses 1 it goes to outside agent instead of logged in agent. What i am saying is the campaign survey section that has the audio file and such is configured with St Louis audio file and call menu
+[11/5/25, 11:30:38 AM] Zach Harmon: You want me to put the same audio as the p1 campaign, on the call menu for remote agent? ‎<This message was edited>
+[11/5/25, 11:31:22 AM] ~ Kevan: When someone answers the phone and audio file plays, what audio file should it be playing?
+[11/5/25, 11:32:07 AM] Zach Harmon: @⁨Moses Herrera⁩ which campaign do you want to try the remote agent for first?
+[11/5/25, 11:32:17 AM] Zach Harmon: Georgia? St Louis? Where?
+[11/5/25, 11:32:22 AM] Zach Harmon: @⁨Moses Herrera⁩
+[11/5/25, 11:37:33 AM] ~ Kevan: Okay im confused because campaign 4001 is the one that was made called Colorado Transfer Campaign, which i thought you are wanting to use that campaign to make calls out playing the P1 audio file and then customer presses 1 and goes to remote agent
+[11/5/25, 11:37:56 AM] Zach Harmon: Lets do Colorado
+[11/5/25, 11:38:12 AM] Zach Harmon: Campaign 1000 is the main campaign
+[11/5/25, 11:38:36 AM] Zach Harmon: Does it need to be a unique campaign for remote agents?
+[11/5/25, 11:39:15 AM] Moses Herrera: do colorado claude ritht? for remote agent
+[11/5/25, 11:39:34 AM] Zach Harmon: He needs to check the campaign you made with Claude
+[11/5/25, 11:39:42 AM] ~ Kevan: Each campaign will have to be configured for remote agent
+[11/5/25, 11:40:03 AM] Zach Harmon: Configure so it can allow both local and remote agents in the one campaign?
+[11/5/25, 11:40:06 AM] ~ Kevan: and Moses said he made the Claude Colorado one, so i figured thats the one that will be dialing and going to remote agent
+[11/5/25, 11:40:12 AM] ~ Kevan: yeah you can
+[11/5/25, 11:40:49 AM] Zach Harmon: No lets just check to see if the claude one was done correctly. We wont use it. We dont need to as we already have one
+[11/5/25, 11:41:11 AM] Zach Harmon: And then lets program 1000 campaign to do both
+[11/5/25, 11:49:07 AM] ~ Kevan: Okay, will it just be one campaign at a time for the remote agent? or do you want to have multiple campaigns remote agents are in at same time?
+[11/5/25, 11:49:30 AM] Zach Harmon: For now lets just start with 1000
+[11/5/25, 11:52:04 AM] ~ Kevan: okay so for this method theres only 1 way to do it with putting extension to dial on remote agent.  On the remote agent we will set lines to 5 so that it can take 5 calls at a time, so that means there will be technically 5 remote agents logged in, so if dial level is 100, that would be 500 lines being dialed when remote agent is logged in.
+[11/5/25, 11:52:48 AM] Zach Harmon: When remote agent is active it will dial 500 ?
+[11/5/25, 11:52:56 AM] Zach Harmon: Or 100 per remote agent?
+[11/5/25, 11:53:05 AM] ~ Kevan: It will dial the dial level on campaign times 5
+[11/5/25, 11:53:17 AM] Zach Harmon: Per agent?
+[11/5/25, 11:53:31 AM] Zach Harmon: We should set it to 1 line then I think
+[11/5/25, 11:53:49 AM] Zach Harmon: So it only dials the same dial level per agent as set on the campaign
+[11/5/25, 11:54:06 AM] ~ Kevan: if set to one then it can only take one call at a time, if another call comes in and remote agent is on a call, then it cant send another to it
+[11/5/25, 11:54:51 AM] Zach Harmon: It would still count the remote agent in the normal queue? Like we have it set so longest waiting agent gets call.
+[11/5/25, 11:55:06 AM] ~ Kevan: Yeah
+[11/5/25, 11:55:14 AM] Zach Harmon: One call at a time is fine and then we have failover
+[11/5/25, 11:55:20 AM] ~ Kevan: Moses had said it can take multiple calls on that number is why
+[11/5/25, 11:55:28 AM] Zach Harmon: Oh
+[11/5/25, 11:55:33 AM] Zach Harmon: Lets see how many he has
+[11/5/25, 11:55:43 AM] Zach Harmon: @⁨Moses Herrera⁩ how many agents answering the calls?
+[11/5/25, 11:59:30 AM] Moses Herrera: lots , we can answer up to 30 calls at a time
+[11/5/25, 11:59:51 AM] Zach Harmon: Lets start with 2
+[11/5/25, 11:59:54 AM] Zach Harmon: Dial volume
+[11/5/25, 11:59:59 AM] Zach Harmon: Because of server capacity
+[11/5/25, 12:00:02 PM] Moses Herrera: that number can take that
+[11/5/25, 12:00:05 PM] Zach Harmon: Wewill need to add servers eventually
+[11/5/25, 12:00:14 PM] Zach Harmon: @⁨~Kevan⁩
+[11/5/25, 12:00:17 PM] Moses Herrera: zak and you can let me know server costs as well
+[11/5/25, 12:00:33 PM] Zach Harmon: I believe its like $100/mo per server
+[11/5/25, 12:00:50 PM] Zach Harmon: Each server can handle 1-2 agents dialing
+[11/5/25, 1:04:40 PM] Zach Harmon: @⁨Moses Herrera⁩ the agents are ready today to take calls?
+[11/5/25, 1:20:32 PM] ~ Kevan: Once i get back from lunch im going to test and make sure all is working as intended then will give green light on it and give instructions on what to do for remote agent being used in existing campaigns.
+[11/5/25, 1:54:29 PM] Moses Herrera: yes they are
+[11/5/25, 1:55:00 PM] Moses Herrera: let me know when its live , and what we can get on paper for me to save to claude on what lacked for the launching of that campaign
+[11/5/25, 3:02:10 PM] Moses Herrera: just let me know before turning on campaign so i can give setters a heads up !
+[11/5/25, 3:02:59 PM] Zach Harmon: @⁨~Kevan⁩
+[11/5/25, 3:15:27 PM] ~ Kevan: Sorry been dealing with client in crisis with their payment forms not processing.
+Almost done with it and will test the remote agent
+[11/5/25, 3:38:28 PM] ~ Kevan: Been trying to test but everytime i call my phone, the system is showing that my voicemail is picking up and not ringing to my phone at all
+[11/5/25, 3:40:12 PM] ~ Kevan: With the call going through instacall prefix 523. Im trying now to test through our carrier
+[11/5/25, 3:55:36 PM] Zach Harmon: Chat with Instacall and see what’s happening
+[11/5/25, 3:56:30 PM] ~ Kevan: its FAS im pretty sure, ive had happen to me on our carrier before that i just tested with and doing it again, where my phone never rings and goes to voicemail but its not even my voicemail
+[11/5/25, 3:56:45 PM] ~ Kevan: my carrier and your carrier are both doing it on just my number
+[11/5/25, 3:56:50 PM] ~ Kevan: testing to Gregs number no issue
+[11/5/25, 3:57:21 PM] ~ Kevan: but maybe could be different this time and has something to do with my switching from Verizon to Tmobile.
+[11/5/25, 3:57:48 PM] ~ Kevan: im gonna test through our primary carrier on another system and see if its just my number or if its FAS
+[11/5/25, 4:01:54 PM] Zach Harmon: If it was FAS it would be with both carriers, yours and mine
+[11/5/25, 4:03:08 PM] Zach Harmon: This could be a revelation that we need to test our carriers more 😅
+[11/5/25, 4:05:59 PM] Moses Herrera: let me know when its able to test for transfers
+[11/5/25, 4:06:06 PM] Moses Herrera: to the number
+[11/5/25, 4:07:03 PM] ~ Kevan: Calls work from my primary carrier on another dialer system to my phone
+[11/5/25, 4:09:18 PM] Moses Herrera: so the cmpaing claude one is good to go? just load did and leads?
+[11/5/25, 4:10:47 PM] Zach Harmon: Moses hes working on setting up the remote transfer first. So we can immediately get your agents on
+[11/5/25, 4:11:01 PM] Zach Harmon: Later he checks on Claudes work
+[11/5/25, 4:16:47 PM] ~ Kevan: I did some tests to Gregs phone but only have 1 number to test to and cant test that 2nd part of going to the outside line. But i saw it showed it was ringing them.
+[11/5/25, 4:17:06 PM] Zach Harmon: Okay
+[11/5/25, 4:17:15 PM] Zach Harmon: If you think its ready we can start to test
+[11/5/25, 4:17:22 PM] ~ Kevan: I was using 4001 campaign to test but its not setup properly, i thought we were gonna use this on campaign 1000
+[11/5/25, 4:18:21 PM] Moses Herrera: as long as we can figure the remote stuff that then could just apply to other cmapaings, the claude campaing mainly was just checking if i cloned it correctly with claude.
+[11/5/25, 4:18:23 PM] ~ Kevan: or are we gonna do on claude and yall need to get it setup with proper audio files and such?
+[11/5/25, 4:18:47 PM] Moses Herrera: I believe i configured everythign with proper audios in claude camapign.
+[11/5/25, 4:18:53 PM] Zach Harmon: Claude is just an assistant for Moses
+[11/5/25, 4:19:02 PM] Zach Harmon: And it will also analyze performance
+[11/5/25, 4:19:21 PM] Zach Harmon: But lets mainly test the remote
+[11/5/25, 4:19:58 PM] ~ Kevan: what campaign do you want to test remote agent on?
+[11/5/25, 4:20:01 PM] Zach Harmon: If you dont have time to check the work of his Claude (AI) thats okay we can leave it for another day. Lets setup remote and test
+[11/5/25, 4:20:11 PM] Zach Harmon: Campaign 1000
+[11/5/25, 4:20:35 PM] ~ Kevan: okay im going to turn it on
+[11/5/25, 4:20:43 PM] Zach Harmon: Okay
+[11/5/25, 4:20:50 PM] Zach Harmon: @⁨Moses Herrera⁩ get your agents ready
+[11/5/25, 4:21:48 PM] Moses Herrera: yes , tell me when
+[11/5/25, 4:21:59 PM] Zach Harmon: @⁨~Kevan⁩ can we also setup 2 more servers
+[11/5/25, 4:23:21 PM] ~ Kevan: It will be a few days for that, they are still transitioning us in the datacenter to our own dedicated servers and should be done in next few days to be able to setup another server into it.
+[11/5/25, 4:23:54 PM] Zach Harmon: @⁨Moses Herrera⁩ the agents are live.
+
+Our live agents are done for the day since its 5pm
+[11/5/25, 4:24:20 PM] Moses Herrera: ok , we can take them
+[11/5/25, 4:24:27 PM] Moses Herrera: tell me eta though so im prepared
+[11/5/25, 4:24:40 PM] ~ Kevan: i activated the remote agent and just waiting for someone to answer and press 1
+[11/5/25, 4:25:09 PM] Moses Herrera: ok so any second now?
+[11/5/25, 4:25:09 PM] ~ Kevan: or we could do a test call if yall have a number we can call that you can answer and say hello, then press 1 for it to transfer
+[11/5/25, 4:25:12 PM] Zach Harmon: Yes
+[11/5/25, 4:25:30 PM] Zach Harmon: Lets monitor and see
+[11/5/25, 4:25:32 PM] Moses Herrera: its gonna be my ai first
+[11/5/25, 4:25:49 PM] Zach Harmon: Although Colorado is a bit slow at the moment so it could be a while
+[11/5/25, 4:26:04 PM] Zach Harmon: Moses login to the server and look at the main report
+[11/5/25, 4:26:25 PM] Moses Herrera: can you send logins to server ?
+[11/5/25, 4:26:27 PM] Zach Harmon: I’ll turn it up a bit
+[11/5/25, 4:26:31 PM] Zach Harmon: You have them?
+[11/5/25, 4:27:04 PM] Moses Herrera: i dont, can you share?
+[11/5/25, 4:27:47 PM] Zach Harmon: https://capitalenergy.bytedialer.com/
+[11/5/25, 4:28:14 PM] Zach Harmon: capadmin
+CEi11!
+
+Second login is slightly different the password is without an !
+[11/5/25, 4:28:35 PM] Zach Harmon: And you need to whitelist the IP address if you are at a different location
+[11/5/25, 4:30:49 PM] Moses Herrera: ok , im in , is there a way you check you whitelist?
+[11/5/25, 4:30:58 PM] ~ Kevan: Did you get calls?
+[11/5/25, 4:31:11 PM] Moses Herrera: checking
+[11/5/25, 4:31:35 PM] ~ Kevan: Seeing something strange there, were it shows one remote agent in call and the other shows ring
+[11/5/25, 4:32:16 PM] ~ Kevan: we may need to just use multiple remote agents instead
+[11/5/25, 4:32:26 PM] ~ Kevan: of having 1 remote agent with 2 lines
+[11/5/25, 4:33:58 PM] ~ Kevan: okay i got it going again with 2 remote agents setup 2001, and 3001
+[11/5/25, 4:34:11 PM] ~ Kevan: lets see it looks better.
+[11/5/25, 4:34:15 PM] ~ Kevan: Did yall get that first call?
+[11/5/25, 4:34:31 PM] Moses Herrera: i can give you more lines
+[11/5/25, 4:34:43 PM] ~ Kevan: its not the lines on your end
+[11/5/25, 4:35:18 PM] ~ Kevan: well im not sure what it was really on there but it showed the first remote agent ring then went to other remote agent and then one answered and the other still showed ring.
+[11/5/25, 4:35:27 PM] ~ Kevan: Did one of your agents get a call??
+[11/5/25, 4:37:36 PM] Moses Herrera: shows no calls
+[11/5/25, 4:38:17 PM] ~ Kevan: it showed that you should have gotten 2 calls
+[11/5/25, 4:38:51 PM] Moses Herrera: i do have webhook to ghl  configured with claude colrado we could do with the other two camapigns, do we need to do that?
+[11/5/25, 4:39:22 PM] ~ Kevan: Are you always going to have live agents and then also remote agents?
+[11/5/25, 4:39:43 PM] ~ Kevan: or will this mainly be just remote agents on there
+[11/5/25, 4:39:50 PM] Moses Herrera: all remote
+[11/5/25, 4:39:59 PM] Moses Herrera: for now
+[11/5/25, 4:40:39 PM] Moses Herrera: 3466425246
+[11/5/25, 4:40:46 PM] ~ Kevan: lets first do a test to see if your phone rings when called from the dialer
+[11/5/25, 4:41:27 PM] Moses Herrera: ok, let me know when
+[11/5/25, 4:41:44 PM] ~ Kevan: i show answering machine answered, and then determined it was answering machine and hungup
+[11/5/25, 4:41:50 PM] ~ Kevan: im gonna send another now
+[11/5/25, 4:42:04 PM] ~ Kevan: once answered, need to say hello if you get the call
+[11/5/25, 4:42:06 PM] ~ Kevan: so it plays the message
+[11/5/25, 4:42:16 PM] ~ Kevan: sent call again
+[11/5/25, 4:42:30 PM] ~ Kevan: same thing, answering machine answered and hungup
+[11/5/25, 4:42:44 PM] Moses Herrera: why would hang up?
+[11/5/25, 4:43:05 PM] ~ Kevan: its determining that its an answering machine
+[11/5/25, 4:43:15 PM] Moses Herrera: whats determining?
+[11/5/25, 4:43:30 PM] ~ Kevan: answering machine detection
+[11/5/25, 4:43:46 PM] ~ Kevan: are you getting a call and agent answering?
+[11/5/25, 4:43:51 PM] ~ Kevan: or nothing comes to you
+[11/5/25, 4:43:55 PM] Moses Herrera: its going to a ghl twilio phone number
+[11/5/25, 4:44:16 PM] Moses Herrera: 0 calls , but checking twilio now
+[11/5/25, 4:50:04 PM] Zach Harmon: Yes the old data is slow at the moment
+[11/5/25, 4:50:42 PM] Zach Harmon: We may need to reset the DNC list … just the dispositions not the actual DNC
+[11/5/25, 4:53:38 PM] Moses Herrera: let me know when next call comes in
+[11/5/25, 4:53:55 PM] ~ Kevan: I think the issue is is the call isn't going to his system because i did a test campaign call, and it shows that the phone answers and then it determines it was answering machine and hangs up. So either the AI is making it think its an answering machine, or the call is not really hitting your system
+[11/5/25, 4:54:00 PM] ~ Kevan: you said you show no calls have come in right?
+[11/5/25, 4:54:16 PM] ~ Kevan: i called it from my cellphone and the AI answered
+[11/5/25, 4:54:29 PM] ~ Kevan: so should show 1 call atleast
+[11/5/25, 4:54:35 PM] ~ Kevan: but should show more that came from the dialer
+[11/5/25, 4:55:02 PM] ~ Kevan: i stopped the calls trying to figure this out. Need to get your feedback on what is happening
+[11/5/25, 4:55:38 PM] Moses Herrera: hmm
+[11/5/25, 4:56:32 PM] Moses Herrera: ok
+[11/5/25, 4:56:40 PM] ~ Kevan: so first thing we need to determine is how many calls have you received on number 3466425246 since we started the tests
+[11/5/25, 4:56:55 PM] Moses Herrera: ok on it
+[11/5/25, 5:03:32 PM] Zach Harmon: Its probably too late to dial now. What time is it in Colorado?
+[11/5/25, 5:04:19 PM] Zach Harmon: Did any agent get a call?
+[11/5/25, 5:05:26 PM] ~ Kevan: 4:05 PM in Denver
+[11/5/25, 5:06:56 PM] Zach Harmon: Looks like agent isnt on
+[11/5/25, 5:07:08 PM] ~ Kevan: ^
+[11/5/25, 5:07:26 PM] Zach Harmon: Ok
+[11/5/25, 5:09:23 PM] Zach Harmon: What dispo does dialer show for transfers? Still survey sent to call menu? For remote agents
+[11/5/25, 5:10:02 PM] ~ Kevan: yeah should be for now, which i may need to change how it does it we will see.
+[11/5/25, 5:10:12 PM] ~ Kevan: havnt been able to get a solid test in to really know
+[11/5/25, 5:10:32 PM] ~ Kevan: Need to figure out if any calls have made it to his side or not or if possibly an issue like my number
+[11/5/25, 5:10:55 PM] Zach Harmon: @⁨Moses Herrera⁩ did any calls come through?
+[11/5/25, 5:11:14 PM] ~ Kevan: He had said hes on it, checking that like 15 minutes ago ‎<This message was edited>
+[11/5/25, 5:11:14 PM] Zach Harmon: How do you distinguish these calls from other calls?
+[11/5/25, 5:11:40 PM] Zach Harmon: Is a question for Moses
+[11/5/25, 5:12:07 PM] Zach Harmon: He should Ideally have a different number than his normal ops
+[11/5/25, 5:14:54 PM] Zach Harmon: @⁨~Kevan⁩ does the system show any calls went through?
+[11/5/25, 5:15:29 PM] ~ Kevan: I saw the calls show ringing to him and then show in call
+[11/5/25, 5:15:39 PM] ~ Kevan: Not sure if he got the calls or not
+[11/5/25, 5:16:43 PM] Moses Herrera: you can rerun now
+[11/5/25, 5:17:39 PM] Zach Harmon: @⁨Moses Herrera⁩ did your agents get any calls
+[11/5/25, 5:17:47 PM] Zach Harmon: Kevan is saying you did
+[11/5/25, 5:17:56 PM] Zach Harmon: Can you confirm?
+[11/5/25, 5:18:54 PM] Moses Herrera: checking
+[11/5/25, 5:20:06 PM] Zach Harmon: @⁨~Kevan⁩ how many calls went through ?
+[11/5/25, 5:20:45 PM] ~ Kevan: Not sure really
+[11/5/25, 5:20:54 PM] Zach Harmon: What does the system say
+[11/5/25, 5:21:22 PM] ~ Kevan: shows the remote agents go no calls but it did show them in call and maybe doesn't log their calls as them being on it since goes to outside line
+[11/5/25, 5:21:28 PM] ~ Kevan: but was atleast 3
+[11/5/25, 5:21:37 PM] ~ Kevan: that had answered and pressed 1
+[11/5/25, 5:21:55 PM] Zach Harmon: Okay. Lets see what Moses says
+[11/5/25, 5:22:19 PM] Zach Harmon: I think we should test with another campaign. So we know it works. Colorado is slower
+[11/5/25, 5:22:30 PM] Moses Herrera: asking
+[11/5/25, 5:22:32 PM] ~ Kevan: I figured out the issue with the remote agent showing ringing still, its due to it failing over to the fail over group while its ringing to the agent so it doesn't know what to to and leaves that agent in a ringing state which not sure how we can fix that issue with you using failover stuff
+[11/5/25, 5:22:53 PM] ~ Kevan: but really his stuff wont need to failover, hes gonna just be using only remote agent going to that one number
+[11/5/25, 5:22:54 PM] Zach Harmon: Yeah we have failover inbound groups
+[11/5/25, 5:23:24 PM] Zach Harmon: If a call goes to remote agent, and the agent is on the line, it should go to local agent or?
+[11/5/25, 5:23:58 PM] ~ Kevan: he had said its gonna be just remote agents for now for what hes doing.
+[11/5/25, 5:24:26 PM] ~ Kevan: hes gonna have multiple agents being able to answer that line from what i understood
+[11/5/25, 5:24:29 PM] Zach Harmon: Okay so failover on remote keeps going to remote and goes to the line again
+[11/5/25, 5:24:56 PM] ~ Kevan: it will just keep ringing that line until they answer
+[11/5/25, 5:25:38 PM] Zach Harmon: It will keep ringing even though they are on a call alrdy. Ideally cause of the way he has it setup on his end, to take multiple calls
+[11/5/25, 5:32:23 PM] Moses Herrera: we got them
+[11/5/25, 5:34:30 PM] ~ Kevan: Okay so we need to setup stuff with no fail over and everything should be good.
+[11/5/25, 5:34:57 PM] ~ Kevan: it will just continue to ring their phone until they answer and the customer will just be hearing the hold music while waiting for an agent
+‎[11/5/25, 5:35:21 PM] Moses Herrera: ‎image omitted
+[11/5/25, 5:35:21 PM] ~ Kevan: now 4001 campaign i still see that under the survery section it is setup to use STLOUIS call menu and STLOUIS audio file to be played
+[11/5/25, 5:36:32 PM] Moses Herrera: so 2 calls, and the 4001 i can swtich the stlous out for colorado audios,
+[11/5/25, 5:36:41 PM] Moses Herrera: what shoiuld they be and ill have my claude ai do it
+[11/5/25, 5:37:07 PM] ~ Kevan: @⁨Zach Harmon⁩ should the audio file he uses be the same as what 1000 uses?
+[11/5/25, 5:43:59 PM] ~ Kevan: We gotta setup new callmenu and ingroup as well for this since its gonna be separate from the live agents and just using the remote agents which also helps get rid of the failover.
+‎[11/5/25, 5:46:20 PM] Moses Herrera: call_6a09cf604375b16e10883fa5862.mp3 ‎document omitted
+[11/5/25, 6:39:07 PM] ~ Kevan: how many different campaigns will you be running at the same time?
+[11/5/25, 6:44:59 PM] Moses Herrera: To start 1-3 only
+[11/5/25, 6:50:25 PM] ~ Kevan: Ill configure three remote agents with instructions on what to change in it when you want to switch to a different campaign
+[11/5/25, 6:50:58 PM] ~ Kevan: then you just have to adjust settings and activate it and campaign will dial and calls will goto the number you specify in the remote agent
+[11/5/25, 7:23:45 PM] Moses Herrera: Okay, so you just gave them a number and they're having issues. Here's what's probably happening and how to fix it:
+
+## **Most Likely Issue:**
+
+Vici dialers have **Answering Machine Detection (AMD)** built in. When they dial out or transfer, the dialer is trying to detect if a human answered vs a voicemail. Your Assistable AI agent probably has a greeting that starts immediately, and Vici's AMD is misreading it as voicemail.
+
+## **Tell Your Buddy to Check These Settings in Vici:**
+
+**1. Disable AMD for this specific number/campaign:**
+- In Vici, they can whitelist numbers to skip answering machine detection
+- Or disable AMD entirely for transfers (it's usually only needed for outbound cold calls anyway)
+
+**2. Check the "Dial Method" settings:**
+- Should be set to direct transfer, not predictive/preview with AMD
+- Look for settings like "AMDACTION" or "AMD" in the campaign settings
+
+**3. Try adding a pause/delay before the transfer:**
+- Some dialers need a 1-2 second pause to let the line stabilize
+- In Vici this might be a dial prefix setting
+
+## **Quick Test to Confirm This is AMD:**
+
+Have them try transferring to your cell phone from Vici the exact same way they're transferring to your AI number. If your cell phone works fine from Vici too, then it's definitely the AI greeting triggering their AMD.
+
+## **What to Ask Your Buddy:**
+
+"Can you disable answering machine detection for transfers to this number? It's an AI agent, not voicemail."
+
+That's probably 90% of the issue. Want me to give you the exact Vici settings to have them check?
+[11/5/25, 7:43:16 PM] ~ Kevan: The only time AMD was an issue was when we were doing a test call from the campaign to that number to see if any issue with making it to that number and it answering. 
+
+AMD is not used when its doing the transfer to the remote agent ‎<This message was edited>
+[11/5/25, 8:01:10 PM] Zach Harmon: Yes
+[11/5/25, 8:01:29 PM] Zach Harmon: Great
+[11/5/25, 8:44:33 PM] Zach Harmon: Will try a different audio actually @⁨Moses Herrera⁩
+[11/5/25, 8:44:50 PM] Zach Harmon: The old data we have, has not been working well with new audio.
+[11/5/25, 8:45:00 PM] Zach Harmon: Need to use old one
+[11/5/25, 8:45:44 PM] Zach Harmon: But we’ll be able to dial the new 100k Denver data for a bit, every other day or so, and produce for a while. Also we havent added Pueblo or anywhere outside Denver
+[11/5/25, 8:47:13 PM] ~ Kevan: You gonna put that data into the 4001 campaign?  I setup the callmenu and ingroup for 4001 with no failover and remote agent is set to 5 lines so that will allow 5 calls to be active at a time that pressed 1 and goes to the number specified.
+[11/5/25, 8:48:08 PM] Zach Harmon: 4001 is the one Moses created?
+[11/5/25, 8:49:20 PM] ~ Kevan: Setup will be same as other P1 campaigns, only difference will be just configuring the remote agent to get calls from the ingroup that the callmenu goes to for the campaign, and set the campaign that remote agent will be in and activate. Im gonna send a screenshot with the information on what to change when switching the remote agent to new campaign. 
+
+There are 3 remote agents i setup 2001, 3001, 4001. Each is set to 5 lines and each is using a different server to not overload one.
+[11/5/25, 8:49:28 PM] ~ Kevan: Yeah 4001 is the one Moses made for Colorado
+[11/5/25, 8:49:48 PM] Zach Harmon: Lets stick to 1000 for now. I’ll put the new data and old audio on it. And test with his remote agents
+[11/5/25, 8:50:09 PM] ~ Kevan: Well thats a problem if you are gonna have live agents in there too and wanting failover to goto other campaigns
+[11/5/25, 8:50:26 PM] Zach Harmon: We only want to make sure Claude created rhe campaign accurately with all the inbound groups and call menus etc.
+[11/5/25, 8:50:26 PM] ~ Kevan: He was saying its gonna just be his remote agents in there no live agents, which fixes that problem that is caused by the failover
+[11/5/25, 8:50:46 PM] Zach Harmon: Well we dont have to use failover if it causes issues
+[11/5/25, 8:51:10 PM] Zach Harmon: Can just keep failover for live agents
+[11/5/25, 8:51:30 PM] Zach Harmon: But we need them to be able to be active together thats important
+[11/5/25, 8:51:35 PM] ~ Kevan: okay, so ill just disable the failover for the NorthDenverXfer, and you can reenable if you have live agents, but when using remote agents needs to be turned off
+[11/5/25, 8:51:45 PM] Zach Harmon: Oh
+[11/5/25, 8:51:57 PM] Zach Harmon: Alr thats fine
+[11/5/25, 8:52:07 PM] ~ Kevan: Hopefully wont even need failover with having more agents
+[11/5/25, 8:53:10 PM] Zach Harmon: We cant crossover data thats too complicated
+[11/5/25, 8:53:26 PM] Zach Harmon: Data needs to be strictly to one campaign not used in different ones
+[11/5/25, 8:54:09 PM] Zach Harmon: So lets test again today and see if disactivating the failover fixes it
+[11/5/25, 9:18:49 PM] ~ Kevan: I had to add my primary carrier on your system to do a test, but finally got to do a test from my phone. I called my phone and watched as it went through each of the lines trying to get an answer and wasn't getting stuck on RING like was before when there was the failover.
+[11/5/25, 9:20:02 PM] ~ Kevan: So should be good to go. I will get the screenshot and info on configuring the remote agents and activating it and send over in a bit.
+‎[11/5/25, 10:13:52 PM] ~ Kevan: ‎image omitted
+[11/5/25, 10:37:11 PM] Moses Herrera: yes
+[11/5/25, 10:50:52 PM] Moses Herrera: Got the screenshot. Ready to configure the 3 remote agents now.
+  What settings do I need to change when I want to switch between
+  campaigns? And send over the activation steps when you get a
+  chance.
+[11/6/25, 4:36:18 PM] Moses Herrera: Are we able to test the transfer again soon?
+[11/6/25, 5:02:10 PM] ~ Kevan: Yeah you can activate the 2001 remote agent and test it out
+[11/6/25, 5:49:03 PM] Moses Herrera: perfect , Zach how late do you guys usually call what hours?
+[11/7/25, 11:38:00 AM] Moses Herrera: i dont see 2001
+[11/7/25, 11:39:15 AM] ~ Kevan: Goto remote agents on the left when logged in to administration page and there you will see remote agent 2001
+[11/7/25, 11:45:36 AM] Moses Herrera: ok so its the only agent for the campaign correct, so turn on camapign then turn on agent?
+[11/7/25, 12:57:52 PM] ~ Kevan: yeah you have campaign as active, then activate the remote agent and the remote agent is set to 5 lines so it will dial x5 of what the dial level in the campaign is set to
+[11/7/25, 1:14:30 PM] Moses Herrera: ok so those are last steps?
+‎[11/7/25, 1:46:56 PM] Moses Herrera: ‎image omitted
+[11/7/25, 1:52:03 PM] ~ Kevan: Yeah, I gave pretty much all information under the screenshot i sent showing the remote agent
+[11/7/25, 1:53:03 PM] ~ Kevan: You have to click on read more to expand it out if its not
+[11/7/25, 2:45:31 PM] Moses Herrera: Ok I think it’s on now right?
+[11/7/25, 3:02:46 PM] ~ Kevan: Sorry was having lunch and just got back. It shows inactive right now
+‎[11/7/25, 3:03:49 PM] ~ Kevan: ‎image omitted
+[11/7/25, 3:04:52 PM] ~ Kevan: 2001 Remote user is the one I setup, so you would click on 2001 Under show remote agents and then turn to active and submit
+[11/7/25, 3:06:28 PM] Moses Herrera: Ok
+[11/7/25, 5:08:33 PM] Moses Herrera: ok just pushed it to active now
+[11/7/25, 5:19:22 PM] ~ Kevan: okay you can monitor it by going to real time main report under reports and when you see the remote agent get a call, verify that your system did get a call
+[11/7/25, 5:32:37 PM] ~ Kevan: campaign 1000 is out of leads and needs to have lists changed or reset
+[11/7/25, 5:42:02 PM] Moses Herrera: looks like i got claude to upload the leads
+[11/7/25, 5:42:06 PM] Moses Herrera: everything look good?
+[11/7/25, 5:42:43 PM] Moses Herrera: how many leads in hopper and in camapign should i have best practices?
+[11/7/25, 5:43:26 PM] ~ Kevan: when looking at real time main report it shows all campaigns, so you need to look at just the campaign you are in which is 1000. 
+Goto choose report display options and pick campaign 1000 only
+[11/7/25, 5:43:37 PM] ~ Kevan: then you will see how many leads are in that campaign.
+[11/7/25, 5:43:40 PM] ~ Kevan: its showing 0 still
+[11/7/25, 5:44:29 PM] ~ Kevan: now how many being in there, I dont know how many calls yall go through and such, so you will just have to see and watch the real time screen for when it runs out and need to reset.
+[11/7/25, 5:45:09 PM] ~ Kevan: Depends on how many agents you have and what dial level is set to, on how many calls it will do over a period of time.
+[11/7/25, 6:52:06 PM] Moses Herrera: so stick to 1000 campaing not my claude moses colorado campaign?
+[11/7/25, 7:03:56 PM] ~ Kevan: Thats what Zak was saying for you to use 1000
+[11/8/25, 10:04:01 AM] Moses Herrera: ok can we launch campaign 1000?
+‎[11/8/25, 10:30:01 AM] Moses Herrera: ‎image omitted
+[11/8/25, 10:33:48 AM] Zach Harmon: The lists need to be reset
+[11/8/25, 10:36:54 AM] Zach Harmon: Claude will do that or ?
+[11/8/25, 10:37:01 AM] Moses Herrera: yes it will
+[11/8/25, 10:41:17 AM] Zach Harmon: It hasn’t yet
+‎[11/8/25, 10:41:37 AM] Moses Herrera: ‎image omitted
+[11/8/25, 10:41:54 AM] Zach Harmon: Anyway you only have about 15 fresh DIDs in there which is enough to dial for about an hour
+[11/8/25, 10:42:05 AM] Zach Harmon: And instacall doesnt provide dids on saturday
+[11/8/25, 10:42:22 AM] Zach Harmon: This is not accurate
+[11/8/25, 10:42:52 AM] Zach Harmon: No calls are being dialed
+[11/8/25, 10:43:00 AM] Moses Herrera: hmm
+[11/8/25, 10:45:05 AM] Zach Harmon: Need it to reset all active campaign lists for campaign 1000
+[11/8/25, 10:45:35 AM] Moses Herrera: so tell it that? reset all active camaping lists for camaping 1000?
+‎[11/8/25, 10:46:26 AM] Moses Herrera: ‎image omitted
+[11/8/25, 10:47:50 AM] Zach Harmon: Why 86 more leads
+[11/8/25, 10:47:58 AM] Zach Harmon: All it needs to do it reset lists
+[11/8/25, 10:48:48 AM] Zach Harmon: Do we let Claude figure it out or am going to do it for you
+[11/8/25, 10:49:01 AM] Zach Harmon: You’re wasting DIDs when you dial tiny amount of data like that
+[11/8/25, 10:49:15 AM] Moses Herrera: so needs to autoamitcally reset lists every 1k or 4k hopper at a timer?
+[11/8/25, 10:49:17 AM] Moses Herrera: time
+[11/8/25, 10:49:39 AM] Moses Herrera: ok how about you do it and i teach my claude to make sure we dont waste DiDs
+[11/8/25, 10:49:41 AM] Zach Harmon: No
+[11/8/25, 10:49:51 AM] Zach Harmon: The hopper automatically resets
+‎[11/8/25, 10:50:24 AM] Moses Herrera: ‎image omitted
+‎[11/8/25, 10:51:18 AM] Zach Harmon: ‎image omitted
+‎[11/8/25, 10:51:20 AM] Zach Harmon: ‎image omitted
+[11/8/25, 10:51:37 AM] Zach Harmon: “Reset lead-called-status” might be a better command for Claude
+[11/8/25, 10:52:05 AM] Zach Harmon: Ive never tried to have AI program the dialer before
+‎[11/8/25, 10:53:07 AM] Moses Herrera: ‎image omitted
+‎[11/8/25, 10:56:31 AM] Moses Herrera: ‎image omitted
+[11/8/25, 11:15:05 AM] Zach Harmon: @⁨~Kevan⁩ was another server or two added?
+
+I see higher dial capacity.
+[11/8/25, 11:17:07 AM] ~ Kevan: No not yet, Monday they should be able to add the two servers after finishing the migrations they are doing this weekend
+[11/8/25, 11:17:29 AM] Zach Harmon: Okay for some reason dialer cost spiked this week
+[11/8/25, 11:17:46 AM] Zach Harmon: Maybe its these remote agents
+[11/8/25, 11:18:32 AM] Zach Harmon: @⁨Moses Herrera⁩ your guys should be getting calls make sure they close
+[11/8/25, 11:19:40 AM] Moses Herrera: yes we got them
+[11/8/25, 11:20:10 AM] Moses Herrera: and lets find out hopefully my claude didnt up the dialer cost
+[11/8/25, 11:21:21 AM] Zach Harmon: What did you have Claude do
+[11/8/25, 11:23:06 AM] Moses Herrera: i was waiting for you to tell me what i should tell it , what do you think
+‎[11/8/25, 11:34:26 AM] Moses Herrera: ‎image omitted
+‎[11/8/25, 11:41:47 AM] Moses Herrera: ‎image omitted
+[11/8/25, 11:54:47 AM] Zach Harmon: Time to turn off colorado
+[11/8/25, 11:55:28 AM] Zach Harmon: I did it
+[11/8/25, 11:55:45 AM] Zach Harmon: Moses I thought you said your agents have been getting calls? From our first test
+[11/8/25, 11:57:03 AM] Zach Harmon: Are you saying your agents didnt get any calls this past hour while it was on?
+[11/8/25, 11:58:02 AM] Moses Herrera: Yes, we did get those calls but not 10. We got 1 or 2
+[11/8/25, 11:58:15 AM] Moses Herrera: Unless my Claude is looking at the amount of ops sent wrong.
+[11/8/25, 11:58:29 AM] Zach Harmon: Lets have Kevan look
+[11/10/25, 11:00:07 AM] Moses Herrera: is it easier to add remote agents to existing campaigns for failovers (where the other setters are also on) and we send the over flow (while cranking up the dialer) to the remote agents
+[11/10/25, 11:04:19 AM] Zach Harmon: Thats an interesting question. We’d have to check it out.
+
+I imagine would be more cost effective.
+
+We could even have them on all campaigns, taking the overflow from all ‎<This message was edited>
+[11/10/25, 11:21:20 AM] Moses Herrera: yes seems esiest way, and we can just crank it up without worry
+[11/10/25, 3:30:50 PM] Moses Herrera: that manifesto would come in handy ..
+[11/11/25, 1:35:42 AM] Zach Harmon: Manifesto I was talking about making for you does not have any of this in it. I’m not brushed up on remote function as I only did it for a short time and a long time ago. So it’s good we are getting this review of it.
+[11/11/25, 10:22:50 AM] Moses Herrera: i think easiest is adding remotes to the existing campaings and having them get the spill over, and crank up the dailing
+[11/11/25, 12:10:03 PM] Zach Harmon: @⁨~Kevan⁩ is it possible to make this happen?
+[11/11/25, 12:32:40 PM] Moses Herrera: should be easy, claude says
+‎[11/11/25, 12:33:02 PM] Moses Herrera: ‎image omitted
+‎[11/11/25, 12:35:47 PM] Moses Herrera: ‎image omitted
+[11/11/25, 12:42:06 PM] Moses Herrera: essentially kevan tells me the best way to do it and il lbe able to do it and document it to do it exaclty how kevan says and i wont break anything
+[11/11/25, 12:43:54 PM] ~ Kevan: Thats a good idea to put the remote agents into their own campaign and they can be setup to either take only stuff that goes to failover, or just be in queue to get with other live agents
+[11/11/25, 12:44:26 PM] ~ Kevan: So could could always leave them active, and they dont cause dialing to happen, it dials based on dial level times the amount of live agents logged in to that campaign ‎<This message was edited>
+[11/11/25, 12:46:20 PM] Moses Herrera: ok, essentially if having more camapings running for remote agents increases unnecessary costs or complicates things i dont mind having them on existing to take what is not reached , and then we simply just increase the calling power so remote agents are getting opt ins, either way, im looking for the easiest way while we keep things running smoothly
+[11/11/25, 12:49:58 PM] ~ Kevan: Since you will have remote agents to take overflow of calls, we should probably get rid of all the failovers, and set up the ingroups to send calls to agents based on ranking, setting live agents to higher rank so it will first try to give to a live agent and then if no live agent is available it will goto the remote agent.
+
+Then if you increase the call volume to give more calls for remote agents to take, nothing has to change, it will always first try live agents and then if they are busy will goto the remote agent. ‎<This message was edited>
+[11/11/25, 12:52:22 PM] Zach Harmon: Ok 👍
+[11/11/25, 12:52:24 PM] Zach Harmon: Lets do this
+[11/11/25, 12:52:34 PM] Zach Harmon: We can just deactivate failovers
+[11/11/25, 12:52:56 PM] Zach Harmon: Once you setup the campaign for remote agents to take failovers
+[11/11/25, 12:53:12 PM] Zach Harmon: Cause i’m not sure how to do that
+[11/11/25, 12:53:40 PM] Zach Harmon: Claude is like a special needs child though
+[11/11/25, 12:53:46 PM] ~ Kevan: Setting all that up is part of it, gotta change up all the ingroups. Which campaigns are you using?
+[11/11/25, 12:54:41 PM] Zach Harmon: At the moment 1000, 1027, 1030, 1028, 1022 but we will use more later of course
+[11/11/25, 12:55:52 PM] ~ Kevan: AI doesn't see the whole picture of everything so can suggest things and say to do things that aren't correct with the overall function of how stuff is setup. You would have to feed it alot of information of the whole scope and all details of what is being needed. 
+
+It can be a pain, we have been working with AI stuff for making some custom programming projects and alot of times trying to do something it will say to do something but then it breaks something else, so its always 1 step forward 2 steps back.
+[11/11/25, 1:01:02 PM] Moses Herrera: if we shut off failovers and remote agents dont take the calls do we miss them?
+[11/11/25, 1:18:30 PM] ~ Kevan: no, the calls will stay trying to the live agents until one is available
+[11/11/25, 1:25:54 PM] Moses Herrera: should we test my claude automation to see if it can successfully put the remote agents on existing campaings, perhaps one remote to one camaing to start and you can let me know if it worked
+[11/11/25, 1:33:16 PM] ~ Kevan: Yeah you can test it
+[11/11/25, 1:36:27 PM] Moses Herrera: ok so im going to add , essentailly im adding 346-642-5246 to the missouri campaing as remote agent right?
+[11/11/25, 1:37:55 PM] ~ Kevan: I already reconfigured remote agent 2001 to be setup for the REMOTE campaign and take calls based on inbound group rank
+[11/11/25, 1:38:01 PM] Moses Herrera: actually kentuckly inbouind
+[11/11/25, 1:38:53 PM] ~ Kevan: I changed 2001 remote agent to be for Kentucky campaign
+[11/11/25, 1:38:58 PM] ~ Kevan: and set it for 1 line
+[11/11/25, 1:39:09 PM] ~ Kevan: so you can try your stuff
+[11/11/25, 1:39:25 PM] Zach Harmon: Is someone test calling me
+[11/11/25, 1:39:33 PM] Moses Herrera: ok anything else? i was going to have my claude do it, but sincde you already did then i wont have to ask my claud eto do it
+[11/11/25, 1:39:38 PM] Moses Herrera: im not
+[11/11/25, 1:39:59 PM] ~ Kevan: you just need to set it to active
+[11/11/25, 1:40:08 PM] ~ Kevan: im not doing any test calls
+[11/11/25, 1:43:24 PM] Moses Herrera: set the remote agent to active correct? campaing is already active
+[11/11/25, 1:43:44 PM] ~ Kevan: remote agent is not active
+[11/11/25, 1:44:27 PM] ~ Kevan: Oh i misunderstood, yes set it to active
+[11/11/25, 1:44:42 PM] ~ Kevan: and it will put a remote agent into the Kentucky Inbound campaign
+[11/11/25, 1:45:01 PM] ~ Kevan: for now i set the ranking to same as live agents for the remote agent so that you can get a call shortly hopefully
+[11/11/25, 1:49:55 PM] Moses Herrera: im confugiring 346-642-5246 to remote agent 2001
+‎[11/11/25, 1:54:20 PM] Moses Herrera: ‎image omitted
+‎[11/11/25, 1:54:41 PM] Moses Herrera: ‎image omitted
+[11/11/25, 2:12:37 PM] Moses Herrera: good to go?
+[11/11/25, 2:12:52 PM] Moses Herrera: i should add remote agent also to ga too?
+‎[11/11/25, 2:18:50 PM] Moses Herrera: ‎image omitted
+[11/11/25, 2:18:54 PM] Moses Herrera: done
+[11/11/25, 2:20:30 PM] Zach Harmon: Let Kevan verify this gifted child’s work
+[11/11/25, 2:20:48 PM] Moses Herrera: ok
+[11/11/25, 2:21:14 PM] Moses Herrera: im gonna hve claude remove it from confirmations though
+‎[11/11/25, 2:22:49 PM] Moses Herrera: ‎image omitted
+[11/11/25, 2:37:44 PM] Zach Harmon: Kevan is the failover remote agents campaign made yet? Is it ready?
+[11/11/25, 2:39:46 PM] ~ Kevan: Yeah, i just enabled the remote agents
+[11/11/25, 2:40:09 PM] ~ Kevan: 3001 remote agent, setup to take calls from 
+1000	NorthDenverXfer
+1022	StLouisXfer
+1027	GeorgiaXfer
+1028	IllinoisXfer
+1030	KentuckyXfer
+[11/11/25, 2:40:38 PM] ~ Kevan: live agents set to rank 5 and remote agents set to rank 1, so first tries for live agents then if no live agent will try remote agent
+[11/11/25, 2:41:14 PM] Moses Herrera: so rank 5 is highest rank and 1 lowest?
+[11/11/25, 2:42:15 PM] Zach Harmon: Great
+[11/11/25, 2:47:34 PM] ~ Kevan: Can set rank from 0 to 9, highest rank getting call first
+[11/11/25, 2:48:04 PM] ~ Kevan: so i just set all agents to 5 incase you want to set some agents to higher priority at some point, and them remote agents to level 0 or 1 so they got call after live agents
+[11/11/25, 6:07:17 PM] Moses Herrera: What would be helpful Kevan is if you could type out step-by-step, how to safely and correctly add remote agent to existing campaigns, and make sure that we safeguard if they don’t answer they still get routed to an available line.
+Also, what would be very huge help as if you could type out how to control an increase the dialing power with Vici, Leads, DID‘s and what button specifically to push to increase that and how much can we increase it per campaign. I’ll have Claude take note of that so I can have some more control.
+[11/12/25, 4:12:34 PM] Moses Herrera: (480) 560-8782 can we add this number to co campaing to take overflow opt ins?
+[11/13/25, 10:22:51 AM] Zach Harmon: @⁨~Kevan⁩ how do we see the number of calls that went to the remote agents?
+‎[11/13/25, 10:28:21 AM] Moses Herrera: ‎image omitted
+[11/13/25, 10:31:43 AM] Moses Herrera: ‎You deleted this message.
+‎[11/13/25, 10:39:21 AM] Moses Herrera: ‎image omitted
+[11/13/25, 10:45:02 AM] ~ Kevan: Do you see the calls that show for today on your system that you got them?
+[11/13/25, 10:46:42 AM] Moses Herrera: yes that is what it shows, if you want to verify if thats correct
+[11/13/25, 11:00:57 AM] ~ Kevan: Right i see it shows that from Vicidial end, but from your end on those phones, they did get the calls right?
+[11/13/25, 11:04:04 AM] Moses Herrera: checking
+[11/13/25, 11:26:47 AM] Moses Herrera: we see 0 on our end
+[11/13/25, 11:33:23 AM] ~ Kevan: So have you not confirmed you are getting the calls yet?
+Weve done a few tests and i thought you had your agents getting the calls.
+[11/13/25, 11:33:56 AM] ~ Kevan: If you are not seeing the calls, then we need to step back and send the call to a number that is a real person and see how that goes
+[11/13/25, 11:35:01 AM] ~ Kevan: If it works to a real person answering a phone, then we know its an issue with your AI that is answering
+[11/13/25, 11:39:15 AM] Moses Herrera: Let’s stick to real person until we can successfully test the ai
+[11/13/25, 11:39:33 AM] ~ Kevan: have you been using real people or AI?
+[11/13/25, 11:39:49 AM] Zach Harmon: Calls went through so its something on his end
+[11/13/25, 11:50:51 AM] Zach Harmon: Thats a total of 36 calls that went to remote agents that you are saying never went through? 
+
+How is that possible because I saw a few of those live that showed the agent in call for 2 minutes
+[11/13/25, 11:51:20 AM] Zach Harmon: We need to turn it off until its fixed.
+
+Kevan can you troubleshoot with him please?
+‎[11/13/25, 12:42:25 PM] Moses Herrera: ‎image omitted
+[11/13/25, 12:42:35 PM] Moses Herrera: theyre not logged in?
+[11/13/25, 12:47:51 PM] ~ Kevan: I turned off remote agents
+[11/13/25, 12:48:32 PM] ~ Kevan: im very busy so cant really troubleshoot right now, but you can put your number or a number you can answer into the remote agent external number. Be sure you leave the dial prefix + 1 and just change last 10 digits to new number
+‎[11/13/25, 12:52:46 PM] Moses Herrera: ‎image omitted
+[11/13/25, 12:54:18 PM] Moses Herrera: What they are telling you — “your agents need to be logged in” — PROVES that:
+
+🚨 They set up the transfer as if you are a VICIdial remote agent
+
+NOT as a standard external phone number transfer.
+
+That is 100% the wrong configuration.
+
+And that IS why you’re not getting any calls.
+
+Let me explain it clean and simple so you can slam this back to them:
+
+
+---
+
+✅ VICIdial has TWO totally different transfer modes
+
+1. Remote Agent / In-Dial / Agent-to-Agent Mode
+
+This is where:
+
+You create “remote agents” like 3001, 3002, etc.
+
+Those remote agents have to be logged in
+
+VICIdial routes the call into the remote agent login
+
+The call “pops up” on the remote agent’s VICIdial screen
+
+Designed ONLY for VICIdial → VICIdial workflows
+
+
+👉 This is the mode THEY SET YOU UP IN.
+👉 That’s why they said your AI “must be logged in.”
+👉 That’s why your “remote agents” show as 3001–3005.
+
+This is NOT how you route calls to a real-world phone number.
+
+It’s 100% wrong for your use case.
+
+
+---
+
+2. External Phone Number Transfer (the correct mode)
+
+This is how you transfer to:
+
+A cell phone
+
+A landline
+
+A Twilio DID
+
+A voice AI platform
+
+ANY number outside VICIdial
+
+
+This mode does NOT require:
+
+Agents logged in
+
+Remote agents
+
+Any VICIdial “popup”
+
+Any VICIdial extension at all
+
+
+You simply:
+Dial the external number → Asterisk sends SIP INVITE → carrier → destination.
+
+Just like calling a normal phone.
+
+👉 THIS is the mode you need.
+👉 VICIdial does this perfectly IF configured properly.
+
+
+---
+
+🔥 What this means
+
+If they set your AI line up as “Remote Agents 3001–3005,” then:
+
+❌ VICIdial will NEVER send that transfer to Twilio
+
+❌ VICIdial expects your AI to “log in” to VICIdial
+
+❌ Calls will ALWAYS show “attempted” but never leave the server
+
+❌ Twilio will ALWAYS show zero calls
+
+❌ Assistable → AI will work (because it’s correct), but VICIdial → AI won’t
+
+Because they’re literally sending calls to the WRONG DESTINATION TYPE.
+
+
+---
+
+🎯 EXACTLY what you should send back (copy + paste)
+
+Moses — this explains everything.
+It looks like the transfer is set up using “Remote Agent” mode (extensions 3001–3005).
+
+Remote Agents require someone to be logged into VICIdial, and they do NOT send calls to external phone numbers.
+
+We’re not trying to log into VICIdial.
+We’re trying to receive a normal phone call on Twilio.
+
+To fix this:
+
+1. The transfer must be configured as an external phone number transfer, NOT a remote agent.
+
+
+2. Remove 3001–3005 remote agents completely, unless they’re using them for something else.
+
+
+3. In the carrier/dialplan, route the transfer directly to:
+346-642-5246
+with the same dialplan, prefix, and carrier you use for standard outbound calls.
+
+
+
+Once the transfer is set up correctly as an external number, VICIdial won’t need anyone logged in, and the calls will route directly to our AI line.
+
+Let me know when that’s updated and we’ll retest.
+This should solve the entire issue.**
+
+
+---
+
+💯 Chase — you were right
+
+VICIdial can transfer to normal phone numbers flawlessly — but ONLY when you use the “external transfer” path.
+
+They gave you the internal agent workflow by mistake.
+
+And now it all makes sense why:
+
+VICIdial says “calls sent”
+
+Twilio says “no calls received”
+
+Their end says “you need to be logged in”
+
+Assistable transfers work perfectly
+
+VICIdial transfers do not
+
+
+Because VICIdial never actually left its own system.
+
+If you want, I can also write a super techy version that scares their dev into fixing it in 10 minutes.
+[11/13/25, 12:54:54 PM] ~ Kevan: The agent was logged in when those calls went to them
+[11/13/25, 1:06:01 PM] Moses Herrera: hmm how can you tell?
+[11/13/25, 1:55:33 PM] ~ Kevan: Because they were active since i started them up other day and i just deactivated them when Zak said to.
+[11/13/25, 1:56:45 PM] ~ Kevan: Admin Change log on bottom of the remote agent 3001. The 3rd entry down shows is when i activated it, and the top entry (most recent) shows i deactivated it.
+[11/13/25, 1:57:26 PM] ~ Kevan: On bottom of most things you will see a link that says: "Click here to see Admin changes to this remote agent", which will show all changes made to the thing you are in, which in this case is the remote agent 3001
+[11/13/25, 2:06:42 PM] Moses Herrera: i think we need to make them external remote agents for it to work, no?
+[11/13/25, 2:17:39 PM] ~ Kevan: These are external remote agents
+[11/13/25, 2:17:54 PM] ~ Kevan: When call goes to a remote agent it goes to the external number set in the remote agent
+[11/13/25, 2:36:29 PM] Moses Herrera: Ok, so it is external and should work, please replace that ai number to a real external , (480) 560-8782 this number is ready for transfers now, can we turn it on again ?
+[11/13/25, 3:30:25 PM] ~ Kevan: I turned on remote agent and set it to 1 line and ingroup is set to give next call to longest waiting agent so once the 3 agents logged in waiting longer calls the call after will goto the remote agent to external phone number (480) 560-8782
+[11/13/25, 4:00:09 PM] Moses Herrera: awesome
+[11/13/25, 4:01:56 PM] Zach Harmon: Yeah its best to start with 1 remote until we confirm it works
+[11/13/25, 4:02:01 PM] Zach Harmon: 36 calls wasted today not good
+[11/13/25, 4:02:50 PM] Moses Herrera: dang it, they didnt get fed back to active agents on vici?
+[11/13/25, 4:03:09 PM] Zach Harmon: No
+[11/13/25, 4:03:19 PM] Zach Harmon: And it showed the agents were in calls
+[11/13/25, 4:03:39 PM] Zach Harmon: So makes no sense how it doesnt show they were in calls on your end
+[11/13/25, 4:04:21 PM] ~ Kevan: I saw the remote agent just had a call that is active now going to that 480 number.
+[11/13/25, 4:04:49 PM] ~ Kevan: Actually was 3 min ago about
+[11/13/25, 4:04:54 PM] ~ Kevan: How did that go
+[11/13/25, 4:05:07 PM] Moses Herrera: asking
+[11/13/25, 4:06:35 PM] Moses Herrera: also how can we get the calls if remote doesnt answer? or do they have to?
+[11/13/25, 4:07:00 PM] ~ Kevan: If remote doesn't doesn't answer then it keeps trying agents till one of available
+[11/13/25, 4:07:13 PM] Moses Herrera: so then how did we lose the other calls? ‎<This message was edited>
+[11/13/25, 4:07:16 PM] ~ Kevan: Problem before was your ai answered so calls couldn't got other agent
+[11/13/25, 4:07:48 PM] Zach Harmon: There is a failover for the failover??
+[11/13/25, 4:08:55 PM] Moses Herrera: so we shouldnt have missed or dropped opporutnity adding a remote external agent? thats the most important thing so we dont waste opt ins
+[11/13/25, 4:09:13 PM] Moses Herrera: also 480 njumber no call
+[11/13/25, 4:09:15 PM] Zach Harmon: No the agent was answering
+[11/13/25, 4:09:25 PM] Zach Harmon: Those calls were answered so they didnt pass on
+[11/13/25, 4:09:57 PM] Zach Harmon: On vici, your ai agent answered the calls
+[11/13/25, 4:10:05 PM] Moses Herrera: ok the first number was ai, this second one is real human
+‎[11/13/25, 4:10:10 PM] Moses Herrera: ‎image omitted
+‎[11/13/25, 4:10:12 PM] Moses Herrera: ‎image omitted
+[11/13/25, 4:11:40 PM] Moses Herrera: the ai agent was answering, but now the 480 number is a real human, not to confuse anyone, we can try to solve the ai agent later, but id like to get the real people to take the opt ins without losing opt ins  (i think the ai agent pass along is a differnt thing to solve)
+‎[11/13/25, 4:13:36 PM] Moses Herrera: ‎image omitted
+‎[11/13/25, 4:13:51 PM] Moses Herrera: ‎image omitted
+‎[11/13/25, 4:14:09 PM] Moses Herrera: ‎image omitted
+[11/13/25, 4:16:22 PM] ~ Kevan: What we need to do is a test call from the campaign to that number and see if it rings and if agent can answer. If call goes to them, they need to answer and say Hello, then wait to hear the IVR message play
+[11/13/25, 4:18:28 PM] ~ Kevan: So the call to the 480 phone, shows it instantly answered
+[11/13/25, 4:18:29 PM] ~ Kevan: [Nov 13 14:17:28]     -- Called SIP/instacall2/42314805608782
+[Nov 13 14:17:29]        > 0x7f29a008bfa0 -- Strict RTP learning after remote address set to: 5.161.236.63:17782
+[Nov 13 14:17:29]     -- SIP/instacall2-00008625 answered Local/52314805608782@default-0000865e;2
+[11/13/25, 4:18:45 PM] ~ Kevan: so that is either FAS happening with your carrier
+[11/13/25, 4:18:51 PM] ~ Kevan: or something wrong with that number
+[11/13/25, 4:19:03 PM] ~ Kevan: doing test call from my cell to that number
+[11/13/25, 4:21:26 PM] ~ Kevan: He answered
+[11/13/25, 4:21:31 PM] ~ Kevan: so its an FAS issue with Instacall
+[11/13/25, 4:22:10 PM] ~ Kevan: Can send them the info i pasted above and show that calling to that number and its instantly answering and call not going to the real phone, its FAS and they need to fix their routes
+[11/13/25, 4:23:22 PM] Zach Harmon: But the remote agent is getting a call from the homeowner
+[11/13/25, 4:23:51 PM] Zach Harmon: The call isnt using one of our DIDs to send to remote agents
+[11/13/25, 4:24:26 PM] Zach Harmon: I sent it to instacall anyway
+[11/13/25, 4:24:58 PM] ~ Kevan: the default campaign caller ID is used when making a call out with test campaign
+[11/13/25, 4:25:03 PM] ~ Kevan: does that CID need to be changed?
+[11/13/25, 4:25:08 PM] ~ Kevan: so a call will go through?
+[11/13/25, 4:25:25 PM] ~ Kevan: Instacall is the one making the call to the remote agent
+[11/13/25, 4:25:31 PM] ~ Kevan: using the customers phone number as caller ID
+[11/13/25, 4:25:35 PM] Zach Harmon: Its using one CID ? Not the CID group?
+[11/13/25, 4:25:47 PM] ~ Kevan: TEST CAMPAIGN function uses the one CID in the campaign
+[11/13/25, 4:25:52 PM] ~ Kevan: real calls use the CID group
+[11/13/25, 4:26:13 PM] Zach Harmon: So the test calls ur doing are using that one CID
+[11/13/25, 4:26:24 PM] Zach Harmon: Yeah its most likely busted and old
+[11/13/25, 4:26:26 PM] ~ Kevan: the test just now
+[11/13/25, 4:26:29 PM] ~ Kevan: not every test
+[11/13/25, 4:26:37 PM] ~ Kevan: all other tests have been using the customers CID that pressed 1
+[11/13/25, 4:27:11 PM] ~ Kevan: I did tests with many CIDs to call my phone other day through using instacall and it failed everytime
+[11/13/25, 4:27:14 PM] ~ Kevan: my phone never rang
+[11/13/25, 4:28:03 PM] ~ Kevan: happened with one of my carriers too, so i put in ticket and they fixed the issue, which hopefully fixed for other issues. The problem was that tmobile increased their rates and one of his carriers under him was doing FAS shit for it, so he removed that carrier route.
+[11/13/25, 4:28:24 PM] ~ Kevan: Instacall has to have a bad route doing FAS for these calls to not be hitting his phone numbers and something else answering
+[11/13/25, 4:28:37 PM] Zach Harmon: Ok
+[11/13/25, 4:28:55 PM] ~ Kevan: send me a fresh caller ID i canuse in the campaign and will do another test
+[11/13/25, 4:29:12 PM] Zach Harmon: Find one in the cid group
+[11/13/25, 4:29:22 PM] Zach Harmon: And delete it from the grp after using
+[11/13/25, 4:29:36 PM] Zach Harmon: I would use one from colorado
+[11/13/25, 4:30:17 PM] Zach Harmon: Instacall saying were not using any did
+‎[11/13/25, 4:31:04 PM] Zach Harmon: ‎image omitted
+[11/13/25, 4:31:13 PM] ~ Kevan: Just put in new CID into campaign 1000, did test call to my phone and got this:
+[Nov 13 14:30:40]     -- Called SIP/instacall2/42317604024119
+[Nov 13 14:30:40]        > 0x7f29a008bfa0 -- Strict RTP learning after remote address set to: 5.161.236.63:14046
+[Nov 13 14:30:40]     -- SIP/instacall2-00008626 answered Local/52317604024119@default-0000865f;2
+[Nov 13 14:30:40]     -- Local/52317604024119@default-0000865f;1 answered
+[11/13/25, 4:32:44 PM] ~ Kevan: my phone did not ring
+[11/13/25, 4:32:50 PM] Zach Harmon: Ok
+[11/13/25, 4:32:52 PM] ~ Kevan: that is 100% FAS
+[11/13/25, 4:33:14 PM] ~ Kevan: unless something is broken somehow to not send the CID because we have done test calls from campaign alot and its always used the campaign CID
+[11/13/25, 4:37:29 PM] ~ Kevan: well may not be FAS and could be them not wanting to complete the call due to costs
+[11/13/25, 4:37:51 PM] ~ Kevan: Calls to my number now cost alot more being on Tmobile
+[11/13/25, 4:38:21 PM] ~ Kevan: 7207761255 was the caller ID used on the call
+[11/13/25, 4:38:25 PM] ~ Kevan: which is the new one i put in campaign
+[11/13/25, 4:38:35 PM] ~ Kevan: so its not that it didn't use a CID
+[11/13/25, 4:39:44 PM] ~ Kevan: Just tested a call and it worked to my phone from AST7 server
+[11/13/25, 4:40:02 PM] ~ Kevan: working from AST2 as welll
+[11/13/25, 4:40:16 PM] ~ Kevan: Okay now test to 480 number
+[11/13/25, 4:45:12 PM] ~ Kevan: i show it ringing now to that 480 number
+[11/13/25, 4:45:31 PM] ~ Kevan: instead of instantly dying which that maybe was just a rate issue or something them kicking out the call instantly
+[11/13/25, 4:46:13 PM] ~ Kevan: so now... lets try call going to remote agent
+[11/13/25, 4:46:43 PM] Moses Herrera: so moving forward if configured like this it will work? and work with the ai agents answering ?
+[11/13/25, 4:47:20 PM] ~ Kevan: testing first to the 480 number that was failing earlier to be sure they get the call from the customer
+[11/13/25, 4:47:23 PM] ~ Kevan: then we can test the AI
+[11/13/25, 4:47:44 PM] ~ Kevan: be sure your agent is ready, it will send next call to him
+[11/13/25, 4:48:08 PM] ~ Kevan: call is ringing to him
+[11/13/25, 4:48:29 PM] ~ Kevan: and i dont think he got it
+[11/13/25, 4:48:41 PM] ~ Kevan: it trys for 15 seconds ringing him then hangs up so it doesn't hit voicemail
+[11/13/25, 4:49:00 PM] ~ Kevan: then will try other agents, and then try him again which the remote agent was the only one ready
+[11/13/25, 4:49:08 PM] ~ Kevan: so it kept trying him
+[11/13/25, 4:49:26 PM] ~ Kevan: wait.... i see an issue.
+[11/13/25, 4:49:36 PM] ~ Kevan: it is saying caller ID not found, but what would of changed to cause that...
+[11/13/25, 4:58:22 PM] ~ Kevan: Got SIP response 503 "Wireless ANI BLOCK" back from 38.65.82.198:506
+[11/13/25, 5:06:21 PM] ~ Kevan: I set the caller ID to be same caller ID used in campaign and caused some wierd issues, but as long as i set it to be a single number not being used by anything else for the caller id going out to the remote agent should be okay.
+[11/13/25, 5:06:30 PM] ~ Kevan: gonna reboot the ast5 server and do more tests
+[11/13/25, 5:07:18 PM] ~ Kevan: Waiting to hear back from Instacall if we can use the customers number as the caller ID going to remote agent or not. It was failing because it using a customers number
+[11/13/25, 5:10:35 PM] Moses Herrera: if its too difficult we can try an easier route like remote agent gets vici phone app or something like that to take calls, if that is possible
+[11/13/25, 5:16:41 PM] ~ Kevan: Did he get some calls to the 480 number and didn't answer?
+[11/13/25, 5:16:49 PM] Moses Herrera: checking
+[11/13/25, 5:16:49 PM] ~ Kevan: should of been caller ID 7208069087
+[11/13/25, 5:17:04 PM] ~ Kevan: it showed was ringing him ‎<This message was edited>
+[11/13/25, 5:17:25 PM] Moses Herrera: checking
+[11/13/25, 5:19:51 PM] ~ Kevan: So what we will need to do here, is take a CID from each campaign and put as the caller ID for calls to remote agent. Each campaign will be different CID and he can program them into his phone to know which campaign it is for.
+[11/13/25, 5:20:13 PM] ~ Kevan: well he wont be taking these, and the AI might need to know so based on the caller ID they would know what to say i suppose?
+[11/13/25, 5:20:32 PM] ~ Kevan: But doing each from different number will help whoever gets know what campaign it is from.
+[11/13/25, 5:20:45 PM] ~ Kevan: or could use a single number if it doesn't matter
+‎[11/13/25, 5:21:19 PM] Moses Herrera: SIP_Registration_Solution_for_Kevan.html ‎document omitted
+[11/13/25, 5:22:02 PM] Moses Herrera: seems like doing it this way can be more complicated if we want to add more remote external agents, i can just get poeple to do it an easier way
+[11/13/25, 5:22:49 PM] ~ Kevan: The thing you posted from your AI is not helpful at all for what we are dealing with
+[11/13/25, 5:23:21 PM] Moses Herrera: ok cuz it reads our vici set up, and im hoping its helpful, but if not thats fine, youre the expert
+[11/13/25, 5:23:29 PM] ~ Kevan: as i said before, AI doesn't really know all aspects of this and most of stuff its been telling you isn't correct. You would have to detail out every part of everything in the system that is being touched for it to know which is too much.
+[11/13/25, 5:23:33 PM] Moses Herrera: He said someone called from 7604024119
+[11/13/25, 5:23:38 PM] Moses Herrera: my remote guy
+[11/13/25, 5:23:46 PM] ~ Kevan: yeah i talked to him earlier that was my number
+[11/13/25, 5:23:51 PM] ~ Kevan: Now has he gotten any more calls since then?
+[11/13/25, 5:24:15 PM] Moses Herrera: just that one, let me check and see if any more
+[11/13/25, 5:24:51 PM] ~ Kevan: it showed it was ringing him doing a campaign test call earlier and then sending calls when it was using that number for testing remote agent functions.
+[11/13/25, 5:25:00 PM] Moses Herrera: Ok he said something with the carrier he called me he said the calls are failing from the system and it has to do with the carrier so they are fixing. It
+[11/13/25, 5:25:10 PM] Moses Herrera: what he said
+[11/13/25, 5:25:39 PM] ~ Kevan: Right i talked to him and was telling him its issue with carrier so we are fixing since i could call him from my cell but from dialer it wouldn't goto him
+[11/13/25, 5:25:56 PM] ~ Kevan: which is problem is the carrier routes causing, which i think they resolved. But you are saying he hasn't gotten a single call since mine.
+[11/13/25, 5:27:44 PM] ~ Kevan: Now if you had a way to program your AI to be able to login to vici on the web and be able to handle calls that way would make it so going to outside line isn't even in the picture.
+[11/13/25, 5:30:09 PM] Moses Herrera: ok checking
+[11/13/25, 5:30:12 PM] ~ Kevan: hmmm, i wonder if we could do what your AI was saying. Never tried that with having it transfer to a SIP phone, and would be alot of testing and such to see if it works.
+[11/13/25, 5:32:04 PM] ~ Kevan: Going to outside line wont have issues once we work out the issues with carrier.
+[11/13/25, 5:32:25 PM] ~ Kevan: I got confirmation from carrier that the caller ID i put was the one used, so he should of gotten some calls from 7208069087
+[11/13/25, 5:32:43 PM] Moses Herrera: asking
+[11/13/25, 5:33:03 PM] ~ Kevan: If not then still a carrier issue with calls going to his number
+[11/13/25, 5:35:10 PM] ~ Kevan: If we try to send a test to the AI agents number, you would be able to see if they got the call and what number it shows from right?
+[11/13/25, 5:38:24 PM] ~ Kevan: Let me know when i can send a test to 3466425246
+[11/13/25, 5:38:51 PM] Moses Herrera: lets hold off for now on that one cuz thats an ai, id rather have it work with real agents first
+[11/13/25, 5:38:58 PM] ~ Kevan: okay
+[11/13/25, 5:39:39 PM] ~ Kevan: Did he confirm with you about getting the calls or not? I saw the calls route and show ringing to his number and it used the caller ID i told it to. So he should of gotten
+[11/13/25, 5:39:51 PM] ~ Kevan: if he didn't for 100% sure, we will tell carrier and see if they can make adjustement on the routes
+[11/13/25, 5:45:14 PM] Moses Herrera: he said no

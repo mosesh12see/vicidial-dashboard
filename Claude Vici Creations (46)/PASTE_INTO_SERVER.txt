@@ -1,0 +1,132 @@
+#!/bin/bash
+# COPY ALL OF THIS AND PASTE IT INTO YOUR SERVER TERMINAL
+# (Use web-based SSH or however you normally access your server)
+
+echo "🚀 Starting GHL Webhook Setup..."
+
+# Create directory
+mkdir -p /var/www/html/api
+chmod 755 /var/www/html/api
+
+# Create PHP webhook handler
+cat > /var/www/html/api/ghl_webhook_handler.php << 'PHPEOF'
+<?php
+/**
+ * GHL WEBHOOK HANDLER FOR COLORADO CAMPAIGN (4001)
+ * Only sends: Phone, Name, Email, Address - NO internal tracking
+ */
+
+ini_set('log_errors', 1);
+ini_set('error_log', '/tmp/ghl_webhook_errors.log');
+
+define('GHL_WEBHOOK_URL', 'https://services.leadconnectorhq.com/hooks/boXe5LQTgfuXIRfrFTja/webhook-trigger/e241703a-47bc-4554-8d04-bb31a33512cc');
+define('LOG_FILE', '/tmp/ghl_webhook_success.log');
+
+$dispo = $_GET['dispo'] ?? '';
+$campaign_id = $_GET['campaign_id'] ?? '4001';
+$phone_number = $_GET['phone_number'] ?? '';
+$first_name = $_GET['first_name'] ?? '';
+$last_name = $_GET['last_name'] ?? '';
+$email = $_GET['email'] ?? '';
+$address1 = $_GET['address1'] ?? '';
+$city = $_GET['city'] ?? '';
+$state = $_GET['state'] ?? 'CO';
+$postal_code = $_GET['postal_code'] ?? '';
+
+if ($dispo !== 'SVYCLM') {
+    http_response_code(200);
+    echo "OK - Not an opt-in";
+    exit;
+}
+
+if ($campaign_id !== '4001') {
+    http_response_code(200);
+    echo "OK - Not Colorado campaign";
+    exit;
+}
+
+if (empty($phone_number)) {
+    http_response_code(400);
+    echo "ERROR - Missing phone number";
+    exit;
+}
+
+$payload = [
+    'phone_number' => $phone_number,
+    'first_name' => $first_name,
+    'last_name' => $last_name,
+    'email' => $email,
+    'address1' => $address1,
+    'city' => $city,
+    'state' => $state,
+    'postal_code' => $postal_code,
+];
+
+$payload = array_filter($payload, function($value) {
+    return $value !== '' && $value !== null;
+});
+
+$ch = curl_init(GHL_WEBHOOK_URL);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
+curl_setopt($ch, CURLOPT_HTTPHEADER, [
+    'Content-Type: application/json',
+    'User-Agent: Vicidial-Colorado/1.0'
+]);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+
+$response = curl_exec($ch);
+$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+$curl_error = curl_error($ch);
+curl_close($ch);
+
+$log_entry = [
+    'timestamp' => date('Y-m-d H:i:s'),
+    'phone_number' => $phone_number,
+    'name' => trim("$first_name $last_name"),
+    'http_code' => $http_code,
+    'success' => ($http_code >= 200 && $http_code < 300),
+    'error' => $curl_error ? substr($curl_error, 0, 100) : ''
+];
+
+file_put_contents(LOG_FILE, json_encode($log_entry) . "\n", FILE_APPEND);
+
+if ($http_code >= 200 && $http_code < 300) {
+    http_response_code(200);
+    echo "OK - Opt-in sent to GHL";
+} else {
+    http_response_code(500);
+    echo "ERROR - Failed to send to GHL";
+}
+?>
+PHPEOF
+
+# Set permissions
+chmod 644 /var/www/html/api/ghl_webhook_handler.php
+
+# Create log files
+touch /tmp/ghl_webhook_success.log
+touch /tmp/ghl_webhook_errors.log
+chmod 666 /tmp/ghl_webhook_success.log
+chmod 666 /tmp/ghl_webhook_errors.log
+
+# Configure campaign in database
+mysql -u cron -p'6sfhf9ogku0q' asterisk << 'SQLEOF'
+UPDATE vicidial_campaigns
+SET
+  web_form_address = 'http://67.198.205.116/api/ghl_webhook_handler.php?phone_number=--A--phone_number--B--&first_name=--A--first_name--B--&last_name=--A--last_name--B--&email=--A--email--B--&address1=--A--address1--B--&city=--A--city--B--&state=--A--state--B--&postal_code=--A--postal_code--B--&dispo=--A--dispo--B--&campaign_id=--A--campaign--B--',
+  web_form_address_two = 'SVYCLM'
+WHERE campaign_id = '4001';
+SQLEOF
+
+echo ""
+echo "✅ DONE! Testing webhook..."
+
+# Test it
+curl "http://67.198.205.116/api/ghl_webhook_handler.php?phone_number=3035551234&first_name=Test&last_name=User&email=test@test.com&city=Denver&state=CO&dispo=SVYCLM&campaign_id=4001"
+
+echo ""
+echo ""
+echo "✅ Setup complete! Check with GHL partner if they received test opt-in."

@@ -1,0 +1,22 @@
+VICIDIAL API KEY (New - Nov 6, 2025)
+=====================================
+
+API Key: pZMmBUHy.Qlhrgkn7GjfMWpTsUafx6kW2v8ES5H8y
+
+This key is used for:
+- Vapi Ai → Vicidial integration
+- Ultravox Ai → Vicidial integration
+- Creating opt-ins from AI voice agents
+- Writing to campaigns
+- Scheduling appointments
+
+Stored in:
+- /Users/mosesherrera/Desktop/Ultravox Ai/config/ultravox-secrets.json
+- /Users/mosesherrera/Desktop/Vapi Ai/config/vicidial-api.json
+
+Usage:
+- Use this key to authenticate API calls to Vicidial
+- Allows AI agents to create leads, opt-ins, and schedule appointments
+- Enables webhook callbacks from voice platforms
+
+Date Added: November 6, 2025

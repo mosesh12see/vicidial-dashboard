@@ -1,0 +1,2860 @@
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/mosesherrera/update_comprehensive.py': [Errno 2] No such file or directory
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-03 to 2025-11-30
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 296 raw sales to 203 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4642 raw sales to 3358 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-03 to 2025-11-30
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Unexpected error during git push: [Errno 2] No such file or directory: '/Users/mosesherrera/Desktop/vicidial-analysis/public'
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ November 2025 overview (LIVE)
+   ✅ October 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-03 to 2025-11-30
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 296 raw sales to 203 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4642 raw sales to 3358 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-03 to 2025-11-30
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Unexpected error during git push: [Errno 2] No such file or directory: '/Users/mosesherrera/Desktop/vicidial-analysis/public'
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ November 2025 overview (LIVE)
+   ✅ October 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-03 to 2025-11-30
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 296 raw sales to 203 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4642 raw sales to 3358 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-03 to 2025-11-30
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Unexpected error during git push: [Errno 2] No such file or directory: '/Users/mosesherrera/Desktop/vicidial-analysis/public'
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ November 2025 overview (LIVE)
+   ✅ October 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-04 to 2025-12-01
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 305 raw sales to 209 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4622 raw sales to 3341 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-04 to 2025-12-01
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Unexpected error during git push: [Errno 2] No such file or directory: '/Users/mosesherrera/Desktop/vicidial-analysis/public'
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-04 to 2025-12-01
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 311 raw sales to 213 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4628 raw sales to 3345 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-04 to 2025-12-01
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Unexpected error during git push: [Errno 2] No such file or directory: '/Users/mosesherrera/Desktop/vicidial-analysis/public'
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+[main 33861af] Auto-update dashboard - 2025-12-01 10:04 AM
+ 2 files changed, 56 insertions(+), 56 deletions(-)
+To https://github.com/mosesh12see/vicidial-dashboard.git
+   d6b91c3..33861af  main -> main
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-04 to 2025-12-01
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 313 raw sales to 215 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4630 raw sales to 3347 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-04 to 2025-12-01
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+🚀 Auto-pushed to GitHub! Live in 1-2 minutes at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+[main 883b407] Auto-update dashboard - 2025-12-01 11:04 AM
+ 2 files changed, 58 insertions(+), 58 deletions(-)
+fatal: could not read Password for 'https://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@github.com': Device not configured
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-04 to 2025-12-01
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 315 raw sales to 217 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4632 raw sales to 3349 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-04 to 2025-12-01
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'push', 'https://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@github.com/mosesh12see/vicidial-dashboard.git', 'main']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+[main 8fa26e7] Auto-update dashboard - 2025-12-01 12:05 PM
+ 2 files changed, 52 insertions(+), 52 deletions(-)
+fatal: could not read Password for 'https://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@github.com': Device not configured
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-04 to 2025-12-01
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 316 raw sales to 218 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4633 raw sales to 3350 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-04 to 2025-12-01
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'push', 'https://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@github.com/mosesh12see/vicidial-dashboard.git', 'main']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+[main 92b6d10] Auto-update dashboard - 2025-12-01 01:05 PM
+ 2 files changed, 136 insertions(+), 88 deletions(-)
+fatal: could not read Password for 'https://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@github.com': Device not configured
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-04 to 2025-12-01
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 317 raw sales to 219 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4634 raw sales to 3351 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-04 to 2025-12-01
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'push', 'https://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@github.com/mosesh12see/vicidial-dashboard.git', 'main']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+[main 49744f9] Auto-update dashboard - 2025-12-01 02:04 PM
+ 2 files changed, 110 insertions(+), 110 deletions(-)
+fatal: could not read Password for 'https://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@github.com': Device not configured
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-04 to 2025-12-01
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 320 raw sales to 222 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4637 raw sales to 3354 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-04 to 2025-12-01
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'push', 'https://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@github.com/mosesh12see/vicidial-dashboard.git', 'main']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+[main e4e9496] Auto-update dashboard - 2025-12-01 03:04 PM
+ 2 files changed, 96 insertions(+), 96 deletions(-)
+fatal: could not read Password for 'https://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@github.com': Device not configured
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-04 to 2025-12-01
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 324 raw sales to 224 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4641 raw sales to 3356 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-04 to 2025-12-01
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'push', 'https://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@github.com/mosesh12see/vicidial-dashboard.git', 'main']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+[main f420f94] Auto-update dashboard - 2025-12-01 04:05 PM
+ 2 files changed, 94 insertions(+), 94 deletions(-)
+fatal: could not read Password for 'https://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@github.com': Device not configured
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-04 to 2025-12-01
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 326 raw sales to 226 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4643 raw sales to 3358 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-04 to 2025-12-01
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'push', 'https://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@github.com/mosesh12see/vicidial-dashboard.git', 'main']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+[main 1f5e893] Auto-update dashboard - 2025-12-01 05:11 PM
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+fatal: could not read Password for 'https://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@github.com': Device not configured
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-04 to 2025-12-01
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 326 raw sales to 226 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4643 raw sales to 3358 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-04 to 2025-12-01
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'push', 'https://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@github.com/mosesh12see/vicidial-dashboard.git', 'main']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-05 to 2025-12-02
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 305 raw sales to 212 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4634 raw sales to 3354 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-05 to 2025-12-02
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'add', 'deep-analysis-2.html', 'public/deep-analysis-2.html']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+fatal: could not read Username for 'https://github.com': Device not configured
+❌ Failed to push to GitHub
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' (timed out)")
+fatal: could not open '.git/COMMIT_EDITMSG': Resource deadlock avoided
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-05 to 2025-12-02
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 305 raw sales to 212 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4634 raw sales to 3354 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-05 to 2025-12-02
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'commit', '-m', 'Auto-update dashboard - 2025-12-02 11:17 PM']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+fatal: mmap failed: Resource deadlock avoided
+fatal: could not open '.git/COMMIT_EDITMSG': Resource deadlock avoided
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+❌ Failed to push to GitHub
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 275 raw sales to 192 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4602 raw sales to 3327 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'add', 'deep-analysis-2.html', 'public/deep-analysis-2.html']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+❌ Failed to push to GitHub
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 275 raw sales to 192 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4602 raw sales to 3327 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'add', 'deep-analysis-2.html', 'public/deep-analysis-2.html']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+❌ Failed to push to GitHub
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 275 raw sales to 192 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4602 raw sales to 3327 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'add', 'deep-analysis-2.html', 'public/deep-analysis-2.html']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+❌ Failed to push to GitHub
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 275 raw sales to 192 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4602 raw sales to 3327 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'add', 'deep-analysis-2.html', 'public/deep-analysis-2.html']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+❌ Failed to push to GitHub
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 275 raw sales to 192 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4602 raw sales to 3327 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'add', 'deep-analysis-2.html', 'public/deep-analysis-2.html']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+❌ Failed to push to GitHub
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 275 raw sales to 192 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4602 raw sales to 3327 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'add', 'deep-analysis-2.html', 'public/deep-analysis-2.html']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+❌ Failed to push to GitHub
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 275 raw sales to 192 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4602 raw sales to 3327 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'add', 'deep-analysis-2.html', 'public/deep-analysis-2.html']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+❌ Failed to push to GitHub
+[main b03db99] Auto-update dashboard - 2025-12-03 10:34 AM
+ 2 files changed, 2120 insertions(+)
+ create mode 100644 deep-analysis-2.html
+ create mode 100644 public/deep-analysis-2.html
+fatal: could not read Password for 'https://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@github.com': Device not configured
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 275 raw sales to 192 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4602 raw sales to 3327 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'push', 'https://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@github.com/mosesh12see/vicidial-dashboard.git', 'main']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+⏭️  No changes to commit
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+[main fb5554b] Auto-update dashboard - 2025-12-03 11:35 AM
+ 2 files changed, 62 insertions(+), 36 deletions(-)
+fatal: could not read Password for 'https://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@github.com': Device not configured
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 275 raw sales to 192 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4602 raw sales to 3327 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'push', 'https://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@github.com/mosesh12see/vicidial-dashboard.git', 'main']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+⏭️  No changes to commit
+[main 5ee6a08] Auto-update dashboard - 2025-12-03 12:05 PM
+ 2 files changed, 56 insertions(+), 56 deletions(-)
+fatal: could not read Password for 'https://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@github.com': Device not configured
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 276 raw sales to 193 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4603 raw sales to 3328 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'push', 'https://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@github.com/mosesh12see/vicidial-dashboard.git', 'main']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+⏭️  No changes to commit
+[main 8ef23df] Auto-update dashboard - 2025-12-03 01:05 PM
+ 2 files changed, 60 insertions(+), 60 deletions(-)
+fatal: could not read Password for 'https://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@github.com': Device not configured
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 281 raw sales to 196 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4608 raw sales to 3331 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'push', 'https://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@github.com/mosesh12see/vicidial-dashboard.git', 'main']' returned non-zero exit status 128.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+[main 1961fd3] Auto-update dashboard - 2025-12-03 01:05 PM
+ 5 files changed, 5083 insertions(+)
+ create mode 100644 ADMINISTRATION: Group Hourly Stats.html
+ create mode 100644 ADMINISTRATION: User Groups.html
+ create mode 100644 Modify Remote Agents.html
+ create mode 100644 deep-analysis 2.html
+ create mode 100644 enhanced-dashboard.html
+fatal: could not read Username for 'https://github.com': Device not configured
+❌ Failed to push to GitHub
+[main 47f3fbf] Auto-update dashboard - 2025-12-03 02:05 PM
+ 2 files changed, 26 insertions(+), 26 deletions(-)
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 284 raw sales to 199 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4611 raw sales to 3334 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03 14:05:28.935888
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Unexpected error during git push: [Errno 2] No such file or directory: 'gh'
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+bash: update_github.sh: No such file or directory
+[main a678100] Auto-update dashboard - 2025-12-03 02:35 PM
+ 2 files changed, 96 insertions(+), 64 deletions(-)
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 285 raw sales to 200 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4612 raw sales to 3335 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03 14:35:00.365262
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Unexpected error during git push: [Errno 2] No such file or directory: 'gh'
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+bash: update_github.sh: No such file or directory
+[main 1da40a0] Auto-update dashboard - 2025-12-03 03:04 PM
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 285 raw sales to 200 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4612 raw sales to 3335 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-06-06 to 2025-12-03 15:04:55.319859
+💾 Saved to: deep-analysis-2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Unexpected error during git push: [Errno 2] No such file or directory: 'gh'
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ December 2025 overview (LIVE)
+   ✅ November 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+bash: update_github.sh: No such file or directory
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 789, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 680, in connect
+    self._get_server_information()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 1099, in _get_server_information
+    packet = self._read_packet()
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 751, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 795, in _read_bytes
+    raise err.OperationalError(
+    ...<2 lines>...
+    )
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([Errno 54] Connection reset by peer)')
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-06-06 to 2025-12-03
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 789, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 109, in <module>
+    cursor.execute(f"""
+    ~~~~~~~~~~~~~~^^^^^
+    SELECT
+    ^^^^^^
+    ...<7 lines>...
+    ORDER BY month
+    ^^^^^^^^^^^^^^
+    """)
+    ^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 826, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 751, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 795, in _read_bytes
+    raise err.OperationalError(
+    ...<2 lines>...
+    )
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([Errno 54] Connection reset by peer)')
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' (timed out)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 61] Connection refused)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 61] Connection refused)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 61] Connection refused)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 61] Connection refused)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 61] Connection refused)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 61] Connection refused)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 61] Connection refused)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 61] Connection refused)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 61] Connection refused)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 61] Connection refused)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 61] Connection refused)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 61] Connection refused)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 681, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 958, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'cron'@'64.72.41.109' (using password: YES)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 681, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 958, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'cron'@'64.72.41.109' (using password: YES)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 681, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 958, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'cron'@'64.72.41.109' (using password: YES)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 681, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 958, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'cron'@'64.72.41.109' (using password: YES)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 681, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 958, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'cron'@'172.56.188.30' (using password: YES)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 681, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 958, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'cron'@'108.236.85.241' (using password: YES)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 681, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 958, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'cron'@'108.236.85.241' (using password: YES)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 681, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 958, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'cron'@'108.236.85.241' (using password: YES)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 681, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 958, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'cron'@'108.236.85.241' (using password: YES)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 681, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 958, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'cron'@'108.236.85.241' (using password: YES)")
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-dashboard/update_comprehensive.py", line 73, in <module>
+    conn = pymysql.connect(
+        host=DB_HOST,
+    ...<4 lines>...
+        connect_timeout=30
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 681, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 958, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'cron'@'108.236.85.241' (using password: YES)")
+fatal: could not read Username for 'https://github.com': Device not configured
+============================================================
+VICIDIAL AUTO-UPDATE - December 04, 2025 08:30 PM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📊 Fetching YESTERDAY's data (2025-12-03)...
+  ✅ GA: 206,335 calls
+  ✅ MO: 526 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 418,131
+   Opt-ins: 250
+   Sales: 8
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ⚠️ Git error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 128.
+
+✅ DONE! Dashboard updated at December 04, 2025 at 08:31 PM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+============================================================
+VICIDIAL AUTO-UPDATE - December 04, 2025 08:52 PM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📊 Fetching YESTERDAY's data (2025-12-03)...
+  ✅ GA: 206,335 calls
+  ✅ MO: 526 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 418,131
+   Opt-ins: 250
+   Sales: 8
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 04, 2025 at 08:53 PM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 04, 2025 09:00 PM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📊 Fetching YESTERDAY's data (2025-12-03)...
+  ✅ GA: 206,335 calls
+  ✅ MO: 526 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 418,131
+   Opt-ins: 250
+   Sales: 8
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 04, 2025 at 09:01 PM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 04, 2025 09:30 PM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📊 Fetching YESTERDAY's data (2025-12-03)...
+  ✅ GA: 206,335 calls
+  ✅ MO: 526 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 418,131
+   Opt-ins: 250
+   Sales: 8
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 04, 2025 at 09:31 PM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 04, 2025 10:00 PM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📊 Fetching YESTERDAY's data (2025-12-03)...
+  ✅ GA: 206,335 calls
+  ✅ MO: 526 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 418,131
+   Opt-ins: 250
+   Sales: 8
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 04, 2025 at 10:01 PM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 04, 2025 10:30 PM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📊 Fetching YESTERDAY's data (2025-12-03)...
+  ✅ GA: 206,335 calls
+  ✅ MO: 526 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 418,131
+   Opt-ins: 250
+   Sales: 8
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 04, 2025 at 10:31 PM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 04, 2025 11:00 PM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📊 Fetching YESTERDAY's data (2025-12-03)...
+  ✅ GA: 206,335 calls
+  ✅ MO: 526 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 418,131
+   Opt-ins: 250
+   Sales: 8
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 04, 2025 at 11:01 PM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 04, 2025 11:30 PM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📊 Fetching YESTERDAY's data (2025-12-03)...
+  ✅ GA: 206,335 calls
+  ✅ MO: 526 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 418,131
+   Opt-ins: 250
+   Sales: 8
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 04, 2025 at 11:31 PM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 05, 2025 07:00 AM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-05)...
+
+📊 Fetching YESTERDAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 0
+   Opt-ins: 0
+   Sales: 0
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 05, 2025 at 07:01 AM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 05, 2025 07:30 AM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-05)...
+
+📊 Fetching YESTERDAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 0
+   Opt-ins: 0
+   Sales: 0
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 05, 2025 at 07:31 AM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 05, 2025 08:00 AM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-05)...
+  ✅ GA: 17,827 calls
+  ✅ KY: 13,413 calls
+
+📊 Fetching YESTERDAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 31,240
+   Opt-ins: 24
+   Sales: 2
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 05, 2025 at 08:01 AM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 05, 2025 08:30 AM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-05)...
+  ✅ GA: 40,291 calls
+  ✅ KY: 18,892 calls
+
+📊 Fetching YESTERDAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 59,183
+   Opt-ins: 40
+   Sales: 4
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 05, 2025 at 08:31 AM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 05, 2025 09:00 AM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-05)...
+  ✅ GA: 61,634 calls
+  ✅ KY: 37,942 calls
+
+📊 Fetching YESTERDAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 99,576
+   Opt-ins: 69
+   Sales: 4
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 05, 2025 at 09:01 AM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 05, 2025 09:30 AM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-05)...
+  ✅ GA: 77,717 calls
+  ✅ MO: 1,540 calls
+  ✅ KY: 58,011 calls
+
+📊 Fetching YESTERDAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 137,268
+   Opt-ins: 83
+   Sales: 4
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 05, 2025 at 09:31 AM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 05, 2025 10:00 AM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-05)...
+  ✅ GA: 105,426 calls
+  ✅ MO: 1,540 calls
+  ✅ KY: 70,170 calls
+
+📊 Fetching YESTERDAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 177,136
+   Opt-ins: 99
+   Sales: 4
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 05, 2025 at 10:01 AM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 05, 2025 10:30 AM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-05)...
+  ✅ GA: 124,115 calls
+  ✅ MO: 7,661 calls
+  ✅ KY: 86,331 calls
+
+📊 Fetching YESTERDAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 218,107
+   Opt-ins: 113
+   Sales: 5
+
+📝 Updating HTML dashboard...
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 05, 2025 at 10:31 AM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 05, 2025 11:00 AM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-05)...
+  ✅ GA: 131,282 calls
+  ✅ MO: 17,681 calls
+  ✅ KY: 106,091 calls
+
+📊 Fetching YESTERDAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 255,054
+   Opt-ins: 135
+   Sales: 6
+
+📝 Regenerating ENTIRE HTML dashboard with fresh data...
+  ✅ HTML fully regenerated with today's data
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 05, 2025 at 11:02 AM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 05, 2025 02:30 PM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-05)...
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1063e9e80>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10640de50>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10640e850>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10640ead0>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10640ed50>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10640efd0>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10640f250>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10640f4d0>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10640f750>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+
+📊 Fetching YESTERDAY's data (2025-12-04)...
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10640f9d0>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10640fc50>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10640fed0>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10646c190>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10646c550>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10646c7d0>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10646ca50>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10646ccd0>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10646ce10>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 0
+   Opt-ins: 0
+   Sales: 0
+
+📝 Regenerating ENTIRE HTML dashboard with fresh data...
+  ✅ HTML fully regenerated with today's data
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 05, 2025 at 02:49 PM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+fatal: Unable to create '/Users/mosesherrera/Desktop/vicidial-dashboard/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+============================================================
+VICIDIAL AUTO-UPDATE - December 05, 2025 03:30 PM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-05)...
+  ✅ GA: 158,407 calls
+  ✅ MO: 128,841 calls
+  ✅ KY: 157,850 calls
+
+📊 Fetching YESTERDAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 445,098
+   Opt-ins: 237
+   Sales: 14
+
+📝 Regenerating ENTIRE HTML dashboard with fresh data...
+  ✅ HTML fully regenerated with today's data
+
+🚀 Pushing to GitHub...
+  ⚠️ Git error: Command '['git', 'add', 'deep-analysis-2.html', 'public/deep-analysis-2.html']' returned non-zero exit status 128.
+
+✅ DONE! Dashboard updated at December 05, 2025 at 03:32 PM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit

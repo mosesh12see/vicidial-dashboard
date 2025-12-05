@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vicidial Deep Analysis - REAL DATA</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #1a1a1a;
+    color: #fff;
+    max-width: 1400px;
+    margin: 0 auto;
+            zoom: 0.65;
+}
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+}
+.metric-card {
+    background: #2a2a2a;
+    padding: 25px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+.metric-card h2 {
+    color: #667eea;
+    margin-top: 0;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+}
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+.summary-box {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+.summary-box h3 {
+    margin: 0 0 10px 0;
+    color: #667eea;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.summary-box .value {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.summary-box .subvalue {
+    font-size: 14px;
+    color: #999;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+th {
+    background: #333;
+    color: #667eea;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+tr:hover {
+    background: #2d2d2d;
+}
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.badge-success { background: #10b981; color: white; }
+.badge-warning { background: #f59e0b; color: white; }
+.badge-info { background: #3b82f6; color: white; }
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>Vicidial Analysis Dashboard</h1>
+<p>Real-Time Data from Database | Last Updated: Nov 7, 2025</p>
+</div>
+
+<div class="metric-card">
+<h2>Key Performance Metrics</h2>
+<div class="summary-grid">
+    <div class="summary-box">
+        <h3>14-Day Average</h3>
+        <div class="value">25,911 min</div>
+        <div class="subvalue">431.8 hours/day</div>
+    </div>
+    <div class="summary-box">
+        <h3>Today Total</h3>
+        <div class="value">45,023 min</div>
+        <div class="subvalue">750.4 hours | 519,501 calls</div>
+    </div>
+    <div class="summary-box">
+        <h3>Yesterday Total</h3>
+        <div class="value">49,847 min</div>
+        <div class="subvalue">830.8 hours | 570,854 calls</div>
+    </div>
+    <div class="summary-box">
+        <h3>Today Performance</h3>
+        <div class="value">224 opt-ins</div>
+        <div class="subvalue">3 sales</div>
+    </div>
+</div>
+</div>
+
+<div class="metric-card">
+<h2>Today's Campaign Performance (Nov 7, 2025)</h2>
+<table>
+<thead>
+<tr>
+<th>Campaign</th>
+<th>Calls</th>
+<th>Total Minutes</th>
+<th>Total Hours</th>
+<th>Avg Duration</th>
+<th>Opt-ins</th>
+<th>Sales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Colorado Inbound (1000)</td>
+<td>191,776</td>
+<td>19,180 min</td>
+<td>319.7 hrs</td>
+<td>6 sec</td>
+<td><span class="badge badge-info">33</span></td>
+<td><span class="badge badge-warning">0</span></td>
+</tr>
+<tr>
+<td>Georgia Inbound (1027)</td>
+<td>181,667</td>
+<td>16,294 min</td>
+<td>271.6 hrs</td>
+<td>5 sec</td>
+<td><span class="badge badge-info">92</span></td>
+<td><span class="badge badge-success">2</span></td>
+</tr>
+<tr>
+<td>Illinois Inbound (1028)</td>
+<td>96,624</td>
+<td>6,482 min</td>
+<td>108.0 hrs</td>
+<td>4 sec</td>
+<td><span class="badge badge-info">50</span></td>
+<td><span class="badge badge-warning">0</span></td>
+</tr>
+<tr>
+<td>Kentucky Inbound (1030)</td>
+<td>49,434</td>
+<td>3,067 min</td>
+<td>51.1 hrs</td>
+<td>4 sec</td>
+<td><span class="badge badge-info">49</span></td>
+<td><span class="badge badge-success">1</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="metric-card">
+<h2>Yesterday's Campaign Performance (Nov 6, 2025)</h2>
+<table>
+<thead>
+<tr>
+<th>Campaign</th>
+<th>Calls</th>
+<th>Total Minutes</th>
+<th>Total Hours</th>
+<th>Avg Duration</th>
+<th>Opt-ins</th>
+<th>Sales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Georgia Inbound (1027)</td>
+<td>333,123</td>
+<td>27,229 min</td>
+<td>453.8 hrs</td>
+<td>5 sec</td>
+<td><span class="badge badge-info">160</span></td>
+<td><span class="badge badge-warning">0</span></td>
+</tr>
+<tr>
+<td>Illinois Inbound (1028)</td>
+<td>158,567</td>
+<td>15,143 min</td>
+<td>252.4 hrs</td>
+<td>6 sec</td>
+<td><span class="badge badge-info">76</span></td>
+<td><span class="badge badge-success">1</span></td>
+</tr>
+<tr>
+<td>Kentucky Inbound (1030)</td>
+<td>49,814</td>
+<td>3,761 min</td>
+<td>62.7 hrs</td>
+<td>5 sec</td>
+<td><span class="badge badge-info">41</span></td>
+<td><span class="badge badge-warning">0</span></td>
+</tr>
+<tr>
+<td>Colorado Inbound (1000)</td>
+<td>29,350</td>
+<td>3,713 min</td>
+<td>61.9 hrs</td>
+<td>8 sec</td>
+<td><span class="badge badge-info">6</span></td>
+<td><span class="badge badge-warning">0</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="metric-card">
+<h2>Last 14 Days - Daily Breakdown</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Total Calls</th>
+<th>Total Minutes</th>
+<th>Total Hours</th>
+<th>Avg Call Duration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-11-06</td>
+<td>570,854</td>
+<td>49,847 min</td>
+<td>830.8 hrs</td>
+<td>5 sec</td>
+</tr>
+<tr>
+<td>2025-11-05</td>
+<td>596,964</td>
+<td>45,478 min</td>
+<td>758.0 hrs</td>
+<td>5 sec</td>
+</tr>
+<tr>
+<td>2025-11-04</td>
+<td>572,835</td>
+<td>38,853 min</td>
+<td>647.6 hrs</td>
+<td>4 sec</td>
+</tr>
+<tr>
+<td>2025-11-03</td>
+<td>372,761</td>
+<td>31,925 min</td>
+<td>532.1 hrs</td>
+<td>5 sec</td>
+</tr>
+<tr>
+<td>2025-11-01</td>
+<td>102,971</td>
+<td>6,131 min</td>
+<td>102.2 hrs</td>
+<td>4 sec</td>
+</tr>
+<tr>
+<td>2025-10-31</td>
+<td>402,144</td>
+<td>41,525 min</td>
+<td>692.1 hrs</td>
+<td>6 sec</td>
+</tr>
+<tr>
+<td>2025-10-30</td>
+<td>173,372</td>
+<td>24,181 min</td>
+<td>403.0 hrs</td>
+<td>8 sec</td>
+</tr>
+<tr>
+<td>2025-10-29</td>
+<td>270,145</td>
+<td>26,089 min</td>
+<td>434.8 hrs</td>
+<td>6 sec</td>
+</tr>
+<tr>
+<td>2025-10-28</td>
+<td>167,238</td>
+<td>15,172 min</td>
+<td>252.9 hrs</td>
+<td>5 sec</td>
+</tr>
+<tr>
+<td>2025-10-27</td>
+<td>156,408</td>
+<td>13,816 min</td>
+<td>230.3 hrs</td>
+<td>5 sec</td>
+</tr>
+<tr>
+<td>2025-10-25</td>
+<td>72,966</td>
+<td>5,728 min</td>
+<td>95.5 hrs</td>
+<td>5 sec</td>
+</tr>
+<tr>
+<td>2025-10-24</td>
+<td>115,850</td>
+<td>12,183 min</td>
+<td>203.0 hrs</td>
+<td>6 sec</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div style="text-align: center; margin-top: 40px; padding: 20px; background: #2a2a2a; border-radius: 8px;">
+<p style="color: #999; margin: 0;">All data pulled directly from Vicidial database | No placeholder or fake information</p>
+<p style="color: #667eea; margin: 5px 0 0 0; font-size: 12px;">Generated from real-time database queries</p>
+</div>
+
+</body>
+</html>

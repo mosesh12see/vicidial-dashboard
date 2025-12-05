@@ -1,0 +1,1656 @@
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 212, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 93, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 661, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 223, in main
+    sales, downloaded, skipped, failed = download_batch(table, offset, batch_size)
+                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 96, in download_batch
+    conn = connect_db()
+  File "/Users/mosesherrera/Desktop/vicidial-analysis/download_overnight.py", line 32, in connect_db
+    return pymysql.connect(
+           ~~~~~~~~~~~~~~~^
+        host=DB_HOST, port=DB_PORT, user=DB_USER,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        read_timeout=600  # 10 minute read timeout for slow queries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/pymysql/connections.py", line 723, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '67.198.205.116' ([Errno 51] Network is unreachable)")

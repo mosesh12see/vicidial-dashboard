@@ -1,0 +1,1540 @@
+[main 13482d1] Auto-update dashboard - 2025-11-30 06:04 PM
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ Dashboard updated on GitHub Pages
+[main e7e42c8] Auto-update dashboard - 2025-11-30 07:04 PM
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ Dashboard updated on GitHub Pages
+[main baf53ae] Auto-update dashboard - 2025-11-30 08:04 PM
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ Dashboard updated on GitHub Pages
+[main 2d93311] Auto-update dashboard - 2025-12-01 08:05 AM
+ 2 files changed, 192 insertions(+), 208 deletions(-)
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ Dashboard updated on GitHub Pages
+[main 8e672cd] Auto-update dashboard - 2025-12-01 09:04 AM
+ 2 files changed, 62 insertions(+), 62 deletions(-)
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ Dashboard updated on GitHub Pages
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	.claude-flow/
+	.swarm/
+	00000239-PHOTO-2025-11-05-17-35-21.jpg
+	00000245-call_6a09cf604375b16e10883fa5862.mp3
+	00000278-PHOTO-2025-11-05-22-13-52.jpg
+	00000289-PHOTO-2025-11-07-13-46-56.jpg
+	00000294-PHOTO-2025-11-07-15-03-49.jpg
+	00000311-PHOTO-2025-11-08-10-30-01.jpg
+	00000316-PHOTO-2025-11-08-10-41-37.jpg
+	00000324-PHOTO-2025-11-08-10-46-26.jpg
+	00000334-PHOTO-2025-11-08-10-50-24.jpg
+	00000335-PHOTO-2025-11-08-10-51-18.jpg
+	00000336-PHOTO-2025-11-08-10-51-20.jpg
+	00000339-PHOTO-2025-11-08-10-53-07.jpg
+	00000340-PHOTO-2025-11-08-10-56-31.jpg
+	00000350-PHOTO-2025-11-08-11-34-26.jpg
+	00000351-PHOTO-2025-11-08-11-41-47.jpg
+	00000367-PHOTO-2025-11-11-12-33-02.jpg
+	00000368-PHOTO-2025-11-11-12-35-47.jpg
+	00000404-PHOTO-2025-11-11-13-54-20.jpg
+	00000405-PHOTO-2025-11-11-13-54-41.jpg
+	00000408-PHOTO-2025-11-11-14-18-50.jpg
+	ADMINISTRATION: ADMIN UTILITIES.pdf
+	ADMINISTRATION: ADMIN.pdf
+	ADMINISTRATION: Add Call Menu.pdf
+	ADMINISTRATION: Add Filter Phone Group.pdf
+	ADMINISTRATION: Add New DID.pdf
+	ADMINISTRATION: Add New DNC.pdf
+	ADMINISTRATION: Add New Filter.pdf
+	ADMINISTRATION: Add New In-Group.pdf
+	ADMINISTRATION: Add New List.pdf
+	ADMINISTRATION: Add New Remote Agents.pdf
+	ADMINISTRATION: Add New Script.pdf
+	ADMINISTRATION: Add New User.pdf
+	ADMINISTRATION: Add New Users Group.pdf
+	ADMINISTRATION: Audio Store format.pdf
+	ADMINISTRATION: Audio Store.pdf
+	ADMINISTRATION: Bulk Tools.pdf
+	ADMINISTRATION: CARRIER LIST 2.pdf
+	ADMINISTRATION: CARRIER LIST.pdf
+	ADMINISTRATION: CID GROUP LIST.pdf
+	ADMINISTRATION: CONF TEMPLATE LIST.pdf
+	ADMINISTRATION: CONFERENCE LIST.pdf
+	ADMINISTRATION: Call Menus.pdf
+	ADMINISTRATION: Campaign Agent Pause Codes.pdf
+	ADMINISTRATION: Campaign Areacode CID.pdf
+	ADMINISTRATION: Campaign Auto Alt Dial Statuses.pdf
+	ADMINISTRATION: Campaign HotKeys.pdf
+	ADMINISTRATION: Campaign Lead Recycle Entries.pdf
+	ADMINISTRATION: Campaign List Mixes.pdf
+	ADMINISTRATION: Campaign Presets.pdf
+	ADMINISTRATION: Campaign Statuses.pdf
+	ADMINISTRATION: Campaigns.pdf
+	ADMINISTRATION: Copy Call Menu.pdf
+	ADMINISTRATION: Copy DID.pdf
+	ADMINISTRATION: Copy In-Group.pdf
+	ADMINISTRATION: Copy User.pdf
+	ADMINISTRATION: Filter Phone Group Numbers.pdf
+	ADMINISTRATION: Filter Phone Groups.pdf
+	ADMINISTRATION: Filters.pdf
+	ADMINISTRATION: Group Hourly Stats.pdf
+	ADMINISTRATION: IP LISTS.pdf
+	ADMINISTRATION: In-Groups.pdf
+	ADMINISTRATION: Inbound.pdf
+	ADMINISTRATION: Lead Loader.pdf
+	ADMINISTRATION: Lead Search.pdf
+	ADMINISTRATION: Lists.pdf
+	ADMINISTRATION: MODIFY CARRIER 1 .pdf
+	ADMINISTRATION: MODIFY CARRIER 2.pdf
+	ADMINISTRATION: MODIFY SERVER 1.pdf
+	ADMINISTRATION: MODIFY SERVER CEAST2.pdf
+	ADMINISTRATION: MODIFY SERVER CEDB.pdf
+	ADMINISTRATION: MODIFY SERVER.pdf
+	ADMINISTRATION: MODIFY SYSTEM SETTINGS.pdf
+	ADMINISTRATION: MODIFY SYSTEM STATUSES.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0002.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0003.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0004.pdf
+	ADMINISTRATION: Modify Campaign - Detail view - 1027.pdf
+	ADMINISTRATION: Modify User 1.pdf
+	ADMINISTRATION: Modify User bytworth admin.pdf
+	ADMINISTRATION: Modify User capadmin.pdf
+	ADMINISTRATION: Modify User.pdf
+	ADMINISTRATION: PHONE LIST.pdf
+	ADMINISTRATION: REPORTS.pdf
+	ADMINISTRATION: Remote Agents.pdf
+	ADMINISTRATION: SECTION ADMIN CHANGE LOG.pdf
+	ADMINISTRATION: SERVER LIST.pdf
+	ADMINISTRATION: SETTINGS CONTAINTER LIST.pdf
+	ADMINISTRATION: SYSTEM SNAPSHOT STATS.pdf
+	ADMINISTRATION: SYSTEM SUMMARY STATS.pdf
+	ADMINISTRATION: Scripts.pdf
+	ADMINISTRATION: Search Form.pdf
+	ADMINISTRATION: Shifts.pdf
+	ADMINISTRATION: User Group Bulk Change.pdf
+	ADMINISTRATION: User Groups.pdf
+	ADMINISTRATION: User Stats.pdf
+	ADMINISTRATION: User Status.pdf
+	ADMINISTRATION: Users List.pdf
+	ALL_DASHBOARDS_FIXED.md
+	Agent_Manual_LowRes_BW.pdf
+	CAMPAIGN_REFERENCE.md
+	CID groups screenshot.png
+	COMPLETED_UPDATE.md
+	CORRECTED_STATS_SUMMARY.md
+	CURRENT_PERFORMANCE_DATA.md
+	Claude Vici Creations (46)/
+	Claude Vici Full Api.png
+	DiD inforamtion to know .png
+	EXTERNAL_TRANSFER_OVERFLOW_GUIDE.md
+	Example of what to fildeter out .csv
+	FASTEST_ACCESS.md
+	FINAL_SALES_METHODOLOGY.md
+	IMPORTANT_FIX_OCT31_2025.md
+	Lead full info pdf.pdf
+	Manager_Manual_LowRes_BW.pdf
+	Modify Lead.pdf
+	Outbound Calling Report Stl all list.pdf
+	Outbound IVR Report.pdf
+	Overflow instead of new campaings.png
+	README_STRUCTURE.md
+	Real-Time Main Report: ALL-ACTIVE.pdf
+	Real-Time Monitoring Log Report.pdf
+	Reset lead status.png
+	SALES_FIX_NOV_2025.md
+	SALES_METHODOLOGY_CHANGE.md
+	SALES_TRACKING_REFERENCE.md
+	SMS_SETUP.md
+	SOLUTIONS_FOR_REMOTE_AGENT_OVERFLOW.md
+	"Screenshot 2025-10-22 at 4.18.05\342\200\257PM.png"
+	TIME_MACHINE_README.md
+	User Time Sheet.pdf
+	VICIDIAL_ACCESS_RULES.md
+	VICIDIAL_API_ACCESS.md
+	VoIP Cost Report.pdf
+	WhatsApp Chat - S.E.E. Tech_Server Support copy.zip
+	WhatsApp Chat - S.E.E. Tech_Server Support.zip
+	White Label Vici (17)/
+	Zoiper, how non remote agents take opt ins.jpg
+	__pycache__/
+	check_download_progress.sh
+	check_overnight_progress.sh
+	cron.log
+	deep-icon.png
+	docs/
+	download.log
+	download_chunked.log
+	download_fast.log
+	download_from_sales.log
+	download_from_sales_v2.log
+	download_full_year.log
+	download_inverted.log
+	download_monthly.log
+	download_overnight.log
+	download_progressive.log
+	export_historical_data.py.OLD.BROKEN
+	github.log
+	historical_data.csv.CORRUPTED.backup
+	keep_downloading.sh
+	launchd.log
+	launchd_error.log
+	logs/
+	network_check.log
+	public/.swarm/
+	ranking info .png
+	ranking more explained.png
+	run_snapshot_with_network_check.sh
+	run_with_network_check.sh
+	sales_recordings (3)/
+	setup_twilio.sh
+	sms_optin_notifier.py.bak
+	snapshot_cron.log
+	snapshot_launchd.log
+	snapshot_launchd_error.log
+	snapshot_network_check.log
+	snapshots (16)/
+	universal_snapshot_cron.log
+	update_fast.py.OLD.USEDCSV
+	watchdog.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ Dashboard updated on GitHub Pages
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	.claude-flow/
+	.swarm/
+	00000239-PHOTO-2025-11-05-17-35-21.jpg
+	00000245-call_6a09cf604375b16e10883fa5862.mp3
+	00000278-PHOTO-2025-11-05-22-13-52.jpg
+	00000289-PHOTO-2025-11-07-13-46-56.jpg
+	00000294-PHOTO-2025-11-07-15-03-49.jpg
+	00000311-PHOTO-2025-11-08-10-30-01.jpg
+	00000316-PHOTO-2025-11-08-10-41-37.jpg
+	00000324-PHOTO-2025-11-08-10-46-26.jpg
+	00000334-PHOTO-2025-11-08-10-50-24.jpg
+	00000335-PHOTO-2025-11-08-10-51-18.jpg
+	00000336-PHOTO-2025-11-08-10-51-20.jpg
+	00000339-PHOTO-2025-11-08-10-53-07.jpg
+	00000340-PHOTO-2025-11-08-10-56-31.jpg
+	00000350-PHOTO-2025-11-08-11-34-26.jpg
+	00000351-PHOTO-2025-11-08-11-41-47.jpg
+	00000367-PHOTO-2025-11-11-12-33-02.jpg
+	00000368-PHOTO-2025-11-11-12-35-47.jpg
+	00000404-PHOTO-2025-11-11-13-54-20.jpg
+	00000405-PHOTO-2025-11-11-13-54-41.jpg
+	00000408-PHOTO-2025-11-11-14-18-50.jpg
+	ADMINISTRATION: ADMIN UTILITIES.pdf
+	ADMINISTRATION: ADMIN.pdf
+	ADMINISTRATION: Add Call Menu.pdf
+	ADMINISTRATION: Add Filter Phone Group.pdf
+	ADMINISTRATION: Add New DID.pdf
+	ADMINISTRATION: Add New DNC.pdf
+	ADMINISTRATION: Add New Filter.pdf
+	ADMINISTRATION: Add New In-Group.pdf
+	ADMINISTRATION: Add New List.pdf
+	ADMINISTRATION: Add New Remote Agents.pdf
+	ADMINISTRATION: Add New Script.pdf
+	ADMINISTRATION: Add New User.pdf
+	ADMINISTRATION: Add New Users Group.pdf
+	ADMINISTRATION: Audio Store format.pdf
+	ADMINISTRATION: Audio Store.pdf
+	ADMINISTRATION: Bulk Tools.pdf
+	ADMINISTRATION: CARRIER LIST 2.pdf
+	ADMINISTRATION: CARRIER LIST.pdf
+	ADMINISTRATION: CID GROUP LIST.pdf
+	ADMINISTRATION: CONF TEMPLATE LIST.pdf
+	ADMINISTRATION: CONFERENCE LIST.pdf
+	ADMINISTRATION: Call Menus.pdf
+	ADMINISTRATION: Campaign Agent Pause Codes.pdf
+	ADMINISTRATION: Campaign Areacode CID.pdf
+	ADMINISTRATION: Campaign Auto Alt Dial Statuses.pdf
+	ADMINISTRATION: Campaign HotKeys.pdf
+	ADMINISTRATION: Campaign Lead Recycle Entries.pdf
+	ADMINISTRATION: Campaign List Mixes.pdf
+	ADMINISTRATION: Campaign Presets.pdf
+	ADMINISTRATION: Campaign Statuses.pdf
+	ADMINISTRATION: Campaigns.pdf
+	ADMINISTRATION: Copy Call Menu.pdf
+	ADMINISTRATION: Copy DID.pdf
+	ADMINISTRATION: Copy In-Group.pdf
+	ADMINISTRATION: Copy User.pdf
+	ADMINISTRATION: Filter Phone Group Numbers.pdf
+	ADMINISTRATION: Filter Phone Groups.pdf
+	ADMINISTRATION: Filters.pdf
+	ADMINISTRATION: Group Hourly Stats.pdf
+	ADMINISTRATION: IP LISTS.pdf
+	ADMINISTRATION: In-Groups.pdf
+	ADMINISTRATION: Inbound.pdf
+	ADMINISTRATION: Lead Loader.pdf
+	ADMINISTRATION: Lead Search.pdf
+	ADMINISTRATION: Lists.pdf
+	ADMINISTRATION: MODIFY CARRIER 1 .pdf
+	ADMINISTRATION: MODIFY CARRIER 2.pdf
+	ADMINISTRATION: MODIFY SERVER 1.pdf
+	ADMINISTRATION: MODIFY SERVER CEAST2.pdf
+	ADMINISTRATION: MODIFY SERVER CEDB.pdf
+	ADMINISTRATION: MODIFY SERVER.pdf
+	ADMINISTRATION: MODIFY SYSTEM SETTINGS.pdf
+	ADMINISTRATION: MODIFY SYSTEM STATUSES.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0002.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0003.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0004.pdf
+	ADMINISTRATION: Modify Campaign - Detail view - 1027.pdf
+	ADMINISTRATION: Modify User 1.pdf
+	ADMINISTRATION: Modify User bytworth admin.pdf
+	ADMINISTRATION: Modify User capadmin.pdf
+	ADMINISTRATION: Modify User.pdf
+	ADMINISTRATION: PHONE LIST.pdf
+	ADMINISTRATION: REPORTS.pdf
+	ADMINISTRATION: Remote Agents.pdf
+	ADMINISTRATION: SECTION ADMIN CHANGE LOG.pdf
+	ADMINISTRATION: SERVER LIST.pdf
+	ADMINISTRATION: SETTINGS CONTAINTER LIST.pdf
+	ADMINISTRATION: SYSTEM SNAPSHOT STATS.pdf
+	ADMINISTRATION: SYSTEM SUMMARY STATS.pdf
+	ADMINISTRATION: Scripts.pdf
+	ADMINISTRATION: Search Form.pdf
+	ADMINISTRATION: Shifts.pdf
+	ADMINISTRATION: User Group Bulk Change.pdf
+	ADMINISTRATION: User Groups.pdf
+	ADMINISTRATION: User Stats.pdf
+	ADMINISTRATION: User Status.pdf
+	ADMINISTRATION: Users List.pdf
+	ALL_DASHBOARDS_FIXED.md
+	Agent_Manual_LowRes_BW.pdf
+	CAMPAIGN_REFERENCE.md
+	CID groups screenshot.png
+	COMPLETED_UPDATE.md
+	CORRECTED_STATS_SUMMARY.md
+	CURRENT_PERFORMANCE_DATA.md
+	Claude Vici Creations (46)/
+	Claude Vici Full Api.png
+	DiD inforamtion to know .png
+	EXTERNAL_TRANSFER_OVERFLOW_GUIDE.md
+	Example of what to fildeter out .csv
+	FASTEST_ACCESS.md
+	FINAL_SALES_METHODOLOGY.md
+	IMPORTANT_FIX_OCT31_2025.md
+	Lead full info pdf.pdf
+	Manager_Manual_LowRes_BW.pdf
+	Modify Lead.pdf
+	Outbound Calling Report Stl all list.pdf
+	Outbound IVR Report.pdf
+	Overflow instead of new campaings.png
+	README_STRUCTURE.md
+	Real-Time Main Report: ALL-ACTIVE.pdf
+	Real-Time Monitoring Log Report.pdf
+	Reset lead status.png
+	SALES_FIX_NOV_2025.md
+	SALES_METHODOLOGY_CHANGE.md
+	SALES_TRACKING_REFERENCE.md
+	SMS_SETUP.md
+	SOLUTIONS_FOR_REMOTE_AGENT_OVERFLOW.md
+	"Screenshot 2025-10-22 at 4.18.05\342\200\257PM.png"
+	TIME_MACHINE_README.md
+	User Time Sheet.pdf
+	VICIDIAL_ACCESS_RULES.md
+	VICIDIAL_API_ACCESS.md
+	VoIP Cost Report.pdf
+	WhatsApp Chat - S.E.E. Tech_Server Support copy.zip
+	WhatsApp Chat - S.E.E. Tech_Server Support.zip
+	White Label Vici (17)/
+	Zoiper, how non remote agents take opt ins.jpg
+	__pycache__/
+	check_download_progress.sh
+	check_overnight_progress.sh
+	cron.log
+	deep-icon.png
+	docs/
+	download.log
+	download_chunked.log
+	download_fast.log
+	download_from_sales.log
+	download_from_sales_v2.log
+	download_full_year.log
+	download_inverted.log
+	download_monthly.log
+	download_overnight.log
+	download_progressive.log
+	export_historical_data.py.OLD.BROKEN
+	github.log
+	historical_data.csv.CORRUPTED.backup
+	keep_downloading.sh
+	launchd.log
+	launchd_error.log
+	logs/
+	network_check.log
+	public/.swarm/
+	ranking info .png
+	ranking more explained.png
+	run_snapshot_with_network_check.sh
+	run_with_network_check.sh
+	sales_recordings (3)/
+	setup_twilio.sh
+	sms_optin_notifier.py.bak
+	snapshot_cron.log
+	snapshot_launchd.log
+	snapshot_launchd_error.log
+	snapshot_network_check.log
+	snapshots (16)/
+	universal_snapshot_cron.log
+	update_fast.py.OLD.USEDCSV
+	watchdog.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ Dashboard updated on GitHub Pages
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	.claude-flow/
+	.swarm/
+	00000239-PHOTO-2025-11-05-17-35-21.jpg
+	00000245-call_6a09cf604375b16e10883fa5862.mp3
+	00000278-PHOTO-2025-11-05-22-13-52.jpg
+	00000289-PHOTO-2025-11-07-13-46-56.jpg
+	00000294-PHOTO-2025-11-07-15-03-49.jpg
+	00000311-PHOTO-2025-11-08-10-30-01.jpg
+	00000316-PHOTO-2025-11-08-10-41-37.jpg
+	00000324-PHOTO-2025-11-08-10-46-26.jpg
+	00000334-PHOTO-2025-11-08-10-50-24.jpg
+	00000335-PHOTO-2025-11-08-10-51-18.jpg
+	00000336-PHOTO-2025-11-08-10-51-20.jpg
+	00000339-PHOTO-2025-11-08-10-53-07.jpg
+	00000340-PHOTO-2025-11-08-10-56-31.jpg
+	00000350-PHOTO-2025-11-08-11-34-26.jpg
+	00000351-PHOTO-2025-11-08-11-41-47.jpg
+	00000367-PHOTO-2025-11-11-12-33-02.jpg
+	00000368-PHOTO-2025-11-11-12-35-47.jpg
+	00000404-PHOTO-2025-11-11-13-54-20.jpg
+	00000405-PHOTO-2025-11-11-13-54-41.jpg
+	00000408-PHOTO-2025-11-11-14-18-50.jpg
+	ADMINISTRATION: ADMIN UTILITIES.pdf
+	ADMINISTRATION: ADMIN.pdf
+	ADMINISTRATION: Add Call Menu.pdf
+	ADMINISTRATION: Add Filter Phone Group.pdf
+	ADMINISTRATION: Add New DID.pdf
+	ADMINISTRATION: Add New DNC.pdf
+	ADMINISTRATION: Add New Filter.pdf
+	ADMINISTRATION: Add New In-Group.pdf
+	ADMINISTRATION: Add New List.pdf
+	ADMINISTRATION: Add New Remote Agents.pdf
+	ADMINISTRATION: Add New Script.pdf
+	ADMINISTRATION: Add New User.pdf
+	ADMINISTRATION: Add New Users Group.pdf
+	ADMINISTRATION: Audio Store format.pdf
+	ADMINISTRATION: Audio Store.pdf
+	ADMINISTRATION: Bulk Tools.pdf
+	ADMINISTRATION: CARRIER LIST 2.pdf
+	ADMINISTRATION: CARRIER LIST.pdf
+	ADMINISTRATION: CID GROUP LIST.pdf
+	ADMINISTRATION: CONF TEMPLATE LIST.pdf
+	ADMINISTRATION: CONFERENCE LIST.pdf
+	ADMINISTRATION: Call Menus.pdf
+	ADMINISTRATION: Campaign Agent Pause Codes.pdf
+	ADMINISTRATION: Campaign Areacode CID.pdf
+	ADMINISTRATION: Campaign Auto Alt Dial Statuses.pdf
+	ADMINISTRATION: Campaign HotKeys.pdf
+	ADMINISTRATION: Campaign Lead Recycle Entries.pdf
+	ADMINISTRATION: Campaign List Mixes.pdf
+	ADMINISTRATION: Campaign Presets.pdf
+	ADMINISTRATION: Campaign Statuses.pdf
+	ADMINISTRATION: Campaigns.pdf
+	ADMINISTRATION: Copy Call Menu.pdf
+	ADMINISTRATION: Copy DID.pdf
+	ADMINISTRATION: Copy In-Group.pdf
+	ADMINISTRATION: Copy User.pdf
+	ADMINISTRATION: Filter Phone Group Numbers.pdf
+	ADMINISTRATION: Filter Phone Groups.pdf
+	ADMINISTRATION: Filters.pdf
+	ADMINISTRATION: Group Hourly Stats.pdf
+	ADMINISTRATION: IP LISTS.pdf
+	ADMINISTRATION: In-Groups.pdf
+	ADMINISTRATION: Inbound.pdf
+	ADMINISTRATION: Lead Loader.pdf
+	ADMINISTRATION: Lead Search.pdf
+	ADMINISTRATION: Lists.pdf
+	ADMINISTRATION: MODIFY CARRIER 1 .pdf
+	ADMINISTRATION: MODIFY CARRIER 2.pdf
+	ADMINISTRATION: MODIFY SERVER 1.pdf
+	ADMINISTRATION: MODIFY SERVER CEAST2.pdf
+	ADMINISTRATION: MODIFY SERVER CEDB.pdf
+	ADMINISTRATION: MODIFY SERVER.pdf
+	ADMINISTRATION: MODIFY SYSTEM SETTINGS.pdf
+	ADMINISTRATION: MODIFY SYSTEM STATUSES.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0002.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0003.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0004.pdf
+	ADMINISTRATION: Modify Campaign - Detail view - 1027.pdf
+	ADMINISTRATION: Modify User 1.pdf
+	ADMINISTRATION: Modify User bytworth admin.pdf
+	ADMINISTRATION: Modify User capadmin.pdf
+	ADMINISTRATION: Modify User.pdf
+	ADMINISTRATION: PHONE LIST.pdf
+	ADMINISTRATION: REPORTS.pdf
+	ADMINISTRATION: Remote Agents.pdf
+	ADMINISTRATION: SECTION ADMIN CHANGE LOG.pdf
+	ADMINISTRATION: SERVER LIST.pdf
+	ADMINISTRATION: SETTINGS CONTAINTER LIST.pdf
+	ADMINISTRATION: SYSTEM SNAPSHOT STATS.pdf
+	ADMINISTRATION: SYSTEM SUMMARY STATS.pdf
+	ADMINISTRATION: Scripts.pdf
+	ADMINISTRATION: Search Form.pdf
+	ADMINISTRATION: Shifts.pdf
+	ADMINISTRATION: User Group Bulk Change.pdf
+	ADMINISTRATION: User Groups.pdf
+	ADMINISTRATION: User Stats.pdf
+	ADMINISTRATION: User Status.pdf
+	ADMINISTRATION: Users List.pdf
+	ALL_DASHBOARDS_FIXED.md
+	Agent_Manual_LowRes_BW.pdf
+	CAMPAIGN_REFERENCE.md
+	CID groups screenshot.png
+	COMPLETED_UPDATE.md
+	CORRECTED_STATS_SUMMARY.md
+	CURRENT_PERFORMANCE_DATA.md
+	Claude Vici Creations (46)/
+	Claude Vici Full Api.png
+	DiD inforamtion to know .png
+	EXTERNAL_TRANSFER_OVERFLOW_GUIDE.md
+	Example of what to fildeter out .csv
+	FASTEST_ACCESS.md
+	FINAL_SALES_METHODOLOGY.md
+	IMPORTANT_FIX_OCT31_2025.md
+	Lead full info pdf.pdf
+	Manager_Manual_LowRes_BW.pdf
+	Modify Lead.pdf
+	Outbound Calling Report Stl all list.pdf
+	Outbound IVR Report.pdf
+	Overflow instead of new campaings.png
+	README_STRUCTURE.md
+	Real-Time Main Report: ALL-ACTIVE.pdf
+	Real-Time Monitoring Log Report.pdf
+	Reset lead status.png
+	SALES_FIX_NOV_2025.md
+	SALES_METHODOLOGY_CHANGE.md
+	SALES_TRACKING_REFERENCE.md
+	SMS_SETUP.md
+	SOLUTIONS_FOR_REMOTE_AGENT_OVERFLOW.md
+	"Screenshot 2025-10-22 at 4.18.05\342\200\257PM.png"
+	TIME_MACHINE_README.md
+	User Time Sheet.pdf
+	VICIDIAL_ACCESS_RULES.md
+	VICIDIAL_API_ACCESS.md
+	VoIP Cost Report.pdf
+	WhatsApp Chat - S.E.E. Tech_Server Support copy.zip
+	WhatsApp Chat - S.E.E. Tech_Server Support.zip
+	White Label Vici (17)/
+	Zoiper, how non remote agents take opt ins.jpg
+	__pycache__/
+	check_download_progress.sh
+	check_overnight_progress.sh
+	cron.log
+	deep-icon.png
+	docs/
+	download.log
+	download_chunked.log
+	download_fast.log
+	download_from_sales.log
+	download_from_sales_v2.log
+	download_full_year.log
+	download_inverted.log
+	download_monthly.log
+	download_overnight.log
+	download_progressive.log
+	export_historical_data.py.OLD.BROKEN
+	github.log
+	historical_data.csv.CORRUPTED.backup
+	keep_downloading.sh
+	launchd.log
+	launchd_error.log
+	logs/
+	network_check.log
+	public/.swarm/
+	ranking info .png
+	ranking more explained.png
+	run_snapshot_with_network_check.sh
+	run_with_network_check.sh
+	sales_recordings (3)/
+	setup_twilio.sh
+	sms_optin_notifier.py.bak
+	snapshot_cron.log
+	snapshot_launchd.log
+	snapshot_launchd_error.log
+	snapshot_network_check.log
+	snapshots (16)/
+	universal_snapshot_cron.log
+	update_fast.py.OLD.USEDCSV
+	watchdog.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ Dashboard updated on GitHub Pages
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	.claude-flow/
+	.swarm/
+	00000239-PHOTO-2025-11-05-17-35-21.jpg
+	00000245-call_6a09cf604375b16e10883fa5862.mp3
+	00000278-PHOTO-2025-11-05-22-13-52.jpg
+	00000289-PHOTO-2025-11-07-13-46-56.jpg
+	00000294-PHOTO-2025-11-07-15-03-49.jpg
+	00000311-PHOTO-2025-11-08-10-30-01.jpg
+	00000316-PHOTO-2025-11-08-10-41-37.jpg
+	00000324-PHOTO-2025-11-08-10-46-26.jpg
+	00000334-PHOTO-2025-11-08-10-50-24.jpg
+	00000335-PHOTO-2025-11-08-10-51-18.jpg
+	00000336-PHOTO-2025-11-08-10-51-20.jpg
+	00000339-PHOTO-2025-11-08-10-53-07.jpg
+	00000340-PHOTO-2025-11-08-10-56-31.jpg
+	00000350-PHOTO-2025-11-08-11-34-26.jpg
+	00000351-PHOTO-2025-11-08-11-41-47.jpg
+	00000367-PHOTO-2025-11-11-12-33-02.jpg
+	00000368-PHOTO-2025-11-11-12-35-47.jpg
+	00000404-PHOTO-2025-11-11-13-54-20.jpg
+	00000405-PHOTO-2025-11-11-13-54-41.jpg
+	00000408-PHOTO-2025-11-11-14-18-50.jpg
+	ADMINISTRATION: ADMIN UTILITIES.pdf
+	ADMINISTRATION: ADMIN.pdf
+	ADMINISTRATION: Add Call Menu.pdf
+	ADMINISTRATION: Add Filter Phone Group.pdf
+	ADMINISTRATION: Add New DID.pdf
+	ADMINISTRATION: Add New DNC.pdf
+	ADMINISTRATION: Add New Filter.pdf
+	ADMINISTRATION: Add New In-Group.pdf
+	ADMINISTRATION: Add New List.pdf
+	ADMINISTRATION: Add New Remote Agents.pdf
+	ADMINISTRATION: Add New Script.pdf
+	ADMINISTRATION: Add New User.pdf
+	ADMINISTRATION: Add New Users Group.pdf
+	ADMINISTRATION: Audio Store format.pdf
+	ADMINISTRATION: Audio Store.pdf
+	ADMINISTRATION: Bulk Tools.pdf
+	ADMINISTRATION: CARRIER LIST 2.pdf
+	ADMINISTRATION: CARRIER LIST.pdf
+	ADMINISTRATION: CID GROUP LIST.pdf
+	ADMINISTRATION: CONF TEMPLATE LIST.pdf
+	ADMINISTRATION: CONFERENCE LIST.pdf
+	ADMINISTRATION: Call Menus.pdf
+	ADMINISTRATION: Campaign Agent Pause Codes.pdf
+	ADMINISTRATION: Campaign Areacode CID.pdf
+	ADMINISTRATION: Campaign Auto Alt Dial Statuses.pdf
+	ADMINISTRATION: Campaign HotKeys.pdf
+	ADMINISTRATION: Campaign Lead Recycle Entries.pdf
+	ADMINISTRATION: Campaign List Mixes.pdf
+	ADMINISTRATION: Campaign Presets.pdf
+	ADMINISTRATION: Campaign Statuses.pdf
+	ADMINISTRATION: Campaigns.pdf
+	ADMINISTRATION: Copy Call Menu.pdf
+	ADMINISTRATION: Copy DID.pdf
+	ADMINISTRATION: Copy In-Group.pdf
+	ADMINISTRATION: Copy User.pdf
+	ADMINISTRATION: Filter Phone Group Numbers.pdf
+	ADMINISTRATION: Filter Phone Groups.pdf
+	ADMINISTRATION: Filters.pdf
+	ADMINISTRATION: Group Hourly Stats.pdf
+	ADMINISTRATION: IP LISTS.pdf
+	ADMINISTRATION: In-Groups.pdf
+	ADMINISTRATION: Inbound.pdf
+	ADMINISTRATION: Lead Loader.pdf
+	ADMINISTRATION: Lead Search.pdf
+	ADMINISTRATION: Lists.pdf
+	ADMINISTRATION: MODIFY CARRIER 1 .pdf
+	ADMINISTRATION: MODIFY CARRIER 2.pdf
+	ADMINISTRATION: MODIFY SERVER 1.pdf
+	ADMINISTRATION: MODIFY SERVER CEAST2.pdf
+	ADMINISTRATION: MODIFY SERVER CEDB.pdf
+	ADMINISTRATION: MODIFY SERVER.pdf
+	ADMINISTRATION: MODIFY SYSTEM SETTINGS.pdf
+	ADMINISTRATION: MODIFY SYSTEM STATUSES.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0002.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0003.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0004.pdf
+	ADMINISTRATION: Modify Campaign - Detail view - 1027.pdf
+	ADMINISTRATION: Modify User 1.pdf
+	ADMINISTRATION: Modify User bytworth admin.pdf
+	ADMINISTRATION: Modify User capadmin.pdf
+	ADMINISTRATION: Modify User.pdf
+	ADMINISTRATION: PHONE LIST.pdf
+	ADMINISTRATION: REPORTS.pdf
+	ADMINISTRATION: Remote Agents.pdf
+	ADMINISTRATION: SECTION ADMIN CHANGE LOG.pdf
+	ADMINISTRATION: SERVER LIST.pdf
+	ADMINISTRATION: SETTINGS CONTAINTER LIST.pdf
+	ADMINISTRATION: SYSTEM SNAPSHOT STATS.pdf
+	ADMINISTRATION: SYSTEM SUMMARY STATS.pdf
+	ADMINISTRATION: Scripts.pdf
+	ADMINISTRATION: Search Form.pdf
+	ADMINISTRATION: Shifts.pdf
+	ADMINISTRATION: User Group Bulk Change.pdf
+	ADMINISTRATION: User Groups.pdf
+	ADMINISTRATION: User Stats.pdf
+	ADMINISTRATION: User Status.pdf
+	ADMINISTRATION: Users List.pdf
+	ALL_DASHBOARDS_FIXED.md
+	Agent_Manual_LowRes_BW.pdf
+	CAMPAIGN_REFERENCE.md
+	CID groups screenshot.png
+	COMPLETED_UPDATE.md
+	CORRECTED_STATS_SUMMARY.md
+	CURRENT_PERFORMANCE_DATA.md
+	Claude Vici Creations (46)/
+	Claude Vici Full Api.png
+	DiD inforamtion to know .png
+	EXTERNAL_TRANSFER_OVERFLOW_GUIDE.md
+	Example of what to fildeter out .csv
+	FASTEST_ACCESS.md
+	FINAL_SALES_METHODOLOGY.md
+	IMPORTANT_FIX_OCT31_2025.md
+	Lead full info pdf.pdf
+	Manager_Manual_LowRes_BW.pdf
+	Modify Lead.pdf
+	Outbound Calling Report Stl all list.pdf
+	Outbound IVR Report.pdf
+	Overflow instead of new campaings.png
+	README_STRUCTURE.md
+	Real-Time Main Report: ALL-ACTIVE.pdf
+	Real-Time Monitoring Log Report.pdf
+	Reset lead status.png
+	SALES_FIX_NOV_2025.md
+	SALES_METHODOLOGY_CHANGE.md
+	SALES_TRACKING_REFERENCE.md
+	SMS_SETUP.md
+	SOLUTIONS_FOR_REMOTE_AGENT_OVERFLOW.md
+	"Screenshot 2025-10-22 at 4.18.05\342\200\257PM.png"
+	TIME_MACHINE_README.md
+	User Time Sheet.pdf
+	VICIDIAL_ACCESS_RULES.md
+	VICIDIAL_API_ACCESS.md
+	VoIP Cost Report.pdf
+	WhatsApp Chat - S.E.E. Tech_Server Support copy.zip
+	WhatsApp Chat - S.E.E. Tech_Server Support.zip
+	White Label Vici (17)/
+	Zoiper, how non remote agents take opt ins.jpg
+	__pycache__/
+	check_download_progress.sh
+	check_overnight_progress.sh
+	cron.log
+	deep-icon.png
+	docs/
+	download.log
+	download_chunked.log
+	download_fast.log
+	download_from_sales.log
+	download_from_sales_v2.log
+	download_full_year.log
+	download_inverted.log
+	download_monthly.log
+	download_overnight.log
+	download_progressive.log
+	export_historical_data.py.OLD.BROKEN
+	github.log
+	historical_data.csv.CORRUPTED.backup
+	keep_downloading.sh
+	launchd.log
+	launchd_error.log
+	logs/
+	network_check.log
+	public/.swarm/
+	ranking info .png
+	ranking more explained.png
+	run_snapshot_with_network_check.sh
+	run_with_network_check.sh
+	sales_recordings (3)/
+	setup_twilio.sh
+	sms_optin_notifier.py.bak
+	snapshot_cron.log
+	snapshot_launchd.log
+	snapshot_launchd_error.log
+	snapshot_network_check.log
+	snapshots (16)/
+	universal_snapshot_cron.log
+	update_fast.py.OLD.USEDCSV
+	watchdog.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ Dashboard updated on GitHub Pages
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	.claude-flow/
+	.swarm/
+	00000239-PHOTO-2025-11-05-17-35-21.jpg
+	00000245-call_6a09cf604375b16e10883fa5862.mp3
+	00000278-PHOTO-2025-11-05-22-13-52.jpg
+	00000289-PHOTO-2025-11-07-13-46-56.jpg
+	00000294-PHOTO-2025-11-07-15-03-49.jpg
+	00000311-PHOTO-2025-11-08-10-30-01.jpg
+	00000316-PHOTO-2025-11-08-10-41-37.jpg
+	00000324-PHOTO-2025-11-08-10-46-26.jpg
+	00000334-PHOTO-2025-11-08-10-50-24.jpg
+	00000335-PHOTO-2025-11-08-10-51-18.jpg
+	00000336-PHOTO-2025-11-08-10-51-20.jpg
+	00000339-PHOTO-2025-11-08-10-53-07.jpg
+	00000340-PHOTO-2025-11-08-10-56-31.jpg
+	00000350-PHOTO-2025-11-08-11-34-26.jpg
+	00000351-PHOTO-2025-11-08-11-41-47.jpg
+	00000367-PHOTO-2025-11-11-12-33-02.jpg
+	00000368-PHOTO-2025-11-11-12-35-47.jpg
+	00000404-PHOTO-2025-11-11-13-54-20.jpg
+	00000405-PHOTO-2025-11-11-13-54-41.jpg
+	00000408-PHOTO-2025-11-11-14-18-50.jpg
+	ADMINISTRATION: ADMIN UTILITIES.pdf
+	ADMINISTRATION: ADMIN.pdf
+	ADMINISTRATION: Add Call Menu.pdf
+	ADMINISTRATION: Add Filter Phone Group.pdf
+	ADMINISTRATION: Add New DID.pdf
+	ADMINISTRATION: Add New DNC.pdf
+	ADMINISTRATION: Add New Filter.pdf
+	ADMINISTRATION: Add New In-Group.pdf
+	ADMINISTRATION: Add New List.pdf
+	ADMINISTRATION: Add New Remote Agents.pdf
+	ADMINISTRATION: Add New Script.pdf
+	ADMINISTRATION: Add New User.pdf
+	ADMINISTRATION: Add New Users Group.pdf
+	ADMINISTRATION: Audio Store format.pdf
+	ADMINISTRATION: Audio Store.pdf
+	ADMINISTRATION: Bulk Tools.pdf
+	ADMINISTRATION: CARRIER LIST 2.pdf
+	ADMINISTRATION: CARRIER LIST.pdf
+	ADMINISTRATION: CID GROUP LIST.pdf
+	ADMINISTRATION: CONF TEMPLATE LIST.pdf
+	ADMINISTRATION: CONFERENCE LIST.pdf
+	ADMINISTRATION: Call Menus.pdf
+	ADMINISTRATION: Campaign Agent Pause Codes.pdf
+	ADMINISTRATION: Campaign Areacode CID.pdf
+	ADMINISTRATION: Campaign Auto Alt Dial Statuses.pdf
+	ADMINISTRATION: Campaign HotKeys.pdf
+	ADMINISTRATION: Campaign Lead Recycle Entries.pdf
+	ADMINISTRATION: Campaign List Mixes.pdf
+	ADMINISTRATION: Campaign Presets.pdf
+	ADMINISTRATION: Campaign Statuses.pdf
+	ADMINISTRATION: Campaigns.pdf
+	ADMINISTRATION: Copy Call Menu.pdf
+	ADMINISTRATION: Copy DID.pdf
+	ADMINISTRATION: Copy In-Group.pdf
+	ADMINISTRATION: Copy User.pdf
+	ADMINISTRATION: Filter Phone Group Numbers.pdf
+	ADMINISTRATION: Filter Phone Groups.pdf
+	ADMINISTRATION: Filters.pdf
+	ADMINISTRATION: Group Hourly Stats.pdf
+	ADMINISTRATION: IP LISTS.pdf
+	ADMINISTRATION: In-Groups.pdf
+	ADMINISTRATION: Inbound.pdf
+	ADMINISTRATION: Lead Loader.pdf
+	ADMINISTRATION: Lead Search.pdf
+	ADMINISTRATION: Lists.pdf
+	ADMINISTRATION: MODIFY CARRIER 1 .pdf
+	ADMINISTRATION: MODIFY CARRIER 2.pdf
+	ADMINISTRATION: MODIFY SERVER 1.pdf
+	ADMINISTRATION: MODIFY SERVER CEAST2.pdf
+	ADMINISTRATION: MODIFY SERVER CEDB.pdf
+	ADMINISTRATION: MODIFY SERVER.pdf
+	ADMINISTRATION: MODIFY SYSTEM SETTINGS.pdf
+	ADMINISTRATION: MODIFY SYSTEM STATUSES.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0002.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0003.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0004.pdf
+	ADMINISTRATION: Modify Campaign - Detail view - 1027.pdf
+	ADMINISTRATION: Modify User 1.pdf
+	ADMINISTRATION: Modify User bytworth admin.pdf
+	ADMINISTRATION: Modify User capadmin.pdf
+	ADMINISTRATION: Modify User.pdf
+	ADMINISTRATION: PHONE LIST.pdf
+	ADMINISTRATION: REPORTS.pdf
+	ADMINISTRATION: Remote Agents.pdf
+	ADMINISTRATION: SECTION ADMIN CHANGE LOG.pdf
+	ADMINISTRATION: SERVER LIST.pdf
+	ADMINISTRATION: SETTINGS CONTAINTER LIST.pdf
+	ADMINISTRATION: SYSTEM SNAPSHOT STATS.pdf
+	ADMINISTRATION: SYSTEM SUMMARY STATS.pdf
+	ADMINISTRATION: Scripts.pdf
+	ADMINISTRATION: Search Form.pdf
+	ADMINISTRATION: Shifts.pdf
+	ADMINISTRATION: User Group Bulk Change.pdf
+	ADMINISTRATION: User Groups.pdf
+	ADMINISTRATION: User Stats.pdf
+	ADMINISTRATION: User Status.pdf
+	ADMINISTRATION: Users List.pdf
+	ALL_DASHBOARDS_FIXED.md
+	Agent_Manual_LowRes_BW.pdf
+	CAMPAIGN_REFERENCE.md
+	CID groups screenshot.png
+	COMPLETED_UPDATE.md
+	CORRECTED_STATS_SUMMARY.md
+	CURRENT_PERFORMANCE_DATA.md
+	Claude Vici Creations (46)/
+	Claude Vici Full Api.png
+	DiD inforamtion to know .png
+	EXTERNAL_TRANSFER_OVERFLOW_GUIDE.md
+	Example of what to fildeter out .csv
+	FASTEST_ACCESS.md
+	FINAL_SALES_METHODOLOGY.md
+	IMPORTANT_FIX_OCT31_2025.md
+	Lead full info pdf.pdf
+	Manager_Manual_LowRes_BW.pdf
+	Modify Lead.pdf
+	Outbound Calling Report Stl all list.pdf
+	Outbound IVR Report.pdf
+	Overflow instead of new campaings.png
+	README_STRUCTURE.md
+	Real-Time Main Report: ALL-ACTIVE.pdf
+	Real-Time Monitoring Log Report.pdf
+	Reset lead status.png
+	SALES_FIX_NOV_2025.md
+	SALES_METHODOLOGY_CHANGE.md
+	SALES_TRACKING_REFERENCE.md
+	SMS_SETUP.md
+	SOLUTIONS_FOR_REMOTE_AGENT_OVERFLOW.md
+	"Screenshot 2025-10-22 at 4.18.05\342\200\257PM.png"
+	TIME_MACHINE_README.md
+	User Time Sheet.pdf
+	VICIDIAL_ACCESS_RULES.md
+	VICIDIAL_API_ACCESS.md
+	VoIP Cost Report.pdf
+	WhatsApp Chat - S.E.E. Tech_Server Support copy.zip
+	WhatsApp Chat - S.E.E. Tech_Server Support.zip
+	White Label Vici (17)/
+	Zoiper, how non remote agents take opt ins.jpg
+	__pycache__/
+	check_download_progress.sh
+	check_overnight_progress.sh
+	cron.log
+	deep-icon.png
+	docs/
+	download.log
+	download_chunked.log
+	download_fast.log
+	download_from_sales.log
+	download_from_sales_v2.log
+	download_full_year.log
+	download_inverted.log
+	download_monthly.log
+	download_overnight.log
+	download_progressive.log
+	export_historical_data.py.OLD.BROKEN
+	github.log
+	historical_data.csv.CORRUPTED.backup
+	keep_downloading.sh
+	launchd.log
+	launchd_error.log
+	logs/
+	network_check.log
+	public/.swarm/
+	ranking info .png
+	ranking more explained.png
+	run_snapshot_with_network_check.sh
+	run_with_network_check.sh
+	sales_recordings (3)/
+	setup_twilio.sh
+	sms_optin_notifier.py.bak
+	snapshot_cron.log
+	snapshot_launchd.log
+	snapshot_launchd_error.log
+	snapshot_network_check.log
+	snapshots (16)/
+	universal_snapshot_cron.log
+	update_fast.py.OLD.USEDCSV
+	watchdog.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ Dashboard updated on GitHub Pages
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	.claude-flow/
+	.swarm/
+	00000239-PHOTO-2025-11-05-17-35-21.jpg
+	00000245-call_6a09cf604375b16e10883fa5862.mp3
+	00000278-PHOTO-2025-11-05-22-13-52.jpg
+	00000289-PHOTO-2025-11-07-13-46-56.jpg
+	00000294-PHOTO-2025-11-07-15-03-49.jpg
+	00000311-PHOTO-2025-11-08-10-30-01.jpg
+	00000316-PHOTO-2025-11-08-10-41-37.jpg
+	00000324-PHOTO-2025-11-08-10-46-26.jpg
+	00000334-PHOTO-2025-11-08-10-50-24.jpg
+	00000335-PHOTO-2025-11-08-10-51-18.jpg
+	00000336-PHOTO-2025-11-08-10-51-20.jpg
+	00000339-PHOTO-2025-11-08-10-53-07.jpg
+	00000340-PHOTO-2025-11-08-10-56-31.jpg
+	00000350-PHOTO-2025-11-08-11-34-26.jpg
+	00000351-PHOTO-2025-11-08-11-41-47.jpg
+	00000367-PHOTO-2025-11-11-12-33-02.jpg
+	00000368-PHOTO-2025-11-11-12-35-47.jpg
+	00000404-PHOTO-2025-11-11-13-54-20.jpg
+	00000405-PHOTO-2025-11-11-13-54-41.jpg
+	00000408-PHOTO-2025-11-11-14-18-50.jpg
+	ADMINISTRATION: ADMIN UTILITIES.pdf
+	ADMINISTRATION: ADMIN.pdf
+	ADMINISTRATION: Add Call Menu.pdf
+	ADMINISTRATION: Add Filter Phone Group.pdf
+	ADMINISTRATION: Add New DID.pdf
+	ADMINISTRATION: Add New DNC.pdf
+	ADMINISTRATION: Add New Filter.pdf
+	ADMINISTRATION: Add New In-Group.pdf
+	ADMINISTRATION: Add New List.pdf
+	ADMINISTRATION: Add New Remote Agents.pdf
+	ADMINISTRATION: Add New Script.pdf
+	ADMINISTRATION: Add New User.pdf
+	ADMINISTRATION: Add New Users Group.pdf
+	ADMINISTRATION: Audio Store format.pdf
+	ADMINISTRATION: Audio Store.pdf
+	ADMINISTRATION: Bulk Tools.pdf
+	ADMINISTRATION: CARRIER LIST 2.pdf
+	ADMINISTRATION: CARRIER LIST.pdf
+	ADMINISTRATION: CID GROUP LIST.pdf
+	ADMINISTRATION: CONF TEMPLATE LIST.pdf
+	ADMINISTRATION: CONFERENCE LIST.pdf
+	ADMINISTRATION: Call Menus.pdf
+	ADMINISTRATION: Campaign Agent Pause Codes.pdf
+	ADMINISTRATION: Campaign Areacode CID.pdf
+	ADMINISTRATION: Campaign Auto Alt Dial Statuses.pdf
+	ADMINISTRATION: Campaign HotKeys.pdf
+	ADMINISTRATION: Campaign Lead Recycle Entries.pdf
+	ADMINISTRATION: Campaign List Mixes.pdf
+	ADMINISTRATION: Campaign Presets.pdf
+	ADMINISTRATION: Campaign Statuses.pdf
+	ADMINISTRATION: Campaigns.pdf
+	ADMINISTRATION: Copy Call Menu.pdf
+	ADMINISTRATION: Copy DID.pdf
+	ADMINISTRATION: Copy In-Group.pdf
+	ADMINISTRATION: Copy User.pdf
+	ADMINISTRATION: Filter Phone Group Numbers.pdf
+	ADMINISTRATION: Filter Phone Groups.pdf
+	ADMINISTRATION: Filters.pdf
+	ADMINISTRATION: Group Hourly Stats.pdf
+	ADMINISTRATION: IP LISTS.pdf
+	ADMINISTRATION: In-Groups.pdf
+	ADMINISTRATION: Inbound.pdf
+	ADMINISTRATION: Lead Loader.pdf
+	ADMINISTRATION: Lead Search.pdf
+	ADMINISTRATION: Lists.pdf
+	ADMINISTRATION: MODIFY CARRIER 1 .pdf
+	ADMINISTRATION: MODIFY CARRIER 2.pdf
+	ADMINISTRATION: MODIFY SERVER 1.pdf
+	ADMINISTRATION: MODIFY SERVER CEAST2.pdf
+	ADMINISTRATION: MODIFY SERVER CEDB.pdf
+	ADMINISTRATION: MODIFY SERVER.pdf
+	ADMINISTRATION: MODIFY SYSTEM SETTINGS.pdf
+	ADMINISTRATION: MODIFY SYSTEM STATUSES.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0002.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0003.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0004.pdf
+	ADMINISTRATION: Modify Campaign - Detail view - 1027.pdf
+	ADMINISTRATION: Modify User 1.pdf
+	ADMINISTRATION: Modify User bytworth admin.pdf
+	ADMINISTRATION: Modify User capadmin.pdf
+	ADMINISTRATION: Modify User.pdf
+	ADMINISTRATION: PHONE LIST.pdf
+	ADMINISTRATION: REPORTS.pdf
+	ADMINISTRATION: Remote Agents.pdf
+	ADMINISTRATION: SECTION ADMIN CHANGE LOG.pdf
+	ADMINISTRATION: SERVER LIST.pdf
+	ADMINISTRATION: SETTINGS CONTAINTER LIST.pdf
+	ADMINISTRATION: SYSTEM SNAPSHOT STATS.pdf
+	ADMINISTRATION: SYSTEM SUMMARY STATS.pdf
+	ADMINISTRATION: Scripts.pdf
+	ADMINISTRATION: Search Form.pdf
+	ADMINISTRATION: Shifts.pdf
+	ADMINISTRATION: User Group Bulk Change.pdf
+	ADMINISTRATION: User Groups.pdf
+	ADMINISTRATION: User Stats.pdf
+	ADMINISTRATION: User Status.pdf
+	ADMINISTRATION: Users List.pdf
+	ALL_DASHBOARDS_FIXED.md
+	Agent_Manual_LowRes_BW.pdf
+	CAMPAIGN_REFERENCE.md
+	CID groups screenshot.png
+	COMPLETED_UPDATE.md
+	CORRECTED_STATS_SUMMARY.md
+	CURRENT_PERFORMANCE_DATA.md
+	Claude Vici Creations (46)/
+	Claude Vici Full Api.png
+	DiD inforamtion to know .png
+	EXTERNAL_TRANSFER_OVERFLOW_GUIDE.md
+	Example of what to fildeter out .csv
+	FASTEST_ACCESS.md
+	FINAL_SALES_METHODOLOGY.md
+	IMPORTANT_FIX_OCT31_2025.md
+	Lead full info pdf.pdf
+	Manager_Manual_LowRes_BW.pdf
+	Modify Lead.pdf
+	Outbound Calling Report Stl all list.pdf
+	Outbound IVR Report.pdf
+	Overflow instead of new campaings.png
+	README_STRUCTURE.md
+	Real-Time Main Report: ALL-ACTIVE.pdf
+	Real-Time Monitoring Log Report.pdf
+	Reset lead status.png
+	SALES_FIX_NOV_2025.md
+	SALES_METHODOLOGY_CHANGE.md
+	SALES_TRACKING_REFERENCE.md
+	SMS_SETUP.md
+	SOLUTIONS_FOR_REMOTE_AGENT_OVERFLOW.md
+	"Screenshot 2025-10-22 at 4.18.05\342\200\257PM.png"
+	TIME_MACHINE_README.md
+	User Time Sheet.pdf
+	VICIDIAL_ACCESS_RULES.md
+	VICIDIAL_API_ACCESS.md
+	VoIP Cost Report.pdf
+	WhatsApp Chat - S.E.E. Tech_Server Support copy.zip
+	WhatsApp Chat - S.E.E. Tech_Server Support.zip
+	White Label Vici (17)/
+	Zoiper, how non remote agents take opt ins.jpg
+	__pycache__/
+	check_download_progress.sh
+	check_overnight_progress.sh
+	cron.log
+	deep-icon.png
+	docs/
+	download.log
+	download_chunked.log
+	download_fast.log
+	download_from_sales.log
+	download_from_sales_v2.log
+	download_full_year.log
+	download_inverted.log
+	download_monthly.log
+	download_overnight.log
+	download_progressive.log
+	export_historical_data.py.OLD.BROKEN
+	github.log
+	historical_data.csv.CORRUPTED.backup
+	keep_downloading.sh
+	launchd.log
+	launchd_error.log
+	logs/
+	network_check.log
+	public/.swarm/
+	ranking info .png
+	ranking more explained.png
+	run_snapshot_with_network_check.sh
+	run_with_network_check.sh
+	sales_recordings (3)/
+	setup_twilio.sh
+	sms_optin_notifier.py.bak
+	snapshot_cron.log
+	snapshot_launchd.log
+	snapshot_launchd_error.log
+	snapshot_network_check.log
+	snapshots (16)/
+	universal_snapshot_cron.log
+	update_fast.py.OLD.USEDCSV
+	watchdog.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ Dashboard updated on GitHub Pages
+On branch main
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	.claude-flow/
+	.swarm/
+	00000239-PHOTO-2025-11-05-17-35-21.jpg
+	00000245-call_6a09cf604375b16e10883fa5862.mp3
+	00000278-PHOTO-2025-11-05-22-13-52.jpg
+	00000289-PHOTO-2025-11-07-13-46-56.jpg
+	00000294-PHOTO-2025-11-07-15-03-49.jpg
+	00000311-PHOTO-2025-11-08-10-30-01.jpg
+	00000316-PHOTO-2025-11-08-10-41-37.jpg
+	00000324-PHOTO-2025-11-08-10-46-26.jpg
+	00000334-PHOTO-2025-11-08-10-50-24.jpg
+	00000335-PHOTO-2025-11-08-10-51-18.jpg
+	00000336-PHOTO-2025-11-08-10-51-20.jpg
+	00000339-PHOTO-2025-11-08-10-53-07.jpg
+	00000340-PHOTO-2025-11-08-10-56-31.jpg
+	00000350-PHOTO-2025-11-08-11-34-26.jpg
+	00000351-PHOTO-2025-11-08-11-41-47.jpg
+	00000367-PHOTO-2025-11-11-12-33-02.jpg
+	00000368-PHOTO-2025-11-11-12-35-47.jpg
+	00000404-PHOTO-2025-11-11-13-54-20.jpg
+	00000405-PHOTO-2025-11-11-13-54-41.jpg
+	00000408-PHOTO-2025-11-11-14-18-50.jpg
+	ADMINISTRATION: ADMIN UTILITIES.pdf
+	ADMINISTRATION: ADMIN.pdf
+	ADMINISTRATION: Add Call Menu.pdf
+	ADMINISTRATION: Add Filter Phone Group.pdf
+	ADMINISTRATION: Add New DID.pdf
+	ADMINISTRATION: Add New DNC.pdf
+	ADMINISTRATION: Add New Filter.pdf
+	ADMINISTRATION: Add New In-Group.pdf
+	ADMINISTRATION: Add New List.pdf
+	ADMINISTRATION: Add New Remote Agents.pdf
+	ADMINISTRATION: Add New Script.pdf
+	ADMINISTRATION: Add New User.pdf
+	ADMINISTRATION: Add New Users Group.pdf
+	ADMINISTRATION: Audio Store format.pdf
+	ADMINISTRATION: Audio Store.pdf
+	ADMINISTRATION: Bulk Tools.pdf
+	ADMINISTRATION: CARRIER LIST 2.pdf
+	ADMINISTRATION: CARRIER LIST.pdf
+	ADMINISTRATION: CID GROUP LIST.pdf
+	ADMINISTRATION: CONF TEMPLATE LIST.pdf
+	ADMINISTRATION: CONFERENCE LIST.pdf
+	ADMINISTRATION: Call Menus.pdf
+	ADMINISTRATION: Campaign Agent Pause Codes.pdf
+	ADMINISTRATION: Campaign Areacode CID.pdf
+	ADMINISTRATION: Campaign Auto Alt Dial Statuses.pdf
+	ADMINISTRATION: Campaign HotKeys.pdf
+	ADMINISTRATION: Campaign Lead Recycle Entries.pdf
+	ADMINISTRATION: Campaign List Mixes.pdf
+	ADMINISTRATION: Campaign Presets.pdf
+	ADMINISTRATION: Campaign Statuses.pdf
+	ADMINISTRATION: Campaigns.pdf
+	ADMINISTRATION: Copy Call Menu.pdf
+	ADMINISTRATION: Copy DID.pdf
+	ADMINISTRATION: Copy In-Group.pdf
+	ADMINISTRATION: Copy User.pdf
+	ADMINISTRATION: Filter Phone Group Numbers.pdf
+	ADMINISTRATION: Filter Phone Groups.pdf
+	ADMINISTRATION: Filters.pdf
+	ADMINISTRATION: Group Hourly Stats.pdf
+	ADMINISTRATION: IP LISTS.pdf
+	ADMINISTRATION: In-Groups.pdf
+	ADMINISTRATION: Inbound.pdf
+	ADMINISTRATION: Lead Loader.pdf
+	ADMINISTRATION: Lead Search.pdf
+	ADMINISTRATION: Lists.pdf
+	ADMINISTRATION: MODIFY CARRIER 1 .pdf
+	ADMINISTRATION: MODIFY CARRIER 2.pdf
+	ADMINISTRATION: MODIFY SERVER 1.pdf
+	ADMINISTRATION: MODIFY SERVER CEAST2.pdf
+	ADMINISTRATION: MODIFY SERVER CEDB.pdf
+	ADMINISTRATION: MODIFY SERVER.pdf
+	ADMINISTRATION: MODIFY SYSTEM SETTINGS.pdf
+	ADMINISTRATION: MODIFY SYSTEM STATUSES.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0002.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0003.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0004.pdf
+	ADMINISTRATION: Modify Campaign - Detail view - 1027.pdf
+	ADMINISTRATION: Modify User 1.pdf
+	ADMINISTRATION: Modify User bytworth admin.pdf
+	ADMINISTRATION: Modify User capadmin.pdf
+	ADMINISTRATION: Modify User.pdf
+	ADMINISTRATION: PHONE LIST.pdf
+	ADMINISTRATION: REPORTS.pdf
+	ADMINISTRATION: Remote Agents.pdf
+	ADMINISTRATION: SECTION ADMIN CHANGE LOG.pdf
+	ADMINISTRATION: SERVER LIST.pdf
+	ADMINISTRATION: SETTINGS CONTAINTER LIST.pdf
+	ADMINISTRATION: SYSTEM SNAPSHOT STATS.pdf
+	ADMINISTRATION: SYSTEM SUMMARY STATS.pdf
+	ADMINISTRATION: Scripts.pdf
+	ADMINISTRATION: Search Form.pdf
+	ADMINISTRATION: Shifts.pdf
+	ADMINISTRATION: User Group Bulk Change.pdf
+	ADMINISTRATION: User Groups.pdf
+	ADMINISTRATION: User Stats.pdf
+	ADMINISTRATION: User Status.pdf
+	ADMINISTRATION: Users List.pdf
+	ALL_DASHBOARDS_FIXED.md
+	Agent_Manual_LowRes_BW.pdf
+	CAMPAIGN_REFERENCE.md
+	CID groups screenshot.png
+	COMPLETED_UPDATE.md
+	CORRECTED_STATS_SUMMARY.md
+	CURRENT_PERFORMANCE_DATA.md
+	Claude Vici Creations (46)/
+	Claude Vici Full Api.png
+	DiD inforamtion to know .png
+	EXTERNAL_TRANSFER_OVERFLOW_GUIDE.md
+	Example of what to fildeter out .csv
+	FASTEST_ACCESS.md
+	FINAL_SALES_METHODOLOGY.md
+	IMPORTANT_FIX_OCT31_2025.md
+	Lead full info pdf.pdf
+	Manager_Manual_LowRes_BW.pdf
+	Modify Lead.pdf
+	Outbound Calling Report Stl all list.pdf
+	Outbound IVR Report.pdf
+	Overflow instead of new campaings.png
+	README_STRUCTURE.md
+	Real-Time Main Report: ALL-ACTIVE.pdf
+	Real-Time Monitoring Log Report.pdf
+	Reset lead status.png
+	SALES_FIX_NOV_2025.md
+	SALES_METHODOLOGY_CHANGE.md
+	SALES_TRACKING_REFERENCE.md
+	SMS_SETUP.md
+	SOLUTIONS_FOR_REMOTE_AGENT_OVERFLOW.md
+	"Screenshot 2025-10-22 at 4.18.05\342\200\257PM.png"
+	TIME_MACHINE_README.md
+	User Time Sheet.pdf
+	VICIDIAL_ACCESS_RULES.md
+	VICIDIAL_API_ACCESS.md
+	VoIP Cost Report.pdf
+	WhatsApp Chat - S.E.E. Tech_Server Support copy.zip
+	WhatsApp Chat - S.E.E. Tech_Server Support.zip
+	White Label Vici (17)/
+	Zoiper, how non remote agents take opt ins.jpg
+	__pycache__/
+	check_download_progress.sh
+	check_overnight_progress.sh
+	cron.log
+	deep-icon.png
+	docs/
+	download.log
+	download_chunked.log
+	download_fast.log
+	download_from_sales.log
+	download_from_sales_v2.log
+	download_full_year.log
+	download_inverted.log
+	download_monthly.log
+	download_overnight.log
+	download_progressive.log
+	export_historical_data.py.OLD.BROKEN
+	github.log
+	historical_data.csv.CORRUPTED.backup
+	keep_downloading.sh
+	launchd.log
+	launchd_error.log
+	logs/
+	network_check.log
+	public/.swarm/
+	ranking info .png
+	ranking more explained.png
+	run_snapshot_with_network_check.sh
+	run_with_network_check.sh
+	sales_recordings (3)/
+	setup_twilio.sh
+	sms_optin_notifier.py.bak
+	snapshot_cron.log
+	snapshot_launchd.log
+	snapshot_launchd_error.log
+	snapshot_network_check.log
+	snapshots (16)/
+	universal_snapshot_cron.log
+	update_fast.py.OLD.USEDCSV
+	watchdog.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ Dashboard updated on GitHub Pages
+On branch main
+Your branch is ahead of 'origin/main' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	.claude-flow/
+	.swarm/
+	00000239-PHOTO-2025-11-05-17-35-21.jpg
+	00000245-call_6a09cf604375b16e10883fa5862.mp3
+	00000278-PHOTO-2025-11-05-22-13-52.jpg
+	00000289-PHOTO-2025-11-07-13-46-56.jpg
+	00000294-PHOTO-2025-11-07-15-03-49.jpg
+	00000311-PHOTO-2025-11-08-10-30-01.jpg
+	00000316-PHOTO-2025-11-08-10-41-37.jpg
+	00000324-PHOTO-2025-11-08-10-46-26.jpg
+	00000334-PHOTO-2025-11-08-10-50-24.jpg
+	00000335-PHOTO-2025-11-08-10-51-18.jpg
+	00000336-PHOTO-2025-11-08-10-51-20.jpg
+	00000339-PHOTO-2025-11-08-10-53-07.jpg
+	00000340-PHOTO-2025-11-08-10-56-31.jpg
+	00000350-PHOTO-2025-11-08-11-34-26.jpg
+	00000351-PHOTO-2025-11-08-11-41-47.jpg
+	00000367-PHOTO-2025-11-11-12-33-02.jpg
+	00000368-PHOTO-2025-11-11-12-35-47.jpg
+	00000404-PHOTO-2025-11-11-13-54-20.jpg
+	00000405-PHOTO-2025-11-11-13-54-41.jpg
+	00000408-PHOTO-2025-11-11-14-18-50.jpg
+	ADMINISTRATION: ADMIN UTILITIES.pdf
+	ADMINISTRATION: ADMIN.pdf
+	ADMINISTRATION: Add Call Menu.pdf
+	ADMINISTRATION: Add Filter Phone Group.pdf
+	ADMINISTRATION: Add New DID.pdf
+	ADMINISTRATION: Add New DNC.pdf
+	ADMINISTRATION: Add New Filter.pdf
+	ADMINISTRATION: Add New In-Group.pdf
+	ADMINISTRATION: Add New List.pdf
+	ADMINISTRATION: Add New Remote Agents.pdf
+	ADMINISTRATION: Add New Script.pdf
+	ADMINISTRATION: Add New User.pdf
+	ADMINISTRATION: Add New Users Group.pdf
+	ADMINISTRATION: Audio Store format.pdf
+	ADMINISTRATION: Audio Store.pdf
+	ADMINISTRATION: Bulk Tools.pdf
+	ADMINISTRATION: CARRIER LIST 2.pdf
+	ADMINISTRATION: CARRIER LIST.pdf
+	ADMINISTRATION: CID GROUP LIST.pdf
+	ADMINISTRATION: CONF TEMPLATE LIST.pdf
+	ADMINISTRATION: CONFERENCE LIST.pdf
+	ADMINISTRATION: Call Menus.pdf
+	ADMINISTRATION: Campaign Agent Pause Codes.pdf
+	ADMINISTRATION: Campaign Areacode CID.pdf
+	ADMINISTRATION: Campaign Auto Alt Dial Statuses.pdf
+	ADMINISTRATION: Campaign HotKeys.pdf
+	ADMINISTRATION: Campaign Lead Recycle Entries.pdf
+	ADMINISTRATION: Campaign List Mixes.pdf
+	ADMINISTRATION: Campaign Presets.pdf
+	ADMINISTRATION: Campaign Statuses.pdf
+	ADMINISTRATION: Campaigns.pdf
+	ADMINISTRATION: Copy Call Menu.pdf
+	ADMINISTRATION: Copy DID.pdf
+	ADMINISTRATION: Copy In-Group.pdf
+	ADMINISTRATION: Copy User.pdf
+	ADMINISTRATION: Filter Phone Group Numbers.pdf
+	ADMINISTRATION: Filter Phone Groups.pdf
+	ADMINISTRATION: Filters.pdf
+	ADMINISTRATION: Group Hourly Stats.pdf
+	ADMINISTRATION: IP LISTS.pdf
+	ADMINISTRATION: In-Groups.pdf
+	ADMINISTRATION: Inbound.pdf
+	ADMINISTRATION: Lead Loader.pdf
+	ADMINISTRATION: Lead Search.pdf
+	ADMINISTRATION: Lists.pdf
+	ADMINISTRATION: MODIFY CARRIER 1 .pdf
+	ADMINISTRATION: MODIFY CARRIER 2.pdf
+	ADMINISTRATION: MODIFY SERVER 1.pdf
+	ADMINISTRATION: MODIFY SERVER CEAST2.pdf
+	ADMINISTRATION: MODIFY SERVER CEDB.pdf
+	ADMINISTRATION: MODIFY SERVER.pdf
+	ADMINISTRATION: MODIFY SYSTEM SETTINGS.pdf
+	ADMINISTRATION: MODIFY SYSTEM STATUSES.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0002.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0003.pdf
+	ADMINISTRATION: Modify Campaign - Basic View - 0004.pdf
+	ADMINISTRATION: Modify Campaign - Detail view - 1027.pdf
+	ADMINISTRATION: Modify User 1.pdf
+	ADMINISTRATION: Modify User bytworth admin.pdf
+	ADMINISTRATION: Modify User capadmin.pdf
+	ADMINISTRATION: Modify User.pdf
+	ADMINISTRATION: PHONE LIST.pdf
+	ADMINISTRATION: REPORTS.pdf
+	ADMINISTRATION: Remote Agents.pdf
+	ADMINISTRATION: SECTION ADMIN CHANGE LOG.pdf
+	ADMINISTRATION: SERVER LIST.pdf
+	ADMINISTRATION: SETTINGS CONTAINTER LIST.pdf
+	ADMINISTRATION: SYSTEM SNAPSHOT STATS.pdf
+	ADMINISTRATION: SYSTEM SUMMARY STATS.pdf
+	ADMINISTRATION: Scripts.pdf
+	ADMINISTRATION: Search Form.pdf
+	ADMINISTRATION: Shifts.pdf
+	ADMINISTRATION: User Group Bulk Change.pdf
+	ADMINISTRATION: User Groups.pdf
+	ADMINISTRATION: User Stats.pdf
+	ADMINISTRATION: User Status.pdf
+	ADMINISTRATION: Users List.pdf
+	ALL_DASHBOARDS_FIXED.md
+	Agent_Manual_LowRes_BW.pdf
+	CAMPAIGN_REFERENCE.md
+	CID groups screenshot.png
+	COMPLETED_UPDATE.md
+	CORRECTED_STATS_SUMMARY.md
+	CURRENT_PERFORMANCE_DATA.md
+	Claude Vici Creations (46)/
+	Claude Vici Full Api.png
+	DiD inforamtion to know .png
+	EXTERNAL_TRANSFER_OVERFLOW_GUIDE.md
+	Example of what to fildeter out .csv
+	FASTEST_ACCESS.md
+	FINAL_SALES_METHODOLOGY.md
+	IMPORTANT_FIX_OCT31_2025.md
+	Lead full info pdf.pdf
+	Manager_Manual_LowRes_BW.pdf
+	Modify Lead.pdf
+	Outbound Calling Report Stl all list.pdf
+	Outbound IVR Report.pdf
+	Overflow instead of new campaings.png
+	README_STRUCTURE.md
+	Real-Time Main Report: ALL-ACTIVE.pdf
+	Real-Time Monitoring Log Report.pdf
+	Reset lead status.png
+	SALES_FIX_NOV_2025.md
+	SALES_METHODOLOGY_CHANGE.md
+	SALES_TRACKING_REFERENCE.md
+	SMS_SETUP.md
+	SOLUTIONS_FOR_REMOTE_AGENT_OVERFLOW.md
+	"Screenshot 2025-10-22 at 4.18.05\342\200\257PM.png"
+	TIME_MACHINE_README.md
+	User Time Sheet.pdf
+	VICIDIAL_ACCESS_RULES.md
+	VICIDIAL_API_ACCESS.md
+	VoIP Cost Report.pdf
+	WhatsApp Chat - S.E.E. Tech_Server Support copy.zip
+	WhatsApp Chat - S.E.E. Tech_Server Support.zip
+	White Label Vici (17)/
+	Zoiper, how non remote agents take opt ins.jpg
+	__pycache__/
+	check_download_progress.sh
+	check_overnight_progress.sh
+	cron.log
+	deep-icon.png
+	docs/
+	download.log
+	download_chunked.log
+	download_fast.log
+	download_from_sales.log
+	download_from_sales_v2.log
+	download_full_year.log
+	download_inverted.log
+	download_monthly.log
+	download_overnight.log
+	download_progressive.log
+	export_historical_data.py.OLD.BROKEN
+	github.log
+	historical_data.csv.CORRUPTED.backup
+	keep_downloading.sh
+	launchd.log
+	launchd_error.log
+	logs/
+	network_check.log
+	public/.swarm/
+	ranking info .png
+	ranking more explained.png
+	run_snapshot_with_network_check.sh
+	run_with_network_check.sh
+	sales_recordings (3)/
+	setup_twilio.sh
+	sms_optin_notifier.py.bak
+	snapshot_cron.log
+	snapshot_launchd.log
+	snapshot_launchd_error.log
+	snapshot_network_check.log
+	snapshots (16)/
+	universal_snapshot_cron.log
+	update_fast.py.OLD.USEDCSV
+	watchdog.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ Dashboard updated on GitHub Pages

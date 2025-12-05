@@ -1,0 +1,79 @@
+#!/usr/bin/env python3
+"""
+ONE-TIME EXPORT: Export 90 days of historical call data to CSV
+This avoids heavy database queries - run once, then use cached data
+"""
+
+import pymysql
+import csv
+import os
+from datetime import datetime
+
+# Database credentials
+DB_HOST = "67.198.205.116"
+DB_NAME = "asterisk"
+DB_USER = "cron"
+DB_PASS = "byt3w0rt4"
+DB_PORT = 3306
+
+print("🔄 Connecting to Vicidial database...")
+conn = pymysql.connect(
+    host=DB_HOST,
+    user=DB_USER,
+    password=DB_PASS,
+    database=DB_NAME,
+    port=DB_PORT,
+    connect_timeout=30
+)
+
+cursor = conn.cursor(pymysql.cursors.DictCursor)
+
+print("📊 Exporting last 90 days of call data (this will take a few minutes)...")
+print("⚠️  Run this during off-peak hours to avoid impacting calls")
+
+# Export aggregated data to reduce size
+query = """
+SELECT
+    DATE(call_date) as date,
+    campaign_id,
+    SUBSTRING(phone_number, 1, 3) as area_code,
+    status,
+    COUNT(*) as call_count
+FROM vicidial_log
+WHERE call_date >= DATE_SUB(CURDATE(), INTERVAL 90 DAY)
+GROUP BY DATE(call_date), campaign_id, area_code, status
+ORDER BY date ASC
+"""
+
+cursor.execute(query)
+
+# Write to CSV
+output_file = "historical_data.csv"
+with open(output_file, 'w', newline='') as csvfile:
+    fieldnames = ['date', 'campaign_id', 'area_code', 'status', 'call_count']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+
+    row_count = 0
+    for row in cursor:
+        writer.writerow({
+            'date': row['date'].strftime('%Y-%m-%d'),
+            'campaign_id': row['campaign_id'],
+            'area_code': row['area_code'],
+            'status': row['status'],
+            'call_count': row['call_count']
+        })
+        row_count += 1
+
+        if row_count % 10000 == 0:
+            print(f"  Exported {row_count:,} rows...")
+
+cursor.close()
+conn.close()
+
+print(f"\n✅ Export complete: {output_file}")
+print(f"📦 Total rows: {row_count:,}")
+if os.path.exists(output_file):
+    print(f"💾 File size: {round(os.path.getsize(output_file) / 1024 / 1024, 2)} MB")
+print("\n🚀 Now you can run update_fast.py daily - it will only query TODAY's data!")

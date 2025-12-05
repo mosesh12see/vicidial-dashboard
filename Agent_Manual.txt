@@ -1,0 +1,1289 @@
+THIS IS THE FREE SAMPLE VERSION OF THE
+AGENT MANUAL.
+IF YOU WOULD LIKE THIS MANUAL WITH FULL
+COLOR SCREENSHOTS, PLEASE GO TO
+HTTP://WWW.VICIDIAL.ORG TO PURCHASE THE FULL
+VERSION OF THE VICIDIAL AGENT MANUAL
+
+SAMPLE
+®
+
+AGENT MANUAL
+for VICIdial release 2.7
+By Matt Florell
+
+2013-05-06 version
+
+©2013 Matt Florell
+
+FREE SAMPLE VERSION
+
+1
+NPZ8NF
+
+©2013 Matt Florell
+
+Table of Contents
+INTRODUCTION.....................................................................................................................................4
+What is VICIdial®?...............................................................................................................................4
+How does the agent screen work?.........................................................................................................4
+OVERVIEW OF AGENT CLIENT-SCREEN FUNCTIONS..................................................................5
+UNIVERSAL FEATURES...................................................................................................................5
+PROPER LOGIN AND LOGOUT PROCEDURES............................................................................5
+Pause Codes......................................................................................................................................7
+Logging Out......................................................................................................................................8
+SCRIPT TAB........................................................................................................................................8
+FORM TAB...........................................................................................................................................9
+CALL RECORDING............................................................................................................................9
+WEB FORM........................................................................................................................................10
+CRM POPUP LOGIN.........................................................................................................................10
+PARK CALL.......................................................................................................................................10
+TRANSFER CONFERENCE.............................................................................................................11
+HANGUP XFER LINE..................................................................................................................11
+HANGUP BOTH LINES...............................................................................................................11
+LEAVE 3-WAY CALL..................................................................................................................11
+TRANSFER CONFERENCE TYPES................................................................................................12
+Agent to Agent, Blind Transfer......................................................................................................12
+Agent to Agent, Consultative Transfer...........................................................................................13
+Agent to Agent, Parked Transfer....................................................................................................14
+Re-Queue Call................................................................................................................................15
+Agent to Outside Line, Blind Transfer...........................................................................................16
+Agent to Outside Line, Consultative Transfer................................................................................17
+Agent to Outside Line, Park Customer Transfer............................................................................18
+Quick Transfer................................................................................................................................19
+AGENTDIRECT Transfers............................................................................................................20
+VOICEMAIL MESSAGE...................................................................................................................21
+PRESETS - DTMF and NUMBER to CALL.....................................................................................21
+SENDING DTMF DIGITS.................................................................................................................21
+TRANSFER PRESETS – List of Preset Phone Numbers...................................................................21
+Agent Choose CALLER ID................................................................................................................21
+USING HOTKEYS.............................................................................................................................22
+VOLUME CONTROL........................................................................................................................22
+COMMENTS......................................................................................................................................23
+CALL NOTES.....................................................................................................................................23
+DISPOSITIONING A CALL..............................................................................................................24
+Customer is still on the line............................................................................................................24
+Minimize to see customer details...................................................................................................25
+Open web form after dispositioning...............................................................................................25
+Wrapup Time After Call.................................................................................................................25
+PRE-CALL WORK.............................................................................................................................25
+CALLS IN THE SESSION, AND FORCED HANGUPS..................................................................26
+CALLS IN QUEUE, AND TAKE CALL...........................................................................................27
+AGENTS VIEW SIDEBAR................................................................................................................28
+CALLBACKS.....................................................................................................................................29
+FREE SAMPLE VERSION
+
+2
+
+©2013 Matt Florell
+
+Setting a Callback...........................................................................................................................29
+Receiving a Callback......................................................................................................................30
+Agent-only Callbacks.....................................................................................................................30
+Callback Alert Types......................................................................................................................31
+AGENT CALL LOG...........................................................................................................................31
+AGENT BLIND MONITORING ALERT..........................................................................................31
+AGENT LEAD SEARCH...................................................................................................................32
+NEW LEAD, SEARCH LEAD MANUAL DIALING, AND FAST DIAL.......................................33
+Manual Dial....................................................................................................................................33
+Fast Dial..........................................................................................................................................34
+Group Alias Select..........................................................................................................................34
+SESSION WARNING MESSAGES...................................................................................................35
+MANUAL DIALING MODE.............................................................................................................36
+PREVIEW DIALING..........................................................................................................................36
+MULTIPLE NUMBER-PER-LEAD DIALING.................................................................................37
+TERRITORY DIALING.....................................................................................................................38
+CALL TIME MISMATCH ALERT...................................................................................................38
+AGENT INTERFACE ALERT...........................................................................................................39
+AUTO-DIAL MODE..........................................................................................................................39
+CALL CONTROL...............................................................................................................................39
+PAUSE AND RESUME PROCEDURE.............................................................................................39
+MULTIPLE NUMBER-PER-LEAD DIALING.................................................................................39
+INBOUND AND CLOSER FEATURES...........................................................................................40
+LOGIN SELECT GROUPS MENU...................................................................................................40
+DISPLAY AND CALL INFO.............................................................................................................41
+Ring All...............................................................................................................................................41
+IN-GROUP MANUAL DIAL.............................................................................................................41
+INBOUND CAMPAIGN LEAD SEARCH........................................................................................42
+EMAIL................................................................................................................................................43
+Time-Clock Punch-in Punch-out.........................................................................................................44
+LOGGING INTO VICIdial OUTSIDE OF THE OFFICE......................................................................45
+WEB LOGIN.......................................................................................................................................45
+PHONE ISSUES AND OPTIONS......................................................................................................45
+EXTERNAL USER ISSUES..............................................................................................................45
+MANAGER FUNCTIONS......................................................................................................................47
+CLOSING................................................................................................................................................48
+FREQUENTLY ASKED QUESTIONS(FAQ).......................................................................................49
+- I logged in and there was already an agent in my session, what happened?....................................49
+- How much delay is there before a customer gets to my phone? ......................................................49
+- What about Answering Machines and detecting them?....................................................................49
+- What Internet web browsers work with VICIdial?...........................................................................49
+Figures List..............................................................................................................................................50
+THIS IS THE FREE SAMPLE VERSION OF THE AGENT MANUAL.
+IF YOU WOULD LIKE THIS MANUAL WITH FULL COLOR SCREENSHOTS, PLEASE GO TO
+HTTP://WWW.VICIDIAL.ORG TO PURCHASE THE FULL VERSION OF THE VICIDIAL AGENT MANUAL
+AND HELP SUPPORT THE PROJECT
+
+FREE SAMPLE VERSION
+
+3
+
+©2013 Matt Florell
+
+INTRODUCTION
+This manual is meant as a resource for Call Center Agents and Managers to help them to better
+understand how the VICIdial web client works, and to learn how to use all of it's features correctly as
+well as answer questions as to why things work the way they do within the VICIdial Call Center Suite.
+
+What is VICIdial®?
+Simply put, VICIdial is a call center software package that sends calls to an agent and allows an agent
+to place calls. It can run in an inbound, outbound(as predictive or manual dialing) or blended capacity
+(handling inbound and outbound calls in the same agent session). There is also the ability to allow for
+Interactive Voice Response(IVR) applications interacting with customers' calls.
+
+How does the agent screen work?
+The VICIdial agent screen is basically an interactive web page. It allows the agent to interface with the
+system during the process of a call and do things such as add or modify information about the
+customer, conference in other parties, transfer the call, record and many other functions necessary in a
+call center. The VICIdial agent screen is available fully translated in English and Spanish, and partially
+translated in French, German, Italian, Portuguese, Brazilian Portuguese, Greek, Polish, Slovak,
+Russian, Dutch, Traditional Chinese, Swedish, Danish and Japanese. The next few chapters will go
+over how to operate as a call center agent within VICIdial and will go into detail about how all of the
+agent features work.
+
+THIS IS THE FREE SAMPLE VERSION OF THE
+AGENT MANUAL.
+IF YOU WOULD LIKE THIS MANUAL WITH FULL
+COLOR SCREENSHOTS, PLEASE GO TO
+HTTP://WWW.VICIDIAL.ORG TO PURCHASE THE FULL
+VERSION OF THE VICIDIAL AGENT MANUAL AND
+HELP SUPPORT THE PROJECT
+
+FREE SAMPLE VERSION
+
+4
+
+©2013 Matt Florell
+
+OVERVIEW OF AGENT CLIENT-SCREEN FUNCTIONS
+UNIVERSAL FEATURES
+First we will go over the features that are accessible for all VICIdial users, whether predictive, manual
+dialing or inbound campaigns.
+
+Figure 1. VICIdial Agent/Phone Login Screen
+
+PROPER LOGIN AND LOGOUT PROCEDURES
+Depending on how your Manager has set up the VICIdial web link, you may be opening a web browser
+and clicking on a bookmark, or you may have an icon that you can click on on your desktop that says
+VICIdial. Open up VICIdial and you will see the login screen (see Figure 1). If you have a login for
+your phone first (it will show "Phone Login" and "Phone Password" fields) then enter the values in that
+your manager gave you for those fields. Then you will see the "User Login" "User Password" and
+"Campaign" fields in the form for you to fill out. Once these fields are filled in and your campaign
+selected, click on the "SUBMIT" button to login.
+There is is also a “Timeclock” link in the top left corner of your screen. This takes you to a timeclock
+punch-in screen which we will discuss later in this manual.
+After you click SUBMIT, your phone should ring (unless you are dialing into the system or using an
+integrated web phone). Pick the phone up (or answer it if you are using a soft-phone on your
+computer). When you answer the phone, you'll hear the system announce, “you are the only one in this
+session” indicating the connection is successful. From now on you should not hang up your phone
+unless you log out of VICIdial.
+If your phone does not ring and you do not see the active screen, then something is wrong. There are
+two messages that may appear on your screen: There are no leads in the hopper for this campaign, or
+you may see an error message in the campaign pull-down message. If there are no leads in the hopper,
+tell your manager, if you see an ERROR message then you should double-check your login and
+password and try logging in again.
+At this point you are logged in to VICIdial (see Figure 2) and you are PAUSED. Most of the buttons
+on the left side will not be activated until you are on a call, you may also see a INBOUND GROUP
+selection screen, which we will discuss further on in the manual. At the top of your screen you will see
+the ID of the phone you are currently connected through, as well as your user ID and name. Below that
+FREE SAMPLE VERSION
+
+5
+
+©2013 Matt Florell
+
+is a clock showing the current system time and your session ID, which you may need to reference later.
+Further below that, in the grey section, is the Status line which will show important information as calls
+are placed and received. Towards the bottom, below the Comments section, on the left side, you may
+see your dialing status and a count of the calls being dialed in your campaign at this moment as well as
+the number of dialable leads in your campaign (This is only useful in Autodial mode and may not
+appear on every screen). On the right side there may be a link to active Agent-only callbacks, if
+enabled. Next to that, you may see an ENTER A PAUSE CODE link. Below these you may see links
+to manually dial a customer (MANUAL DIAL and FAST DIAL) with a MUTE button on the far right.
+Below this is a small line of type that shows you the software version and build date as well as the
+address of the VICIdial server that you are connected to. At the bottom is a link to show the calls that
+are in your session. Clicking this link toggles the display on and off. There are also similar links to
+show you Agent View (status of other agents on your system) and Calls In Queue View (shows the
+inbound calls in queue that you are able to take) Farther on the right at the bottom is where the HOT
+KEYS activation section will appear if your campaign has Hot Keys activated.
+
+Figure 2. VICIdial Agent PAUSED
+
+If you are in Manual dial mode you will see a “Dial Next Number” button in place of the green PAUSE
+and RESUME buttons (these show up in auto-dial, inbound and blended modes). These are found in
+the top left corner of the grey section (In INBOUND-MAN mode you will have both a Dial-NextNumber button and pause/resume buttons). In this mode you may also see a check box to enable you to
+preview leads before dialing them (This us unavailable in auto-dial mode). In either dialing mode you
+may also see a check box below these buttons that allows you to dial alternate numbers if your manager
+FREE SAMPLE VERSION
+
+6
+
+©2013 Matt Florell
+
+has enabled that feature on the campaign you are currently logged into. To begin taking calls in Autodial and INBOUND-MAN modes you will need to press the RESUME button. This alerts the system
+that you ready and available to take calls. Once the dialer connects a customer call with you, you'll
+hear a short “Bloop” sound, and then the customer is on the line. In MANUAL DIAL click the “Dial
+Next Number” button to trigger the system to call the next lead.
+
+Figure 3. Selecting a Pause Code
+
+Pause Codes
+When you go on a break, your manager may want you to remain logged-in to the dialer, and simply go
+into PAUSE mode. This allows you to use a PAUSE CODE to show what kind of break you are on.
+To select a PAUSE CODE, just click on the text link below the Comments field labeled “ENTER A
+PAUSE CODE” and a screen will appear with choices of Pause Codes to enter for your Pause time (see
+Figure 3). Just click on one to select it, and you will immediately go back to the main screen.
+Even if you do not use a specific Pause Code, you should stay logged-in to the dialer in PAUSE mode
+until you start calling again, after your break has ended. Make sure to not hang up your phone at this
+time. A manager can also set pause code selection to be mandatory for every pause time you have.
+
+FREE SAMPLE VERSION
+
+7
+
+©2013 Matt Florell
+
+Logging Out
+When you are done with your shift, click on the "Logout" button in the upper right corner of the
+VICIdial screen. This will hangup your phone and show you a re-login link. If you click on the relogin link, all of the login information that you entered when you logged-in will show up on the screen
+and you can just click "SUBMIT" to log in again without having to fill it all in again.
+NOTE: At NO TIME should you press the BACK or FORWARD buttons in your web browser, this
+may log you out without you knowing. Also, DO NOT close your browser with the "X" at the top of
+the window. That may lead to your session not ending properly, you may not be logged out and may
+result in your losing clocked-in time on your VICIdial time-sheet.
+
+Figure 4. VICIdial Script Tab
+
+SCRIPT TAB
+When you login to VICIdial you will see several tabs at the top, left corner of the screen. The
+VICIdial Main tab is furthest to the left, followed by the SCRIPT tab. VICIdial is the main screen that
+shows all customer information in the system as well as a call timer, the name of the line your call is
+connected on and the local time where your customer is located. The SCRIPT tab's purpose is to show
+the agent a script to read with the customer's information put into the script or to open a website inside
+the SCRIPT tab that may show your company's CRM or ordering system. Your manager can define
+that the customer's name, address and other information are automatically put into the script for each
+FREE SAMPLE VERSION
+
+8
+
+©2013 Matt Florell
+
+call (see Figure 4). If it is set up by your manager, the SCRIPT tab may pop up when a call comes to
+you, otherwise you can get to the SCRIPT tab by just clicking on the tab portion at the top of you
+screen and you can go back to the main VICIdial screen by clicking on the VICIdial tab at the top.
+
+Figure 5. VICIdial Form Tab
+
+FORM TAB
+When a customer's record is shown from a list that contains Custom Fields, the FORM tab will appear.
+It's found just to the right of the SCRIPT tab, at the top of the agent's screen. The FORM tab's purpose
+is to display all of the Custom Fields created for this lead. Your manager will have created the fields
+for 2 reasons. They can pre-load the Custom Fields with detailed data about the customer not
+contained on the MAIN tab. Custom Fields can also be used to prompt you to ask the customer
+specific questions, while allowing you to retain their answers. The Custom Field types consist of either
+multiple choices selections, or text boxes for open ended questions. Your manager can also provide
+brief instructions for each field, which can be accessed by clicking the “help” link beside the field.
+
+CALL RECORDING
+The first button below your green call control buttons ("Dial Next Number", "PAUSE", "RESUME") is
+the "START RECORDING" button. This button will initiate an audio recording of your session. If
+your campaign is set up to do so, recording may be started at the beginning of every call you receive
+automatically without you needing to start it. This button may also be disabled if your manager has
+defined that in the campaign.
+Above the recording button you will see the filename of the recording which may contain things like
+the time, your ID number, the customer's phone number or other information. Also, the system
+FREE SAMPLE VERSION
+
+9
+
+©2013 Matt Florell
+
+recording ID will be displayed above the recording button. You may want to keep track of this number
+because it is the easiest way to retrieve the recording in the future if needed.
+
+WEB FORM
+This button will take all of the information about the call and the customer and send it to a new web
+browser window that has been set by the manager for this campaign. This allows for such things as the
+easy lookup of a customer's information in a company database or even a longer sales or survey form
+that can contain many fields. Your manager can also set the web form to open automatically when a
+new call arrives at your session. There is also an option for a second web form button that goes to a
+different webpage if your manager has enabled it.
+
+CRM POPUP LOGIN
+This feature pops open a new window as soon as you first log into the campaign, directing you to the
+accompanying CRM login page. It allows you to quickly login to the CRM while the dialer loads the
+agent window. This saves additional steps and ensures that when you are ready to take calls both
+systems will be available to you. This is an optional feature that is enabled by your manager. If this
+has been set for your campaign, make sure you do not have “popup blockers” enabled on your web
+browser, or it will not work correctly.
+
+PARK CALL
+The next button is the PARK CALL button and it allows you to send a customer that is in your session
+to a music-on-hold waiting area. Once you send the customer to park you can retrieve them by clicking
+on the button again. The park button can be set to a custom message by your manager if a recording
+has been setup for this campaign. When you click on the button to park a call, a timer above the button
+will start that lets you know how long the call has been on park.
+
+FREE SAMPLE VERSION
+
+10
+
+©2013 Matt Florell
+
+Figure 6. VICIdial Transfer Conference
+
+TRANSFER CONFERENCE
+This button opens a blue form that allows the agent to transfer the call or add a third party (see Figure
+6). There are 8 different kinds of conferences and transfers, 4 agent to agent, 3 agent to outside line,
+and Quick Transfer (which works for both). They are each explained below, by type. Once a
+conference has been created, you can exit it in one of 3 possible ways (indicated by 3 large buttons on
+the bottom left of your agent screen).
+
+HANGUP XFER LINE
+This button disconnects the conference, and leaves you and the customer still connected.
+
+HANGUP BOTH LINES
+This button disconnects everyone from the conference.
+
+LEAVE 3-WAY CALL
+This button allows you to drop from the conference leaving the customer and the other party still
+connected.
+
+FREE SAMPLE VERSION
+
+11
+
+©2013 Matt Florell
+
+TRANSFER CONFERENCE TYPES
+
+Figure 7. VICIdial Agent to Agent, Blind Transfer Diagram
+
+Agent to Agent, Blind Transfer
+When you want to immediately send the call over to an agent or In-group, without notifying the
+recipient or staying on the line with the customer.
+1. Click the “TRANSFER-CONF” button on the left side agent screen
+2. Select the In-group in the pull-down menu
+3. Click the “LOCAL CLOSER” button to send the call
+
+FREE SAMPLE VERSION
+
+12
+
+©2013 Matt Florell
+
+Figure 8. VICIdial Agent to Agent, Consultative Transfer Diagram
+
+Agent to Agent, Consultative Transfer
+When you want to transfer or conference a call to another agent or In-group, while you and the
+customer wait together. You can converse with the customer while waiting for the agent or In-group to
+pick up. When they do, all 3 of you will be on the line together.
+1. Click the “TRANSFER-CONF” button on the left side agent screen
+2. Select the In-group in the pull-down menu
+3. Select the “CONSULTATIVE” box
+4. Click the “DIAL WITH CUSTOMER” button to send the call
+
+FREE SAMPLE VERSION
+
+13
+
+©2013 Matt Florell
+
+Figure 9. VICIdial Agent to Agent, Parked Transfer Diagram
+
+Agent to Agent, Parked Transfer
+When you want to transfer or conference a call to another agent or In-group, but you wish to talk to
+them privately without the customer being on the line. This allows you to place the call while the
+customer is hold and speak with the other agent as long as you like before bringing the customer back
+on the line with all 3 of you.
+1. Click the “TRANSFER-CONF” button on the left side agent screen
+2. Select the In-group in the pull-down menu
+3. Select the “CONSULTATIVE” box
+4. Click on the “PARK CUSTOMER DIAL” button on the left side, directly above the
+“TRANSFER-CONF” button. This will both park the customer's call and initiate the
+consultative transfer to the selected In-group.
+5. You can bring the customer back on the line by selecting the “UNPARK CALL” button
+(this was labeled as the “PARK CALL” button prior to the Agent selecting “PARK
+CUSTOMER DIAL”)
+
+FREE SAMPLE VERSION
+
+14
+
+©2013 Matt Florell
+
+Figure 10. VICIdial Agent to Agent, Re-Queue Diagram
+
+Re-Queue Call
+This feature needs to be enabled on the campaign. You will have a “RE-QUEUE CALL” button on the
+left side of your screen just below the “QUICK TRANSFER” button. It allows you to take your
+current live call and transfer it to an AGENTDIRECT queue for you to answer at a later time. This will
+send the customer right back to you if you do not pause immediately (the campaign can be set to pause
+after every call). The purpose of this feature is to allow you the ability to click “GRAB CALL” that
+may appear in the “CALLS IN QUEUE” frame at the bottom of the screen when there are calls
+waiting.
+
+FREE SAMPLE VERSION
+
+15
+
+©2013 Matt Florell
+
+Figure 11. VICIdial Agent to Outside Line, Blind Transfer Diagram
+
+Agent to Outside Line, Blind Transfer
+You want to transfer or conference the call to a phone number (rather than an agent or In-group).
+1. Click the “TRANSFER-CONF” button on the left side agent screen
+2. Enter the phone number in the “NUMBER TO CALL” field
+3. Press the “BLIND TRANSFER” button to send the call
+
+FREE SAMPLE VERSION
+
+16
+
+©2013 Matt Florell
+
+Figure 12. VICIdial Agent to Outside Line, Consultative Transfer Diagram
+
+Agent to Outside Line, Consultative Transfer
+When you want to transfer or conference a call to a phone number (rather than another agent or Ingroup) while you and the customer are on the line together. You can converse with the customer while
+waiting for the phone number to pick up. When they do, all 3 of you will be on the line together.
+1. Click the “TRANSFER-CONF” button on the left side agent screen
+2. Enter the DID in the “NUMBER TO CALL” field
+3. Press the “DIAL WITH CUSTOMER” button directly below, to place the call.
+
+FREE SAMPLE VERSION
+
+17
+
+©2013 Matt Florell
+
+Figure 13. VICIdial Agent to Outside Line, Park Transfer Diagram
+
+Agent to Outside Line, Park Customer Transfer
+When you want to transfer or conference a call to a phone number (rather than another agent or Ingroup), but you wish to talk to them privately without the customer being on the line. This allows you
+to place the call while the customer is hold and speak with the other party as long as you like before
+bringing the Customer back on the line with all 3 of you.
+1. Click the “TRANSFER-CONF” button on the left side agent screen
+2. Enter the DID in the “NUMBER TO CALL” field
+3. Press the “PARK CUSTOMER DIAL” button (below & to the right). The customer will
+immediately be put on hold (Park) while the dialer places the call. Once the call completes
+to the phone number, you can talk to the 3rd party as long as you wish.
+4. You can bring the customer back on the line by selecting the “UNPARK CALL” button (this
+was labeled as the “PARK CALL” button prior to you selecting “PARK CUSTOMER
+DIAL”)
+
+FREE SAMPLE VERSION
+
+18
+
+©2013 Matt Florell
+
+Figure 14. VICIdial Quick Transfer Diagram
+
+Quick Transfer
+This feature needs to be enabled on the campaign. When this is active, there will be a “QUICK
+TRANSFER” button on the main agent screen, just below the “TRANSFER-CONF” button. This is
+the only transfer that does not require starting with the “TRANSFER-CONF” button. Your manager
+has pre-programmed either an In-group or phone number to that button. To initiate this transfer, press
+the “QUICK TRANSFER” button and the dialer immediately blind transfers the call to the preset
+location.
+
+FREE SAMPLE VERSION
+
+19
+
+©2013 Matt Florell
+
+Figure 15. VICIdial AGENTDIRECT Transfers
+
+AGENTDIRECT Transfers
+The AGENTDIRECT transfer is a special type of Agent to Agent Transfer. It allows you to transfer
+(or queue) a call for only one specific agent. If you select the AGENTDIRECT entry from the Local
+Closer pull-down menu, an “AGENTS” link will appear to the right of the number to call field. You
+can click on this link to see a list of the available agents that you can send an AGENTDIRECT transfer
+to. Simply click on one select it. From here you can either select the CONSULTATIVE checkbox and
+click “Dial with Customer” for a Consultative Transfer, or click on the “Local Closer” button to send
+the call as a Blind Transfer (See above for more detail).
+
+VOICEMAIL MESSAGE
+This is an option feature, set up by your manager. When you reach a voicemail or answering machine,
+this allows you to send the call to a pre-recorded message specific to your campaign. Open the
+transfer-conference frame and select the VM button (with a picture of a phone in the lower right side of
+the frame) to send the call. The pre-recorded message will play for the answering machine or
+FREE SAMPLE VERSION
+
+20
+
+©2013 Matt Florell
+
+voicemail and you will be sent to the Disposition screen.
+
+PRESETS - DTMF and NUMBER to CALL
+If your campaign is set up for it, you may have up to two presets in the Transfer-Conf frame for filling
+in the "Send DTMF" and "Number to Call" fields. These presets are small text links in the middle row
+of the Transfer-Conf frame on the far right that are labeled "D1" through "D5". When clicked, they
+will fill in values in the "Send DTMF" field and/or the "Number to Call" field.
+
+SENDING DTMF DIGITS
+Because of how VICIdial is setup, DTMF digits(the sound a key-press makes on your phone) are
+sometimes blocked from being played to other callers in your session. To send these DTMF digits you
+will need to enter them into the field next to the "SEND DTMF" button. If you want to add a pause
+between digits just add a comma ",". For multiple pauses just add more commas in a row.
+
+TRANSFER PRESETS – List of Preset Phone Numbers
+If your campaign is set up for it, you may have a button in the bottom right hand corner of main screen
+labeled “Presets”. Once clicked it will display a list of phone numbers that can be dialed. Depending
+on how your campaign has been configured this list will have the phone number & a corresponding
+name as an indicator, or just the name. By clicking on the name in the list, it places the phone number
+in the Transfer-conference section's “Number to Dial” field.
+
+Agent Choose CALLER ID
+If the manager has enabled this feature, there will be an “Agent Choose” field in the Transferconference frame. This allows you to select, on a per call basis, which of several caller ID options you
+will display when placing a call to a third party. Your choices are:
+Campaign: displays the default caller ID for the campaign you are currently logged into
+Customer: displays the phone number of the customer you currently have on the line
+Agent Phone: displays the default caller ID for your agent extension
+Custom: displays the unique caller ID assigned to this lead
+
+FREE SAMPLE VERSION
+
+21
+
+©2013 Matt Florell
+
+Figure 16. VICIdial HotKeys
+
+USING HOTKEYS
+Hotkeys are a way of reducing the time it takes to hangup and disposition a call if the customer is
+unavailable. This feature is set up by your manager. Hotkeys work by assigning a Call Disposition to
+the number keys(1-9) on your keyboard. This feature is activated when your mouse pointer is on top of
+the orange Hotkeys button at the bottom of your screen. When the mouse is over the Hotkeys button
+you'll see the list of Call Dispositions available, and their corresponding number on your keypad.
+When you are ready to end the call, press the number for the disposition you've chosen for that call.
+The call will immediately be hung-up, dispositioned automatically, and you will be able to take your
+next call immediately. To use Hotkeys, it needs to be activated by your manager for your user login
+and for the campaign that you are using. (see Figure 16).
+
+VOLUME CONTROL
+You have the ability on most systems to control the volume level of the customer as well as being able
+to mute yourself by clicking on buttons at the bottom of the agent screen. The customer volume
+control buttons are directly below the Send DTMF button. There is a button with a red UP arrow to
+raise the customer volume and a button below that with a blue DOWN arrow to lower the customer
+volume. On the right side of the screen there is a MUTE button that allows the agent to mute
+themselves. When clicked, this button will change to UNMUTE that will allow you to turn off muting
+when it is clicked. For the customer volume control, after the call is over the next call will be a normal
+volume level. There are also volume control buttons available for every connected caller in the “Show
+FREE SAMPLE VERSION
+
+22
+
+©2013 Matt Florell
+
+conference call channel information” panel at the bottom of the screen.
+
+COMMENTS
+This field appears below the customer's information on the MAIN tab. The Comments field allows you
+to add additional remarks regarding the call or customer, beyond the general information provided on
+the MAIN tab.
+
+CALL NOTES
+This is an optional feature that can be enable by your manager. This field appears below the
+“Comments” field on the Main tab, and the Disposition screen (allowing you to add remarks even after
+you have hung up the call). Unlike Comments, these notes are permanently saved on the lead.
+Optionally (If you manager has enabled) you can see the previous Call Notes from other agents that
+have spoken to this customer. The notes will each be stamped with the date & time of the previous
+call, along with the User ID of each agent.
+
+Figure 17. VICIdial Call Disposition Screen
+
+DISPOSITIONING A CALL
+After a customer call is hung-up, the green Disposition screen will appear (see Figure 17). Here you
+can select the appropriate status for the call you've just completed. To select a status, you can either
+FREE SAMPLE VERSION
+
+23
+
+©2013 Matt Florell
+
+double click the link, or click the link once and then select the SUBMIT link at the bottom. If you are
+in auto-dial mode and want to go into PAUSE before receiving your next call, select the PAUSE
+AGENT DIALING checkbox before selecting your status. This assures you will be in PAUSE after
+dispositioning the that call, and you do not immediately get another call.
+If you need to take written down notes, such as a log sheet, and you forget to write down the customer
+information before you select the hangup button, you can click on the 'minimize' button at the top of the
+Disposition screen to move the disposition frame out of the way. This allows you to see the customer
+data below. At this point, the data can not be edited, because it has already been committed to the
+system once you pressed the hangup button.
+
+Customer is still on the line
+If a customer is still on the phone after you have arrived at the Disposition screen, you can click on the
+"Hangup Again" link at the top of the screen to attempt to hangup the call again (You can only click
+this link once per call). This should be an infrequent problem. If the call still does not hang up, you
+should be able to hang it up from the "conference call channel information" link list at the bottom of
+your agent screen after Dispositioning the call.
+
+Minimize to see customer details
+If you need to see the information on the screen about the customer you just talked to, you can click on
+the "minimize" link at the top of the screen to view the customer information again. Any editing of this
+information will be discarded since the customer information is committed to the system as soon as you
+click on the "Hangup Customer" button.
+
+Open web form after dispositioning
+If your manager instructs you to, you can click on the "Web Form Submit" link on the Disposition
+screen to open up a web form window at the time you submit your chosen call disposition. This web
+form window will also be sent the disposition that you just selected for the previous call.
+
+Wrapup Time After Call
+If your campaign is set up for it, you might have a set amount of time after you hangup and disposition
+a call, during which you can complete other call wrapup work before you are able to receive another
+call. You will see a green Wrapup screen after dispositioning a call. It contains a countdown
+indicating how many seconds of wrapup time remain before the green wrapup screen disappears and
+you can take another call. There is also a “Finish Wrapup and Move On” link that you can click to
+bypass the wrapup time and immediately go on to the next call.
+
+PRE-CALL WORK
+This manager enabled feature is available in Auto-dialing mode. This setting will automatically place
+you in PAUSE when you have selected any of the following functions that would require you to be
+paused; such as: Manual Dial, Fast Dial, Lead Search, Call Log View, Callbacks Check, Enter Pause
+Code.
+
+FREE SAMPLE VERSION
+
+24
+
+©2013 Matt Florell
+
+Figure 18. VICIdial Live Call and calls-in-session display
+
+CALLS IN THE SESSION, AND FORCED HANGUPS
+To see the participants in your session at any time, click on the "Show conference channel information"
+link at the bottom of your screen(see Figure 18). A frame will appear at the bottom that will list the
+channels in your session including your channel. If you have a problem where a channel does not get
+hung up properly when you have clicked a hangup button, you can click on the channel's HANGUP
+link in this frame and it will be released.
+Also in this frame will be volume control buttons allowing you to raise, lower and mute the volume on
+any call in your session.
+
+FREE SAMPLE VERSION
+
+25
+
+©2013 Matt Florell
+
+Figure 19. VICIdial Live Call and calls in queue display
+
+CALLS IN QUEUE, AND TAKE CALL
+To see the waiting calls, in the queues available to you, click on the "Show Calls In Queue" link at the
+bottom of your screen(see Figure 19). A frame will appear (at the bottom of the screen) that will list
+calls from the In-groups currently assigned to you. This listing will show you the phone number of the
+caller, the name, if there is one, the amount of time the caller has been waiting in queue, the agent the
+call came from or the number that the customer dialed to get to the queue, the color of the In-group, the
+name of the In-group and whether the call is inbound or outbound.
+To take a call you need to be paused. Then click on the TAKE CALL link to have the call sent to you.
+There may be a delay of a few seconds, if the customer is listening to a place-in-line prompt or other
+non-transfer prompt.
+
+FREE SAMPLE VERSION
+
+26
+
+©2013 Matt Florell
+
+Figure 20. VICIdial Agents View display
+
+AGENTS VIEW SIDEBAR
+To see the agents that are logged in on your system (or just the agents logged into your campaign or
+user group) you can click on the “Agents View +” link on the bottom right side of your screen. This
+will bring up the agents view sidebar, showing the agents with a color (blue for READY, purple for
+INCALL and yellow for PAUSED) and optionally the amount of time the agent has been in that state.
+
+FREE SAMPLE VERSION
+
+27
+
+©2013 Matt Florell
+
+Figure 21. VICIdial CallBack Date-and-Time and Comment Screen
+
+CALLBACKS
+The Callback feature allows you to set a date and time for leads so that they can be removed from
+active dialing, until that date and time have arrived. Callbacks default to allow any agent to receive the
+call when the customer is called back (ANYONE Callbacks). Additionally, if it is enabled for your
+account, an agent can select to have the callback be restricted to only their login (AGENT ONLY
+Callbacks). When an agent receives a call that was last set as a CALLBK, there will be a message
+showing up next to the "Customer Information" header of the VICIdial screen that will say
+"PREVIOUS CALLBACK" so that the agent will know that this lead was set as a callback the last time
+it was called. Agent Only Callbacks will trigger a pop-up alert on the screen.
+
+Setting a Callback
+When setting a Callback for a specific date and time, the agent will hangup the call as usual and select
+the CALLBK status in the disposition screen. Once chosen, a new calendar screen displaying the next
+12 months will pop up (see Figure 21). The agent needs to choose a day from the calendar and then
+select a time (hour, half hour and AM/PM menus at the top of the screen) for that lead to be contacted
+back. There is also a field for comments about the callback, if necessary. Once a callback date and
+time are set, click on the SUBMIT button to go on to the next call. The manager can also limit how far
+FREE SAMPLE VERSION
+
+28
+
+©2013 Matt Florell
+
+in advance a callback may be set. If you are unable to set a callback for the desired date, contact your
+manager to see if that feature has been enabled.
+Callbacks are reactivated and put back into the system at the date and time specified by the agent. The
+call will not happen immediately and by default the agent that set it may not necessarily get that
+callback call. It is important to note that managers have the ability to see what callbacks were set by
+each agent and when the agent set them. Managers also have the ability to override agent callbacks by
+changing them to Anyone callbacks or assigning them to another agent.
+
+Receiving a Callback
+If you receive a call that had been last dispositioned as a CALLBK, either ANYONE or
+AGENTONLY, you will see a box appear with information about the callback record including the
+date of the last call, the scheduled callback date and time along with any callback comments that were
+entered by the agent that set the callback.
+
+Figure 22. VICIdial Agent-Only Callbacks
+
+Agent-only Callbacks
+If your manager has activated this feature, it will display a "MY CALLBACK ONLY" checkbox under
+the date fields in the callback screen (If you have dispositioned calls as CALLBK). This checkbox, if
+selected by the agent, will save the callback to only be accessible by the agent that set it.
+FREE SAMPLE VERSION
+
+29
+
+©2013 Matt Florell
+
+If you have set an agent-only callback, you will see a text link under the comments on your main screen
+that will show "1 ACTIVE CALLBACKS". If you click on this link you will see a screen that has a list
+of all ACTIVE and LIVE callbacks for the campaigns that you are currently logged into (see Figure
+22). An ACTIVE callback is one that has yet to be triggered, while a LIVE callback is one that has
+passed its callback trigger date and time. For agent-only callbacks you can call both ACTIVE and
+LIVE call-backs. If you click on one of the callbacks listed in this screen the callback record will be
+changed to INACTIVE, removed from the list, and you will go to the main screen in manual dial mode
+where you can see the customer details. From here you can call the customer by clicking on the "DIAL
+LEAD" link at the top of the screen. After the call is over you can HANGUP CUSTOMER as usual
+and disposition it. If you want to set it to callback again, another callback record will be added and you
+will need to pick a new date and time.
+
+Callback Alert Types
+Your manager can also enable Callback Alerts, which differ from the standard status line. The alerts
+range from red, blinking, or blinking red. In addition, each of those alerts also has a DEFER option
+which will stop blinking and/or displaying in red when you check the callbacks, until the number of
+callbacks changes. Select the “close” or “Close Call Log” link to go back top the Main tab.
+
+Figure 23. VICIdial Agent Call Log
+
+AGENT CALL LOG
+If this feature has been configured by your manager, you will see the “View Call Log” link at the
+bottom right of the Main tab. Once selected. It allows you to see a list of the calls you have handled. It
+displays the Date/Time, Length, Status, Phone Number, Customer Name, Campaign,
+inbound/outbound, Alternate Phone Number, and Hangup data. You can click the “INFO” link to view
+the lead itself, or “DIAL” to manually dial the customer. The default setting displays only the current
+day's calls, but changing the Date field, at the top of the page, allows you to view previous days calls.
+
+AGENT BLIND MONITORING ALERT
+This optional feature allows your manager to send a popup alert to all agents on the same campaign.
+This can be used to advise important information that needs to be seen immediately.
+
+FREE SAMPLE VERSION
+
+30
+
+©2013 Matt Florell
+
+Figure 24. VICIdial Agent Lead Search
+
+Figure 25. VICIdial Agent Lead Search Results
+
+AGENT LEAD SEARCH
+If your manager has enabled this feature on the campaign, you can search for a specific customer lead
+while in Pause. You can search by using either the Main, Alternate or Address3 phone number, and
+any combination of the following data : Lead ID, Vendor ID, First Name, Last Name, City, State, and
+Postal Code. We recommend Main phone number, Lead ID, or Vendor ID, as they yield the fastest
+results. These fields do not allow for wildcard or partial search terms. Once you click Submit, the
+system will display a results page showing the lead or leads that meet the given criteria. From that
+page you can click the “INFO” link to view the lead itself, or “DIAL” to manual dial the customer.
+
+FREE SAMPLE VERSION
+
+31
+
+©2013 Matt Florell
+
+Figure 26. VICIdial New Lead and Manual Lead Dialing
+
+NEW LEAD, SEARCH LEAD MANUAL DIALING, AND FAST DIAL
+If your manager has activated this feature, you will see a MANUAL DIAL text link and a FAST DIAL
+text link below the comments field of your main VICIdial screen. These features allow you to add a
+new lead to the database manually or search for an existing lead by phone number and call that number.
+
+Manual Dial
+If you click on the MANUAL DIAL link, you will go to a green screen allowing you to specify the
+customer number you want to call. When the "NEW MANUAL DIAL LEAD" screen appears you will
+see instructions at the top along with the campaign's dial prefix that your system may use to get to an
+outside line, a Dial Code field and a Phone Number field (see Figure 23). In the USA and Canada the
+Dial code usually stays as a "1", the phone number field is a maximum length of 10 digits (this should
+only have digits entered into it). Once you have entered in a phone number you can click on the
+“Search Existing” checkbox to see if this phone number is already in the system and bring up its
+record. An option feature (enable by your manager) allows you to see the Comments or Call Notes
+from previous calls. You can click the "Dial Now" link and go to the main screen, ready to dial the
+lead. Once on the main screen you may choose to enter or modify the lead data in the "Customer
+Information" fields, before clicking the "DIAL LEAD" button to place the call. From the Manual Dial
+screen, you can also place a call to any extension by entering it in the "Dial Override" field. After the
+call is finished and you have selected “Hangup Customer”, you will disposition the call as usual and go
+into the next call.
+
+FREE SAMPLE VERSION
+
+32
+
+©2013 Matt Florell
+
+Fast Dial
+The FAST DIAL link is very similar to the Manual Dial link, except to use it all you have to do is enter
+a phone number in to the main Customer Information “phone number” field and click on the FAST
+DIAL text link to start dialing that number. There are not as many options with this feature, but it is
+much faster to use with less steps.
+
+Figure 27. VICIdial Group Alias Selection
+
+Group Alias Select
+The optional Group Alias Select link allows you to select the callerID number that is sent out with
+manual dial and transfer conferences 3-way calls (see figure 26).
+
+FREE SAMPLE VERSION
+
+33
+
+©2013 Matt Florell
+
+Figure 28. VICIdial Session Warning Messages
+
+SESSION WARNING MESSAGES
+If your agent phone is hungup while you are logged into VICIdial, you will be sent to a blue screen
+with an message stating that “No one is in your session” (see Figure 27). If you accidentally hung up
+your phone, you can return your session by dialing the session ID that is at the top of your screen or
+you can have the dialer call you back by clicking the "Call Agent Again" link on the screen.
+If your customer hung up, and you have not clicked on the HANGUP CUSTOMER button, you may
+see the "Customer is no longer in your session" message appear on your screen (see Figure 27). To
+remove this message, hangup the call as normal through your VICIdial screen. You can also click on
+the "Finish and Disposition Call" link which will take you directly to the Disposition screen.
+If your manager has logged you out, you may see a blue screen with the message “Your session has
+been disabled” along with a LOGOUT link. If this happens, make sure you click on the LOGOUT link
+so that your VICIdial timesheet will be accurate.
+One other message that you may see pop up is a warning that your session has been paused. This can
+happen sometimes when you having internet connection issues. If this persists, inform your manager.
+
+FREE SAMPLE VERSION
+
+34
+
+©2013 Matt Florell
+
+Figure 29. VICIdial Lead Preview Manual Dialing
+
+MANUAL DIALING MODE
+Manual dialing mode is when the agent controls when a call to a customer is dialed by clicking on the
+green "Dial Next Number" button in the top left of the screen. In this mode, you will hear the ringing
+of the phone, you hang it up at any time manually, the system will not start another call until you click
+the button to dial again.
+
+PREVIEW DIALING
+Clicking on the LEAD PREVIEW checkbox directly below the green DIAL NEXT NUMBER button
+activates this feature. This allows for the agent to be able to see the lead information before the call is
+placed (see Figure 28). This is desired for example if the agent just wants to open a WEB FORM with
+more information about the customer before dialing them. This feature is available in Manual dialing
+mode only. When you are ready to call the customer, simply click the “DIAL LEAD” link at the top of
+the screen. An optional feature places a “SKIP LEAD” link just to the right of DIAL LEAD. This
+allows you to skip over the current lead already on your screen, and preview the next lead available in
+the system. Keep in mind VICIdial logs and displays every lead skipped in your Agent Stats.
+
+FREE SAMPLE VERSION
+
+35
+
+©2013 Matt Florell
+
+Figure 30. VICIdial Multiple Number per Lead Dialing
+
+MULTIPLE NUMBER-PER-LEAD DIALING
+Clicking on the ALT PHONE DIAL checkbox directly below the LEAD PREVIEW checkbox
+activates this feature. This allows for you to dial the alternate phones numbers on the customer lead, if
+they can not be reached at their main number. These additional numbers can be located in the
+“alternate phone number” and/or “address3” fields. Nothing will change on the VICIdial screen until
+the call has been hung up. At this point the screen would normally go to the lead disposition screen,
+but in Alternate number dialing mode, the status area (at the top of the purple section) will change,
+displaying links that will allow you to dial the main customer number again, the alternate phone
+number, or the address3 field phone number (see Figure 29). When you have finished all of the calls
+you wanted to place for this lead, simply click on the FINISH LEAD link to go to the disposition
+screen.
+
+FREE SAMPLE VERSION
+
+36
+
+©2013 Matt Florell
+
+Figure 31. VICIdial Territory Dialing Login Screen
+
+TERRITORY DIALING
+This Manual Dial only feature allows you to dial a sub-set of leads in the campaign that are designed
+specifically for you or your group. The Territories are created by your manager, and the customer
+leads are assigned a Territory. When you login, a green screen will display the Territory (or
+Territories) available to you. You can even select to be in more than one Territory at a time. After
+choosing your Territory and completing your login, you will be presented with leads from the Territory
+you selected.
+
+CALL TIME MISMATCH ALERT
+A Manual Dial only feature, that pops up an alert to advise when the timezone of the phone number
+does not match the timezone for the postal code on the customer lead. This manager enabled feature is
+a security measure to ensure the customer is called at the desired time for their current location.
+
+FREE SAMPLE VERSION
+
+37
+
+©2013 Matt Florell
+
+AGENT INTERFACE ALERT
+This Manual Dial alert advises that the disposition of your last call did not complete correctly. You
+will not be able to dial another lead. This alert is rare and indicates a potential problem on the network
+connection. Please alert you manager.
+
+AUTO-DIAL MODE
+Auto-Dialing mode is when you are only sent calls that have been answered. You will not receive
+Busy, Disconnected, Invalid number or Ring-no-Answer calls. Optionally, VICIdial can also avoid
+sending most answering machine and voicemail answered calls. Because of this, you will not hear
+ringing of the phone. You will simply hear a quick “bloop” sound when the customer is connected to
+your session.
+
+CALL CONTROL
+The PAUSE and RESUME buttons at the top left of the screen are known as the call control buttons.
+When you log into a campaign in auto-dial or inbound/closer mode, the PAUSE button will be gray and
+the RESUME button will be green, indicating are in Pause. This is known as the “paused state”. Once
+you click on the RESUME button, you are available to start taking calls. When you are ready to pause,
+just click on the PAUSE button to stop receiving calls. You may also select the PAUSE AGENT
+DIALING checkbox on the disposition screen to PAUSE to Pause yourself immediately after
+submitting the disposition for that call.
+
+PAUSE AND RESUME PROCEDURE
+If wish to go on a break or log out at the end of your shift, you will need to be Paused to click on the
+LOGOUT button in the top right corner. If you haven't done this and leave from disposition screen or
+just close the web window, your login time may not be recorded accurately. In addition calls may still
+be made for several minutes because the system is not aware you have logged out. If you are
+experiencing a high call volume, or you have no delay between when you hangup one call and receive
+the next, it would be a good idea to use the “PAUSE AGENT DIALING” checkbox on the call
+disposition screen.
+
+MULTIPLE NUMBER-PER-LEAD DIALING
+This is another feature that must be activated by your manager. Clicking on the ALT PHONE DIAL
+checkbox directly below the PAUSE and RESUME dial buttons activates this feature. This allows for
+the agent to be able to dial the alternate phone number or the address3 field as a phone number after a
+call has been received by the agent (see Figure 29). This feature is described in more detail in the
+manual dial section.
+
+FREE SAMPLE VERSION
+
+38
+
+©2013 Matt Florell
+
+Figure 32. VICIdial In-group/Email Selection Screen
+
+INBOUND AND CLOSER FEATURES
+If you will be working on an inbound closer, email, or blended inbound/outbound campaign, you will
+need to login to an inbound enabled campaign. Depending on how the campaign is set up, you will be
+able to take calls from many different sources. Unlike campaigns (where you can only be in one at a
+time) you can staff multiple In-groups and/or email groups all at the same time. The call control
+procedure (pause/resume) is the same for inbound and closer campaigns is the same as it is for
+outbound auto-dial campaigns.
+
+LOGIN SELECT GROUPS MENU
+When you log into a CLOSER-type campaign (depending on how your manager has configured it) you
+will see a green screen that will show a list of inbound and closer groups to select from. This will
+determine which inbound or closer groups you wish to take calls from (see Figure 31). The ability to
+choose may also be disabled. In this case your manager has already preselected the groups you will
+receive calls from. Also on this screen is the option to select the “BLENDED CALLING” checkbox.
+This box allows to be able to take outbound calls, when not on an inbound call. Ask your managers
+whether you should click on BLENDED or not when you log in.
+
+FREE SAMPLE VERSION
+
+39
+
+©2013 Matt Florell
+
+Figure 33. VICIdial In-group Inbound Call Display
+
+DISPLAY AND CALL INFO
+Inbound and Closer campaigns have some special display features that are not in regular auto-dial
+campaigns. When you receive an inbound call, you will see the color and In-group name associated
+with that call in the status bar (toward the top of the screen). If the call is a closer call from a fronter
+agent on another VICIdial campaign, the status line can be setup to show their name and User ID
+number for tracking purposes.
+
+Ring All
+In most cases, the inbound call notification is identical to an outbound Auto-dial campaign. You would
+hear an alert, and the customer is immediately transferred to you session. However, you manager can
+alternately enable the “RING ALL” feature. When a call is received, all the phones in the In-group will
+ring. The first person to answer gets the call.
+
+IN-GROUP MANUAL DIAL
+This feature allows you the ability place manual dial outbound calls that are logged as In-group calls
+assigned to a specific In-group. Depending on how your manager has configured this feature, the
+options may differ. It can allow you to place phone calls out through an In-group and back to yourself.
+Optionally, it may allow you to log time on a call that does not exist, as if it were a real call) most often
+used for logging email or faxing time). It can also be setup to allow both of the above.
+
+FREE SAMPLE VERSION
+
+40
+
+©2013 Matt Florell
+
+INBOUND CAMPAIGN LEAD SEARCH
+If your manager has enabled this feature on the campaign, you can search for a specific customer lead
+while in the middle of an inbound call. Once you select “LEAD SEARCH” it is identical to the Paused
+lead search. You can search by using either the Main, Alternate or Address3 phone number, and any
+combination of the following data : Lead ID, Vendor ID, First Name, Last Name, City, State, and
+Postal Code. We recommend Main phone number, Lead ID, or Vendor ID, as they yield the fastest
+results. These fields do not allow for wildcard or partial search terms. Once you click Submit, the
+system will display a results page showing the lead or leads that meet the given criteria. From that
+page you will select the customer lead and that information will replace the data that was previously on
+your screen.
+
+FREE SAMPLE VERSION
+
+41
+
+©2013 Matt Florell
+
+Figure 34. VICIdial Email Screen
+
+EMAIL
+VICIdial can handles inbound email just like it does calls. If your manager has enabled this feature,
+you will be able to handle this correspondence. The ability to choose may also be disabled. In this
+case your manager has already preselected the groups you will receive correspondence from. Like Ingroups, you can staff multiple email groups at the same time.
+When you receive an email, you will see the color and In-group name associated with that Email Group
+in the status bar (toward the top of the screen). Once you have completed your response to the email
+click the “SEND” button transmit and proceed to the disposition screen. After submitting the
+disposition you will be available to to take new emails or calls, depending on how you have logged into
+the system. If you are in an auto-dial campaign and want to go into PAUSE before receiving your next
+call, select the PAUSE AGENT DIALING checkbox before selecting your status. This assures you
+will be in PAUSE after dispositioning the email, and you do not immediately get another call.
+
+FREE SAMPLE VERSION
+
+42
+
+©2013 Matt Florell
+
+Figure 35. VICIdial Timeclock
+
+Time-Clock Punch-in Punch-out
+Included with VICIdial is an independent timeclock application that allows agents to clock-in and
+clock-out. The VICIdial Agent Login screen can also be restricted to allow only timeclock clocked-in
+agents if your manager has set this for your user group.
+To properly clocking-in is a 2-step process. First, enter your user Login and Password and click
+submit. You will then see a notice of the last time you clocked-out with a LOGIN button below.
+Lastly, you must click the LOGIN button to fully clock-in to the system. Clocking-out of the system is
+the identical process (see figure 34).
+
+FREE SAMPLE VERSION
+
+43
+
+©2013 Matt Florell
+
+LOGGING INTO VICIdial OUTSIDE OF THE OFFICE
+VICIdial is capable of allowing agents to login and use the dialer from a remote location. All that is
+needed is a reliable computer with a good Internet connection and a web browser, and a soft-phone (or
+any phone setup as a local extension on the dialer) or a regular land line phone with the ability to be
+called from a regular phone number.
+
+WEB LOGIN
+First you must bring up your web browser. Firefox 1.0 or higher is suggested, but VICIdial has been
+tested with Opera 9.0, Netscape 9.0, Google Chrome 4.0 and Internet Explorer 6.0+ as well. Microsoft
+Internet Explorer versions prior to 6.0 are not supported. If you are using Firefox version 1.5 or higher,
+please make sure to go into Firefox settings and disable all auto-updating features and disable all
+check-for-updates features. Those features can stop VICIdial from working.
+Once your web browser is up, you must go to the web page address that you manager gave you and
+enter in the "Phone Login" and "Phone Password" that your manager gave you when they setup your
+remote account. After entering the phone information you need to enter your user login and password
+as well as choose the campaign that you want to login to then click submit.
+At this point your VICIdial.php web page should start loading the agent screen and after a few seconds
+the phone will ring (see next section for phone information). Pick up your phone and you are logged
+into VICIdial.
+Firefox also supports the VICIdial Web Dial browser plug-in. This allows rightdialing of phone numbers on web pages to a logged-in ViciDial Agent session.
+
+click selection
+
+PHONE ISSUES AND OPTIONS
+Using VICIdial remotely gives you a lot of flexibility, including what kind of phone you use.
+Depending on what your manager allows, you will either be able to use your home land line phone, a
+computer soft-phone, a VOIP hard-phone or even possibly your cellphone. If you are using your home
+phone or cellphone, you only need to give your manager the 10-digit phone number of the phone you
+want to use remotely. If you will be using a VOIP hard-phone, you should be receiving a phone that is
+already setup by your manager and that you just need to plug into a broadband Internet connection to
+get it to work. If you will be using a soft-phone, your manager will probably give you a set of
+instructions to set it up on your computer and some possible suggestions for microphone headsets to
+use with your computer.
+No matter what kind of phone you will be using, it is important that you get the Phone Login and
+Phone Password from your manager when they have set your phone up so that you will be able to log
+in properly.
+VICIdial has been designed to integrate and support the The Zoiper web phone. Rather than running a
+separate soft phone program alongside the system, Zoiper's web phone inside you agent browser
+window. It operates in the top right-hand side of the screen and offers the same functionality as their
+softphone. It can also be configured to run in a thin bar across the screen, taking up much less room.
+
+EXTERNAL USER ISSUES
+While using VICIdial from a remote location like your home, another office or a hotel offers a great
+amount of flexibility, there are some issues to be aware of. Foremost is the quality of your Internet
+FREE SAMPLE VERSION
+
+44
+
+©2013 Matt Florell
+
+connection. Many home broadband Internet connections like DSL or Cable use a shared architecture,
+meaning that you do not have guaranteed bandwidth or consistent speed at any given time. This means
+that if several people in your area are using a lot of bandwidth, you many have problems with your
+VICIdial operations like crackly audio, dropped calls or even the VICIdial.php webpage failing to load
+properly. When you have that kind of problem, especially in a home environment, there isn't always a
+lot you can do aside from calling your Internet provider and complaining.
+
+FREE SAMPLE VERSION
+
+45
+
+©2013 Matt Florell
+
+MANAGER FUNCTIONS
+Managers of a VICIdial system have a great deal of information that they can look at involving agent
+operations, stats and current status. A manager can tell how long an agent was paused, how long they
+waited, how long they talked and how long the took to disposition each individual call. They also have
+access to login/logout times and the status of every disposition of every call an agent has ever made.
+Managers have the ability to listen in on all conversations, barge into those conversations and talk,
+hangup an agent at any time and grab the customer they are talking to, and deactivate the agent account
+at any time. Also, in some setups a manager will have access to recordings of agents when they are
+logged in, including pause, wait, talk and disposition time.
+
+FREE SAMPLE VERSION
+
+46
+
+©2013 Matt Florell
+
+CLOSING
+VICIdial is a very flexible contact center solution that is user-friendly and highly configurable. If you
+run into any problems while using it, you should contact your manager or system administrator.
+
+FREE SAMPLE VERSION
+
+47
+
+©2013 Matt Florell
+
+FREQUENTLY ASKED QUESTIONS(FAQ)
+- I logged in and there was already an agent in my session, what
+happened?
+Usually this happens when that other agent did not log out correctly or did not hangup their phone.
+Tell your manager what session ID you have and they can lookup who the other agent is and hang up
+their extension.
+
+- How much delay is there before a customer gets to my phone?
+This depends on several things. If you have been waiting for a call for more than 3 seconds, there is a
+good chance that there was less than a second of delay while the customer was transferred to you. If it
+was a very quick transfer after you just logged in or dispositioned a previous call, then there is a good
+chance that the customer may have waited two or more seconds before you(the next available agent)
+was able to take their call. The exception to these is if your system has Answering Machine
+Detection(AMD) enabled. If that is the case, there can be a one-half to two second delay on all calls
+getting to an agent. Your manager should know if you have AMD enabled for your campaign.
+
+- What about Answering Machines and detecting them?
+As mentioned in the question above, Answering Machine Detection adds a delay to the customer
+getting to you. Some managers may disable this so that there is no delay. One other option that they
+may use to reduce the number of Answering Machines sent to agents is to set the ring time to 4 rings,
+which will eliminate over half of the Answering Machines and Voicemail boxes that would normally
+be sent to agents.
+
+- What Internet web browsers work with VICIdial?
+We recommend Firefox as our browser of choice, although we have tested successfully with Opera,
+Google Chrome and Microsoft Internet Explorer 6.0+. With Firefox, we have had VICIdial sessions
+running for several days successfully in the same web browser window. If you are using Firefox
+version 1.5 or higher, please make sure to go into Firefox settings and disable all auto-updating features
+and disable all check-for-updates features. Those features can stop VICIdial from working.
+
+THIS IS THE FREE SAMPLE VERSION OF THE AGENT MANUAL.
+IF YOU WOULD LIKE THIS MANUAL WITH FULL COLOR
+SCREENSHOTS, PLEASE GO TO HTTP://WWW.VICIDIAL.ORG TO
+PURCHASE THE FULL VERSION OF THE VICIDIAL AGENT
+MANUAL AND HELP SUPPORT THE PROJECT
+
+FREE SAMPLE VERSION
+
+48
+
+©2013 Matt Florell
+
+Figures List
+Figure 1. VICIdial Agent/Phone Login Screen..........................................................................................5
+Figure 2. VICIdial Agent PAUSED...........................................................................................................6
+Figure 3. Selecting a Pause Code...............................................................................................................7
+Figure 4. VICIdial Script Tab....................................................................................................................8
+Figure 5. VICIdial Form Tab.....................................................................................................................9
+Figure 6. VICIdial Transfer Conference..................................................................................................11
+Figure 7. VICIdial Agent to Agent, Blind Transfer Diagram..................................................................12
+Figure 8. VICIdial Agent to Agent, Consultative Transfer Diagram.......................................................13
+Figure 9. VICIdial Agent to Agent, Parked Transfer Diagram................................................................14
+Figure 10. VICIdial Agent to Agent, Re-Queue Diagram.......................................................................15
+Figure 11. VICIdial Agent to Outside Line, Blind Transfer Diagram.....................................................16
+Figure 12. VICIdial Agent to Outside Line, Consultative Transfer Diagram..........................................17
+Figure 13. VICIdial Agent to Outside Line, Park Transfer Diagram.......................................................18
+Figure 14. VICIdial Quick Transfer Diagram..........................................................................................19
+Figure 15. VICIdial AGENTDIRECT Transfers.....................................................................................20
+Figure 16. VICIdial HotKeys...................................................................................................................22
+Figure 17. VICIdial Call Disposition Screen...........................................................................................24
+Figure 18. VICIdial Live Call and calls-in-session display.....................................................................26
+Figure 19. VICIdial Live Call and calls in queue display........................................................................27
+Figure 20. VICIdial Agents View display...............................................................................................28
+Figure 21. VICIdial CallBack Date-and-Time and Comment Screen.....................................................29
+Figure 22. VICIdial Agent-Only Callbacks.............................................................................................30
+Figure 23. VICIdial Agent Call Log........................................................................................................31
+Figure 24. VICIdial Agent Lead Search..................................................................................................32
+Figure 25. VICIdial Agent Lead Search Results......................................................................................32
+Figure 26. VICIdial New Lead and Manual Lead Dialing.......................................................................33
+Figure 27. VICIdial Group Alias Selection.............................................................................................34
+Figure 28. VICIdial Session Warning Messages.....................................................................................35
+Figure 29. VICIdial Lead Preview Manual Dialing.................................................................................36
+Figure 30. VICIdial Multiple Number per Lead Dialing.........................................................................37
+Figure 31. VICIdial Territory Dialing Login Screen...............................................................................38
+Figure 32. VICIdial In-group/Email Selection Screen.............................................................................40
+Figure 33. VICIdial In-group Inbound Call Display................................................................................41
+Figure 34. VICIdial Email Screen............................................................................................................43
+Figure 35. VICIdial Timeclock................................................................................................................44
+
+THIS IS THE FREE SAMPLE VERSION OF THE AGENT MANUAL.
+IF YOU WOULD LIKE THIS MANUAL WITH FULL COLOR
+SCREENSHOTS, PLEASE GO TO HTTP://WWW.VICIDIAL.ORG TO
+PURCHASE THE FULL VERSION OF THE VICIDIAL AGENT
+MANUAL AND HELP SUPPORT THE PROJECT
+FREE SAMPLE VERSION
+
+49
+
+©2013 Matt Florell
+
+

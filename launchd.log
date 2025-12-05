@@ -1,0 +1,89 @@
+[main 26d507f] Auto-update dashboard - 2025-11-27 08:04 AM
+ 1 file changed, 36 insertions(+), 89 deletions(-)
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-05-31 to 2025-11-27
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 364 raw sales to 249 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4645 raw sales to 3365 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-05-31 to 2025-11-27
+💾 Saved to: deep-analysis 2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+🚀 Auto-pushed to GitHub! Live in 1-2 minutes at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ November 2025 overview (LIVE)
+   ✅ October 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================
+On branch main
+Your branch is ahead of 'origin/main' by 40 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+================================================================================
+🔄 COMPREHENSIVE DEEP ANALYSIS - 100% LIVE DATA FROM VICIDIAL
+================================================================================
+
+📊 Connecting to Vicidial database...
+✅ Connected!
+📅 Querying data from 2025-05-31 to 2025-11-27
+
+📊 Querying last 14 days data...
+📊 Querying last 6 months data...
+💰 Querying sales data (last 14 days)...
+💰 Querying sales data (last 6 months)...
+✅ All data retrieved from Vicidial!
+
+📊 Deduplicating 14-day sales by lead_id...
+   ✅ Deduplicated 364 raw sales to 249 unique sales
+📊 Deduplicating 6-month sales by lead_id...
+   ✅ Deduplicated 4645 raw sales to 3365 unique sales
+
+📈 Data processing complete!
+   ✅ 8 states with historical data
+
+📝 Generating comprehensive HTML report...
+
+✅ SUCCESS! 100% LIVE dashboard generated!
+📊 Top states: IL, MO, KS, GA, MI, KY, OH, NV
+📅 Data range: 2025-05-31 to 2025-11-27
+💾 Saved to: deep-analysis 2.html
+🌐 Public (GitHub Pages): public/deep-analysis-2.html
+⚠️  Git auto-push failed: Command '['git', 'commit', '-m', 'Auto-update dashboard - 2025-11-27 11:04 AM']' returned non-zero exit status 1.
+
+🎉 Dashboard includes:
+   ✅ Today's performance (LIVE)
+   ✅ Yesterday's performance (LIVE)
+   ✅ 6-month historical graphs (LIVE)
+   ✅ Last 14 days breakdown (LIVE)
+   ✅ November 2025 overview (LIVE)
+   ✅ October 2025 comparison (LIVE)
+
+🔴 ALL DATA PULLED DIRECTLY FROM VICIDIAL DATABASE - NO CACHE!
+================================================================================

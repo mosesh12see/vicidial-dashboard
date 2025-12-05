@@ -1,0 +1,50 @@
+{
+  "date": "2025-11-05",
+  "timestamp": "2025-11-07T21:07:31.982763",
+  "data": {
+    "CO": {
+      "campaign_id": "1000",
+      "total_calls": 35914,
+      "total_minutes": 1981.7667,
+      "total_hours": 33.0294,
+      "avg_seconds": 3.3109,
+      "opt_ins": 11,
+      "sales": 0,
+      "calls_per_optin": 3264,
+      "optins_per_sale": 0.0
+    },
+    "GA": {
+      "campaign_id": "1027",
+      "total_calls": 267273,
+      "total_minutes": 18887.9333,
+      "total_hours": 314.7989,
+      "avg_seconds": 4.2414,
+      "opt_ins": 146,
+      "sales": 2,
+      "calls_per_optin": 1830,
+      "optins_per_sale": 73.0
+    },
+    "IL": {
+      "campaign_id": "1028",
+      "total_calls": 194643,
+      "total_minutes": 16391.0333,
+      "total_hours": 273.1839,
+      "avg_seconds": 5.0544,
+      "opt_ins": 109,
+      "sales": 2,
+      "calls_per_optin": 1785,
+      "optins_per_sale": 54.5
+    },
+    "KY": {
+      "campaign_id": "1030",
+      "total_calls": 99134,
+      "total_minutes": 8217.0,
+      "total_hours": 136.95,
+      "avg_seconds": 4.9776,
+      "opt_ins": 72,
+      "sales": 0,
+      "calls_per_optin": 1376,
+      "optins_per_sale": 0.0
+    }
+  }
+}

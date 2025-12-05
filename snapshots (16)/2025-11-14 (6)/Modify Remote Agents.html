@@ -1,0 +1,619 @@
+<html>
+<head>
+<style>
+body { zoom: 0.65; }
+</style>
+<!-- VERSION: 2.14-858a   BUILD: 220513-0819   ADD: 41111   PHP_SELF: /vicidial/admin.php-->
+<META NAME="ROBOTS" CONTENT="NONE">
+<META NAME="COPYRIGHT" CONTENT="&copy; 2022 ViciDial Group">
+<META NAME="AUTHOR" CONTENT="ViciDial Group">
+<script language="JavaScript" src="calendar_db.js"></script>
+<script language="JavaScript" src="help.js"></script>
+<div id='HelpDisplayDiv' class='help_info' style='display:none;'></div><link rel="stylesheet" href="calendar.css">
+<link rel="stylesheet" type="text/css" href="vicidial_stylesheet.php">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<title>ADMINISTRATION: Modify Remote Agents</title>
+<script language="Javascript">
+var field_name = '';
+var user = 'capadmin';
+var epoch = '1762556906';
+
+	
+	var weak = new Image();
+	weak.src = "images/weak.png";
+	var medium = new Image();
+	medium.src = "images/medium.png";
+	var strong = new Image();
+	strong.src = "images/strong.png";
+
+	function pwdChanged(pwd_field_str, pwd_img_str, pwd_len_field, pwd_len_min) 
+		{
+		var pwd_field = document.getElementById(pwd_field_str);
+		var pwd_field_value = pwd_field.value;
+		var pwd_img = document.getElementById(pwd_img_str);
+		var pwd_len = pwd_field_value.length
+
+	//	var strong_regex = new RegExp( "^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])", "g" );
+	//	var medium_regex = new RegExp( "^(?=.{6,})(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9]))).*$", "g" );
+		var strong_regex = new RegExp( "^(?=.{20,})(?=.*[a-zA-Z])(?=.*[0-9])", "g" );
+		var medium_regex = new RegExp( "^(?=.{10,})(?=.*[a-zA-Z])(?=.*[0-9])", "g" );
+
+		if (strong_regex.test(pwd_field.value) ) 
+			{
+			if (pwd_img.src != strong.src)
+				{pwd_img.src = strong.src;}
+			} 
+		else if (medium_regex.test( pwd_field.value) ) 
+			{
+			if (pwd_img.src != medium.src) 
+				{pwd_img.src = medium.src;}
+			}
+		else 
+			{
+			if (pwd_img.src != weak.src) 
+				{pwd_img.src = weak.src;}
+			}
+		if ( (pwd_len_min > 0) && (pwd_len_min > pwd_len) )
+			{document.getElementById(pwd_len_field).innerHTML = "<font color=red><b>" + pwd_len + "</b></font>";}
+		else
+			{document.getElementById(pwd_len_field).innerHTML = "<font color=black><b>" + pwd_len + "</b></font>";}
+		}
+
+	function openNewWindow(url) 
+		{
+		window.open (url,"",'width=620,height=300,scrollbars=yes,menubar=yes,address=yes');
+		}
+	function scriptInsertField() 
+		{
+		openField = '--A--';
+		closeField = '--B--';
+		var textBox = document.scriptForm.script_text;
+		var scriptIndex = document.getElementById("selectedField").selectedIndex;
+		var insValue =  document.getElementById('selectedField').options[scriptIndex].value;
+		if (document.selection) 
+			{
+			//IE
+			textBox = document.scriptForm.script_text;
+			insValue = document.scriptForm.selectedField.options[document.scriptForm.selectedField.selectedIndex].text;
+			textBox.focus();
+			sel = document.selection.createRange();
+			sel.text = openField + insValue + closeField;
+			} 
+		else if (textBox.selectionStart || textBox.selectionStart == 0) 
+			{
+			//Mozilla
+			var startPos = textBox.selectionStart;
+			var endPos = textBox.selectionEnd;
+			textBox.value = textBox.value.substring(0, startPos)
+			+ openField + insValue + closeField
+			+ textBox.value.substring(endPos, textBox.value.length);
+			}
+		else 
+			{
+			textBox.value += openField + insValue + closeField;
+			}
+		}
+
+		var pass = 'cEi11';
+
+	mouseY=0;
+	function getMousePos(event) {
+		mouseY=event.pageY;
+	}
+	document.addEventListener("click", getMousePos);
+
+	function launch_chooser(fieldname,stage)
+		{
+
+		var h = window.innerHeight;		
+		var vposition=mouseY;
+
+		var audiolistURL = "./non_agent_api.php";
+		var audiolistQuery = "source=admin&function=sounds_list&user=" + user + "&pass=" + pass + "&format=selectframe&stage=" + stage + "&comments=" + fieldname;
+		var Iframe_content = '<IFRAME SRC="' + audiolistURL + '?' + audiolistQuery + '"  style="width:740;height:440;background-color:white;" scrolling="NO" frameborder="0" allowtransparency="true" id="audio_chooser_frame' + epoch + '" name="audio_chooser_frame" width="740" height="460" STYLE="z-index:2"> </IFRAME>';
+
+		document.getElementById("audio_chooser_span").style.position = "absolute";
+		document.getElementById("audio_chooser_span").style.left = "220px";
+		document.getElementById("audio_chooser_span").style.top = vposition + "px";
+		document.getElementById("audio_chooser_span").style.visibility = 'visible';
+		document.getElementById("audio_chooser_span").innerHTML = Iframe_content;
+		}
+
+	function launch_moh_chooser(fieldname,stage)
+		{
+
+		var h = window.innerHeight;		
+		var vposition=mouseY;
+
+		var audiolistURL = "./non_agent_api.php";
+		var audiolistQuery = "source=admin&function=moh_list&user=" + user + "&pass=" + pass + "&format=selectframe&stage=" + stage + "&comments=" + fieldname;
+		var Iframe_content = '<IFRAME SRC="' + audiolistURL + '?' + audiolistQuery + '"  style="width:740;height:440;background-color:white;" scrolling="NO" frameborder="0" allowtransparency="true" id="audio_chooser_frame' + epoch + '" name="audio_chooser_frame" width="740" height="460" STYLE="z-index:2"> </IFRAME>';
+
+		document.getElementById("audio_chooser_span").style.position = "absolute";
+		document.getElementById("audio_chooser_span").style.left = "220px";
+		document.getElementById("audio_chooser_span").style.top = vposition + "px";
+		document.getElementById("audio_chooser_span").style.visibility = 'visible';
+		document.getElementById("audio_chooser_span").innerHTML = Iframe_content;
+		}
+
+	function launch_vm_chooser(fieldname,stage)
+		{
+
+		var h = window.innerHeight;		
+		var vposition=mouseY;
+
+		var audiolistURL = "./non_agent_api.php";
+		var audiolistQuery = "source=admin&function=vm_list&user=" + user + "&pass=" + pass + "&format=selectframe&stage=" + stage + "&comments=" + fieldname;
+		var Iframe_content = '<IFRAME SRC="' + audiolistURL + '?' + audiolistQuery + '"  style="width:740;height:440;background-color:white;" scrolling="NO" frameborder="0" allowtransparency="true" id="audio_chooser_frame' + epoch + '" name="audio_chooser_frame" width="740" height="460" STYLE="z-index:2"> </IFRAME>';
+
+		document.getElementById("audio_chooser_span").style.position = "absolute";
+		document.getElementById("audio_chooser_span").style.left = "220px";
+		document.getElementById("audio_chooser_span").style.top = vposition + "px";
+		document.getElementById("audio_chooser_span").style.visibility = 'visible';
+		document.getElementById("audio_chooser_span").innerHTML = Iframe_content;
+		}
+
+	function close_chooser()
+		{
+		document.getElementById("audio_chooser_span").style.visibility = 'hidden';
+		document.getElementById("audio_chooser_span").innerHTML = '';
+		}
+
+	function user_submit()
+		{
+		var user_field = document.getElementById("user");
+		user_field.disabled = false;
+		document.userform.submit();
+		}
+
+	function play_browser_sound(temp_element,temp_volume)
+		{
+		var taskIndex = document.getElementById(temp_element).selectedIndex;
+		var taskValue = document.getElementById(temp_element).options[taskIndex].value;
+		var temp_selected_element = 'BAS_' + taskValue;
+		if ( (taskValue != '---NONE---') && (taskValue != '---DISABLED---') && (taskValue != '') )
+			{
+			var temp_audio = document.getElementById(temp_selected_element);
+			var taskVolIndex = document.getElementById(temp_volume).selectedIndex;
+			var taskVolValue = document.getElementById(temp_volume).options[taskVolIndex].value;
+			var temp_js_volume = (taskVolValue * .01);
+			temp_audio.volume = temp_js_volume;
+		//	alert(temp_selected_element + ' ' + temp_js_volume);
+			temp_audio.play();
+			}
+		}
+	</script>
+
+<style type="text/css">
+<!--
+
+
+
+.auraltext
+	{
+	position: absolute;
+	font-size: 0;
+	left: -1000px;
+	}
+.chart_td
+	{background-image: url(images/gridline58.gif); background-repeat: repeat-x; background-position: left top; border-left: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5; padding:0; border-bottom: 1px solid #e5e5e5; background-color:transparent;}
+
+.head_style
+	{
+	background-color: 333333;
+	}
+.head_style:hover{background-color: #262626;}
+
+.head_style_selected
+	{
+	background-color: AEC866;
+	}
+.head_style_selected:hover{background-color: AEC866;}
+
+.subhead_style
+	{
+	background-color: #E6E6E6;
+	}
+.subhead_style:hover{background-color: white;}
+
+.subhead_style_selected
+	{
+	background-color: #C6C6C6;
+	}
+.subhead_style_selected:hover{background-color: #C6C6C6;}
+
+.adminmenu_style_selected
+	{
+	background-color: white;
+	}
+.adminmenu_style_selected:hover{background-color: #E6E6E6;}
+
+.records_list_x
+	{
+	background-color: #BCD180;
+	}
+.records_list_x:hover{background-color: #E6E6E6;}
+
+.records_list_y
+	{
+	background-color: #AEC866;
+	}
+.records_list_y:hover{background-color: #E6E6E6;}
+
+
+.horiz_line
+	{
+	height: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #E6E6E6;
+	font-size: 1px;
+	}
+.horiz_line_grey
+	{
+	height: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #9E9E9E;
+	font-size: 1px;
+	}
+
+.sub_sub_head_links
+	{
+	font-family:HELVETICA;
+	font-size:11;
+	color:BLACK;
+	}
+
+-->
+
+</style>
+
+</head>
+<BODY BGCOLOR=white marginheight=0 marginwidth=0 leftmargin=0 topmargin=0>
+<!-- INTERNATIONALIZATION-LINKS-PLACEHOLDER-VICIDIAL -->
+<CENTER>
+
+<TABLE BGCOLOR=white cellpadding=0 cellspacing=0>
+<!-- BEGIN SIDEBAR NAVIGATION -->
+<TR><TD VALIGN=TOP WIDTH=170 BGCOLOR=#333333 ALIGN=CENTER VALIGN=MIDDLE>
+<A HREF="./admin.php"><IMG SRC="./images/vicidial_admin_web_logo.png" WIDTH=170 HEIGHT=45 BORDER=0 ALT="System logo"></A>
+<B><FONT FACE="ARIAL,HELVETICA" COLOR=white>ADMINISTRATION</FONT></B><BR>
+
+	<TABLE CELLPADDING=2 CELLSPACING=0 BGCOLOR=#333333 WIDTH=160>
+		<!-- REPORTS NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=999999';"><TD ALIGN=LEFT CLASS="head_style">
+	<a href="/vicidial/admin.php?ADD=999999" STYLE="text-decoration:none;"><img src="images/icon_reports.png" border=0 alt="Reports" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE"> Reports </a>
+	</TD></TR>
+
+	<!-- USERS NAVIGATION -->
+	<TR WIDTH=100%><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR WIDTH=160 BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=0A';"><TD ALIGN=LEFT CLASS="head_style" WIDTH=160>
+	<a href="/vicidial/admin.php?ADD=0A" STYLE="text-decoration:none;"><img src="images/icon_users.png" border=0 alt="Users" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE">Users</a>
+	</TD></TR>
+		<!-- CAMPAIGNS NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=10';"><TD ALIGN=LEFT CLASS="head_style">
+	<a href="/vicidial/admin.php?ADD=10" STYLE="text-decoration:none;"><img src="images/icon_campaigns.png" border=0 alt="Campaigns" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE">Campaigns</a>
+	</TD></TR>
+		<!-- LISTS NAVIGATION -->
+			<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+		<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=100';"><TD ALIGN=LEFT CLASS="head_style"><a href="/vicidial/admin.php?ADD=100" STYLE="text-decoration:none;"><img src="images/icon_lists.png" border=0 alt="Lists" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE">Lists</a></TD></TR>
+			<!-- SCRIPTS NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=1000000';"><TD ALIGN=LEFT CLASS="head_style">
+	<a href="/vicidial/admin.php?ADD=1000000" STYLE="text-decoration:none;"><img src="images/icon_scripts.png" border=0 alt="Scripts" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE"> Scripts </a>
+	</TD></TR>
+		<!-- FILTERS NAVIGATION -->
+			<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+		<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=10000000';"><TD ALIGN=LEFT CLASS="head_style"><a href="/vicidial/admin.php?ADD=10000000" STYLE="text-decoration:none;"><img src="images/icon_filters.png" border=0 alt="Filters" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE"> Filters </a></TD></TR>
+			<!-- INGROUPS NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=1001';"><TD ALIGN=LEFT CLASS="head_style">
+	<a href="/vicidial/admin.php?ADD=1001" STYLE="text-decoration:none;"><img src="images/icon_inbound.png" border=0 alt="Inbound" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE"> Inbound </a>
+	</TD></TR>
+		<!-- USERGROUPS NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=100000';"><TD ALIGN=LEFT CLASS="head_style">
+	<a href="/vicidial/admin.php?ADD=100000" STYLE="text-decoration:none;"><img src="images/icon_usergroups.png" border=0 alt="User Groups" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE"> User Groups </a>
+	</TD></TR>
+		<!-- REMOTEAGENTS NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=10000';"><TD ALIGN=LEFT CLASS="head_style_selected">
+	<a href="/vicidial/admin.php?ADD=10000" STYLE="text-decoration:none;"><img src="images/icon_black_remoteagents.png" border=0 alt="Remote Agents" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:BLACK"><b> Remote Agents </a>
+	</TD></TR>
+			<TR CLASS="subhead_style" onclick="window.document.location='/vicidial/admin.php?ADD=10000';"><TD ALIGN=LEFT> &nbsp; 
+		<a href="/vicidial/admin.php?ADD=10000" STYLE="text-decoration:none;"><FONT STYLE="font-family:HELVETICA;font-size:11;color:BLACK;"> Show Remote Agents </a>
+		</TR><TR CLASS="subhead_style" onclick="window.document.location='/vicidial/admin.php?ADD=11111';"><TD ALIGN=LEFT> &nbsp; 
+				<a href="/vicidial/admin.php?ADD=11111" STYLE="text-decoration:none;"><FONT STYLE="font-family:HELVETICA;font-size:11;color:BLACK;"> Add New Remote Agents </a>
+		</TR><TR CLASS="subhead_style" onclick="window.document.location='/vicidial/admin.php?ADD=12000';"><TD ALIGN=LEFT> &nbsp; 
+				<a href="/vicidial/admin.php?ADD=12000" STYLE="text-decoration:none;"><FONT STYLE="font-family:HELVETICA;font-size:11;color:BLACK;"> Show Extension Groups </a>
+		</TR><TR CLASS="subhead_style" onclick="window.document.location='/vicidial/admin.php?ADD=12111';"><TD ALIGN=LEFT> &nbsp; 
+				<a href="/vicidial/admin.php?ADD=12111" STYLE="text-decoration:none;"><FONT STYLE="font-family:HELVETICA;font-size:11;color:BLACK;"> Add Extension Group </a>
+				</TD></TR>
+		<!-- ADMIN NAVIGATION -->
+	<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	<TR BGCOLOR=#333333  onclick="window.document.location='/vicidial/admin.php?ADD=999998';"><TD ALIGN=LEFT CLASS="head_style">
+	<a href="/vicidial/admin.php?ADD=999998" STYLE="text-decoration:none;"><img src="images/icon_admin.png" border=0 alt="Admin" width=14 height=14 valign=middle> <FONT STYLE="font-family:HELVETICA;font-size:12;color:WHITE"> Admin </a>
+	</TD></TR>
+		<TR WIDTH=160><TD><DIV CLASS="horiz_line"></DIV></TD></TR>
+	</TABLE>
+	<BR>&nbsp;
+</TD><TD VALIGN=TOP WIDTH=770 BGCOLOR=#D6E3B2>
+<!-- END SIDEBAR NAVIGATION -->
+
+<span style="position:absolute;left:300px;top:30px;z-index:1;visibility:hidden;" id="audio_chooser_span">
+
+</span>
+
+<TABLE BGCOLOR=#D6E3B2 cellpadding=2 cellspacing=0 WIDTH=770 HEIGHT=15>
+<TR BGCOLOR=#333333><TD ALIGN=LEFT BGCOLOR=#333333><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B><a href="../vicidial/welcome.php" STYLE="text-decoration:none;"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=1>HOME</a> | <A HREF="../agc/timeclock.php?referrer=admin" STYLE="text-decoration:none;"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=1> Timeclock</A> | <a href="manager_chat_interface.php" STYLE="text-decoration:none;"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=1> Chat</a> | <a href="/vicidial/admin.php?force_logout=1" STYLE="text-decoration:none;"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=1>Logout</a> <FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=1>(capadmin)</FONT>
+
+
+</TD><TD ALIGN=RIGHT><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B>Friday November 7, 2025 15:08:26 PM &nbsp; </B></TD></TR>
+
+<TR BGCOLOR=#333333>
+
+
+
+
+
+
+
+</TR>
+	<TR><TD ALIGN=LEFT COLSPAN=2 HEIGHT=2 BGCOLOR=#333333></TD></TR>
+<TR><TD ALIGN=LEFT COLSPAN=2>
+<FONT FACE="ARIAL,HELVETICA" COLOR=BLACK SIZE=2><br><B>REMOTE AGENTS MODIFIED</B>
+<TABLE><TR><TD>
+<FONT FACE="ARIAL,HELVETICA" COLOR=BLACK SIZE=2><br>MODIFY A REMOTE AGENTS ENTRY: 13<form action=/vicidial/admin.php method=POST>
+<input type=hidden name=ADD value=41111>
+<input type=hidden name=DB value="0">
+<input type=hidden name=remote_agent_id value="13">
+<center><TABLE width=750 cellspacing=3>
+<tr bgcolor=#AEC866><td align=right><a href="/vicidial/admin.php?ADD=3&user=2001">User ID Start</a>: </td><td align=left><input type=text name=user_start size=9 maxlength=9 value="2001"> (numbers only, incremented, must be an existing vicidial user)<IMG SRC="help.png" onClick="FillAndShowHelpDiv(event, '#remote_agents-user_start')" WIDTH=20 HEIGHT=20 BORDER=0 ALT="HELP" ALIGN=TOP></td></tr>
+<tr bgcolor=#AEC866><td align=right>Number of Lines: </td><td align=left><input type=text name=number_of_lines size=3 maxlength=3 value="5"> (numbers only)<IMG SRC="help.png" onClick="FillAndShowHelpDiv(event, '#remote_agents-number_of_lines')" WIDTH=20 HEIGHT=20 BORDER=0 ALT="HELP" ALIGN=TOP></td></tr>
+<tr bgcolor=#AEC866><td align=right>Server IP: </td><td align=left><select size=1 name=server_ip>
+<option value="174.139.16.202">174.139.16.202 - Server CEAST6 - 174.139.16.202 - Y - Y</option>
+<option value="67.198.205.116">67.198.205.116 - Database Server - 67.229.51.115 - Y - Y</option>
+<option value="67.198.205.58">67.198.205.58 - Server CEAST2 - 67.198.205.58 - Y - Y</option>
+<option value="67.198.237.77">67.198.237.77 - Server CEAST4 - 67.198.237.77 - Y - Y</option>
+<option value="67.198.237.96">67.198.237.96 - Server CEAST5 - 67.198.237.96 - Y - Y</option>
+<option value="98.126.31.10">98.126.31.10 - Server CEAST7 - 98.126.31.10 - Y - Y</option>
+<option value="98.126.31.37">98.126.31.37 - Server CEAST1 - 98.126.31.37 - Y - Y</option>
+<option value="98.126.31.38">98.126.31.38 - Server CEAST3 - 98.126.31.38 - Y - Y</option>
+<option SELECTED>67.198.237.77</option>
+</select><IMG SRC="help.png" onClick="FillAndShowHelpDiv(event, '#remote_agents-server_ip')" WIDTH=20 HEIGHT=20 BORDER=0 ALT="HELP" ALIGN=TOP></td></tr>
+<tr bgcolor=#AEC866><td align=right>External Extension: </td><td align=left><input type=text name=conf_exten size=20 maxlength=20 value="52313466425246"> (dial plan number dialed to reach agents)<IMG SRC="help.png" onClick="FillAndShowHelpDiv(event, '#remote_agents-conf_exten')" WIDTH=20 HEIGHT=20 BORDER=0 ALT="HELP" ALIGN=TOP></td></tr>
+<tr bgcolor=#AEC866><td align=right>Extension Group: </td><td align=left><select size=1 name=extension_group>
+<option value='NONE'>NONE</option>
+<option value='NONE' SELECTED>NONE</option>
+</select><IMG SRC="help.png" onClick="FillAndShowHelpDiv(event, '#remote_agents-extension_group')" WIDTH=20 HEIGHT=20 BORDER=0 ALT="HELP" ALIGN=TOP></td></tr>
+<tr bgcolor=#AEC866><td align=right>Status: </td><td align=left><select size=1 name=status><option value='ACTIVE'>ACTIVE</option><option value='INACTIVE'>INACTIVE</option><option value='ACTIVE' SELECTED>ACTIVE</option></select><IMG SRC="help.png" onClick="FillAndShowHelpDiv(event, '#remote_agents-status')" WIDTH=20 HEIGHT=20 BORDER=0 ALT="HELP" ALIGN=TOP></td></tr>
+<tr bgcolor=#AEC866><td align=right><a href="/vicidial/admin.php?ADD=31&campaign_id=1000">Campaign</a>: </td><td align=left><select size=1 name=campaign_id>
+<option value="0001">0001 - TEST Confirmation</option>
+<option value="0002">0002 - Georgia Confirmation</option>
+<option value="0003">0003 - St Louis Confirmation</option>
+<option value="0004">0004 - Colorado Confirmation</option>
+<option value="0005">0005 - Oklahoma Confirmation</option>
+<option value="0006">0006 - Arizona Confirmation</option>
+<option value="1000">1000 - Colorado Inbound</option>
+<option value="1001">1001 - Vegas Inbound</option>
+<option value="1003">1003 - California Inbound</option>
+<option value="1004">1004 - HOUSTON TEXAS INBOUND</option>
+<option value="1006">1006 - SAN ANTONIO TEXAS INBOUND</option>
+<option value="1008">1008 - Arizona Campaign Inbound</option>
+<option value="1011">1011 - EL PASO SPANISH INBOUND</option>
+<option value="1013">1013 - Denver Spanish</option>
+<option value="1016">1016 - DFW INBOUND</option>
+<option value="1017">1017 - Orlando Inbound</option>
+<option value="1018">1018 - Detroit Inbound</option>
+<option value="1019">1019 - Grand Rapids Inbound</option>
+<option value="1020">1020 - Kansas City Inbound</option>
+<option value="1021">1021 - Tampa SPANISH Inbound</option>
+<option value="1022">1022 - St Louis Inbound</option>
+<option value="1023">1023 - Oklahoma Inbound</option>
+<option value="1024">1024 - Idaho Inbound</option>
+<option value="1025">1025 - Ohio Inbound</option>
+<option value="1026">1026 - Alabama Inbound</option>
+<option value="1027">1027 - Georgia Inbound</option>
+<option value="1028">1028 - Illinois Inbound</option>
+<option value="1029">1029 - Chicago Inbound</option>
+<option value="1030">1030 - Kentucky Inbound</option>
+<option value="1031">1031 - New Jersey Inbound</option>
+<option value="2003">2003 - San Diego Outbound</option>
+<option value="2004">2004 - Matts Campaign</option>
+<option value="2005">2005 - Colorado Outbound</option>
+<option value="2006">2006 - Arizona Outbound</option>
+<option value="3000">3000 - Seed Campaign</option>
+<option value="4000">4000 - Michigan Outbound</option>
+<option value="4001">4001 - Moses Claude Colorado</option>
+<option value="Colorado">Colorado - Colorado Transfer Campaign</option>
+<option value="TESTCID">TESTCID - TEST CALLER ID</option>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=0001">0001</a> - TEST Confirmation <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=0002">0002</a> - Georgia Confirmation <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=0003">0003</a> - St Louis Confirmation <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=0004">0004</a> - Colorado Confirmation <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=0005">0005</a> - Oklahoma Confirmation <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=0006">0006</a> - Arizona Confirmation <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1000">1000</a> - Colorado Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1001">1001</a> - Vegas Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1003">1003</a> - California Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1004">1004</a> - HOUSTON TEXAS INBOUND <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1006">1006</a> - SAN ANTONIO TEXAS INBOUND <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1008">1008</a> - Arizona Campaign Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1011">1011</a> - EL PASO SPANISH INBOUND <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1013">1013</a> - Denver Spanish <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1016">1016</a> - DFW INBOUND <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1017">1017</a> - Orlando Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1018">1018</a> - Detroit Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1019">1019</a> - Grand Rapids Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1020">1020</a> - Kansas City Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1021">1021</a> - Tampa SPANISH Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1022">1022</a> - St Louis Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1023">1023</a> - Oklahoma Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1024">1024</a> - Idaho Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1025">1025</a> - Ohio Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1026">1026</a> - Alabama Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1027">1027</a> - Georgia Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1028">1028</a> - Illinois Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1029">1029</a> - Chicago Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1030">1030</a> - Kentucky Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=1031">1031</a> - New Jersey Inbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=2003">2003</a> - San Diego Outbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=2004">2004</a> - Matts Campaign <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=2005">2005</a> - Colorado Outbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=2006">2006</a> - Arizona Outbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=3000">3000</a> - Seed Campaign <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=4000">4000</a> - Michigan Outbound <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=4001">4001</a> - Moses Claude Colorado <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=Colorado">Colorado</a> - Colorado Transfer Campaign <BR>
+<a href="/vicidial/admin.php?ADD=31&campaign_id=TESTCID">TESTCID</a> - TEST CALLER ID <BR>
+<option SELECTED>1000</option>
+</select><IMG SRC="help.png" onClick="FillAndShowHelpDiv(event, '#remote_agents-campaign_id')" WIDTH=20 HEIGHT=20 BORDER=0 ALT="HELP" ALIGN=TOP></td></tr>
+<tr bgcolor=#AEC866><td align=right>On-Hook Agent: </td><td align=left><select size=1 name=on_hook_agent><option value='Y'>Y</option><option value='N'>N</option><option value='Y' SELECTED>Y</option></select><IMG SRC="help.png" onClick="FillAndShowHelpDiv(event, '#remote_agents-on_hook_agent')" WIDTH=20 HEIGHT=20 BORDER=0 ALT="HELP" ALIGN=TOP></td></tr>
+<tr bgcolor=#AEC866><td align=right>On-Hook Ring Time: </td><td align=left><input type=text name=on_hook_ring_time size=5 maxlength=4 value="20"> <IMG SRC="help.png" onClick="FillAndShowHelpDiv(event, '#remote_agents-on_hook_ring_time')" WIDTH=20 HEIGHT=20 BORDER=0 ALT="HELP" ALIGN=TOP></td></tr>
+<tr bgcolor=#AEC866><td align=center colspan=2>
+<!-- 0) SELECT stats_date,total_calls from vicidial_daily_ra_stats where stats_date='2025-11-07' and user='2001'; \-->
+<!-- 1) SELECT stats_date,total_calls from vicidial_daily_ra_stats where stats_date='2025-11-06' and user='2001'; \-->
+<!-- 2) SELECT stats_date,total_calls from vicidial_daily_ra_stats where stats_date='2025-11-05' and user='2001'; \-->
+<!-- 3) SELECT stats_date,total_calls from vicidial_daily_ra_stats where stats_date='2025-11-04' and user='2001'; \-->
+<!-- 4) SELECT stats_date,total_calls from vicidial_daily_ra_stats where stats_date='2025-11-03' and user='2001'; \-->
+<!-- 5) SELECT stats_date,total_calls from vicidial_daily_ra_stats where stats_date='2025-11-02' and user='2001'; \-->
+<!-- 6) SELECT stats_date,total_calls from vicidial_daily_ra_stats where stats_date='2025-11-01' and user='2001'; \-->
+<!-- 7) SELECT stats_date,total_calls from vicidial_daily_ra_stats where stats_date='2025-10-31' and user='2001'; \-->
+<!-- 8) SELECT stats_date,total_calls from vicidial_daily_ra_stats where stats_date='2025-10-30' and user='2001'; \-->
+<table cellspacing="1" cellpadding="0" bgcolor="white" summary="Multiple day call count." style="background-image:url(images/bg_fade.png); background-repeat:repeat-x; background-position:left top; width: 33em;">
+<caption align="top">8 Day call count for this remote-agent &nbsp; <a href="?ADD=999993&campaign_id=2001&stage=remote-agent"><font size=1>more summary stats...</font></a>  &nbsp; <IMG SRC="help.png" onClick="FillAndShowHelpDiv(event, '#max_stats')" WIDTH=20 HEIGHT=20 BORDER=0 ALT="HELP" ALIGN=TOP><br /></caption>
+<tr>
+<th scope="col" style="text-align: left; vertical-align:top;"><span class="auraltext">date</span> </th>
+<th scope="col" style="text-align: left; vertical-align:top;"><span class="auraltext">call count</span> </th>
+</tr>
+<tr>
+<td class="chart_td"><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;">2025-11-07 </font></td>
+<td class="chart_td"><img src="images/bar.png" alt="" width="0" height="10" style="vertical-align: middle; margin: 2px 2px 2px 0;"/><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;"> -none-</font></td>
+</tr>
+<tr>
+<td class="chart_td"><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;">2025-11-06 </font></td>
+<td class="chart_td"><img src="images/bar.png" alt="" width="0" height="10" style="vertical-align: middle; margin: 2px 2px 2px 0;"/><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;"> -none-</font></td>
+</tr>
+<tr>
+<td class="chart_td"><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;">2025-11-05 </font></td>
+<td class="chart_td"><img src="images/bar.png" alt="" width="400" height="10" style="vertical-align: middle; margin: 2px 2px 2px 0;"/><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;"> 1</font></td>
+</tr>
+<tr>
+<td class="chart_td"><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;">2025-11-04 </font></td>
+<td class="chart_td"><img src="images/bar.png" alt="" width="0" height="10" style="vertical-align: middle; margin: 2px 2px 2px 0;"/><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;"> -none-</font></td>
+</tr>
+<tr>
+<td class="chart_td"><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;">2025-11-03 </font></td>
+<td class="chart_td"><img src="images/bar.png" alt="" width="0" height="10" style="vertical-align: middle; margin: 2px 2px 2px 0;"/><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;"> -none-</font></td>
+</tr>
+<tr>
+<td class="chart_td"><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;">2025-11-02 </font></td>
+<td class="chart_td"><img src="images/bar.png" alt="" width="0" height="10" style="vertical-align: middle; margin: 2px 2px 2px 0;"/><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;"> -none-</font></td>
+</tr>
+<tr>
+<td class="chart_td"><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;">2025-11-01 </font></td>
+<td class="chart_td"><img src="images/bar.png" alt="" width="0" height="10" style="vertical-align: middle; margin: 2px 2px 2px 0;"/><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;"> -none-</font></td>
+</tr>
+<tr>
+<td class="chart_td"><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;">2025-10-31 </font></td>
+<td class="chart_td"><img src="images/bar.png" alt="" width="0" height="10" style="vertical-align: middle; margin: 2px 2px 2px 0;"/><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 60%;"> -none-</font></td>
+</tr>
+</table>
+</td></tr>
+<tr bgcolor=#AEC866><td align=right valign=top>Inbound Groups: <BR><IMG SRC="help.png" onClick="FillAndShowHelpDiv(event, '#remote_agents-closer_campaigns')" WIDTH=20 HEIGHT=20 BORDER=0 ALT="HELP" ALIGN=TOP></td><td align=left>
+<input type="checkbox" name="groups[]" value="4001ColoradoXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=4001ColoradoXfer">4001ColoradoXfer</a> - 4001ColoradoXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="9003Failover"> <a href="/vicidial/admin.php?ADD=3111&group_id=9003Failover">9003Failover</a> - Campaign 9003 Failover  - 98 <BR>
+<input type="checkbox" name="groups[]" value="AGENTDIRECT"> <a href="/vicidial/admin.php?ADD=3111&group_id=AGENTDIRECT">AGENTDIRECT</a> - Single Agent Direct Queue - 98 <BR>
+<input type="checkbox" name="groups[]" value="AGENTDIRECT_CHAT"> <a href="/vicidial/admin.php?ADD=3111&group_id=AGENTDIRECT_CHAT">AGENTDIRECT_CHAT</a> - Agent Direct Queue for Chats - 98 <BR>
+<input type="checkbox" name="groups[]" value="AlabamaXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=AlabamaXfer">AlabamaXfer</a> - AlabamaXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="ArizonaCallback"> <a href="/vicidial/admin.php?ADD=3111&group_id=ArizonaCallback">ArizonaCallback</a> - ArizonaCallback - 99 <BR>
+<input type="checkbox" name="groups[]" value="AZXFER"> <a href="/vicidial/admin.php?ADD=3111&group_id=AZXFER">AZXFER</a> - Shane Arizona Transfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="AZXfer_Failover"> <a href="/vicidial/admin.php?ADD=3111&group_id=AZXfer_Failover">AZXfer_Failover</a> - AZXfer_Failover - 98 <BR>
+<input type="checkbox" name="groups[]" value="BayAreaXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=BayAreaXfer">BayAreaXfer</a> - BayAreaXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="CaliXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=CaliXfer">CaliXfer</a> - CaliXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="ChicagoXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=ChicagoXfer">ChicagoXfer</a> - ChicagoXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="COConfirmCB"> <a href="/vicidial/admin.php?ADD=3111&group_id=COConfirmCB">COConfirmCB</a> - Colorado Confirmation Callback - 99 <BR>
+<input type="checkbox" name="groups[]" value="ColoradoForward"> <a href="/vicidial/admin.php?ADD=3111&group_id=ColoradoForward">ColoradoForward</a> - ColoradoForward - 0 <BR>
+<input type="checkbox" name="groups[]" value="ColoradoXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=ColoradoXfer">ColoradoXfer</a> - Colorado Transfer Queue - 98 <BR>
+<input type="checkbox" name="groups[]" value="ColoradoXfer_Failove"> <a href="/vicidial/admin.php?ADD=3111&group_id=ColoradoXfer_Failove">ColoradoXfer_Failove</a> - Colorado Transfer Failover - 98 <BR>
+<input type="checkbox" name="groups[]" value="ColoradoXfer_Seconda"> <a href="/vicidial/admin.php?ADD=3111&group_id=ColoradoXfer_Seconda">ColoradoXfer_Seconda</a> - Colorado Opt-In Secondary - 98 <BR>
+<input type="checkbox" name="groups[]" value="ColumbusCallback"> <a href="/vicidial/admin.php?ADD=3111&group_id=ColumbusCallback">ColumbusCallback</a> - ColumbusCallback - 99 <BR>
+<input type="checkbox" name="groups[]" value="ColumbusOhioXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=ColumbusOhioXfer">ColumbusOhioXfer</a> - ColumbusOhioXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="ColumbusOhioXferFO"> <a href="/vicidial/admin.php?ADD=3111&group_id=ColumbusOhioXferFO">ColumbusOhioXferFO</a> - Columbus Ohio Xfer Failover - 98 <BR>
+<input type="checkbox" name="groups[]" value="DenverCallback"> <a href="/vicidial/admin.php?ADD=3111&group_id=DenverCallback">DenverCallback</a> - DenverCallback - 99 <BR>
+<input type="checkbox" name="groups[]" value="DenverSpanish"> <a href="/vicidial/admin.php?ADD=3111&group_id=DenverSpanish">DenverSpanish</a> - DenverSpanish - 98 <BR>
+<input type="checkbox" name="groups[]" value="DenverXfer_Failover"> <a href="/vicidial/admin.php?ADD=3111&group_id=DenverXfer_Failover">DenverXfer_Failover</a> - DenverXfer_Failover - 98 <BR>
+<input type="checkbox" name="groups[]" value="DFWXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=DFWXfer">DFWXfer</a> - DFWXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="FLConfirmCB"> <a href="/vicidial/admin.php?ADD=3111&group_id=FLConfirmCB">FLConfirmCB</a> - Florida Confirmation Callback - 99 <BR>
+<input type="checkbox" name="groups[]" value="FLXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=FLXfer">FLXfer</a> - FLXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="GeorgiaXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=GeorgiaXfer">GeorgiaXfer</a> - GeorgiaXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="GRXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=GRXfer">GRXfer</a> - Grand Rapids Xfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="GRXfer_Failover"> <a href="/vicidial/admin.php?ADD=3111&group_id=GRXfer_Failover">GRXfer_Failover</a> - Grand Rapids Transfer Failover - 98 <BR>
+<input type="checkbox" name="groups[]" value="IdahoCallBack"> <a href="/vicidial/admin.php?ADD=3111&group_id=IdahoCallBack">IdahoCallBack</a> - IdahoCallback - 99 <BR>
+<input type="checkbox" name="groups[]" value="IdahoXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=IdahoXfer">IdahoXfer</a> - IdahoXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="IdahoXfer_FO"> <a href="/vicidial/admin.php?ADD=3111&group_id=IdahoXfer_FO">IdahoXfer_FO</a> - IdahoXfer_Failover - 98 <BR>
+<input type="checkbox" name="groups[]" value="IllinoisXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=IllinoisXfer">IllinoisXfer</a> - IllinoisXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="IllinoisXferFailover"> <a href="/vicidial/admin.php?ADD=3111&group_id=IllinoisXferFailover">IllinoisXferFailover</a> - IllinoisXferFailover - 98 <BR>
+<input type="checkbox" name="groups[]" value="JerseySelectXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=JerseySelectXfer">JerseySelectXfer</a> - TEXAS AUSTIN - 98 <BR>
+<input type="checkbox" name="groups[]" value="JerseyXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=JerseyXfer">JerseyXfer</a> - HOUSTON - 98 <BR>
+<input type="checkbox" name="groups[]" value="KansasCityCallback"> <a href="/vicidial/admin.php?ADD=3111&group_id=KansasCityCallback">KansasCityCallback</a> - KansasCityCallback - 99 <BR>
+<input type="checkbox" name="groups[]" value="KansasCityXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=KansasCityXfer">KansasCityXfer</a> - Kansas City Xfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="KansasCityXfer_FO"> <a href="/vicidial/admin.php?ADD=3111&group_id=KansasCityXfer_FO">KansasCityXfer_FO</a> - KansasCityXfer_Failover - 98 <BR>
+<input type="checkbox" name="groups[]" value="KentuckyXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=KentuckyXfer">KentuckyXfer</a> - KentuckyXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="LAXFER"> <a href="/vicidial/admin.php?ADD=3111&group_id=LAXFER">LAXFER</a> - LAXFER - 98 <BR>
+<input type="checkbox" name="groups[]" value="LiveXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=LiveXfer">LiveXfer</a> - Live Transfer - 99 <BR>
+<input type="checkbox" name="groups[]" value="MaxwellXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=MaxwellXfer">MaxwellXfer</a> - Maxwell Xfer - 99 <BR>
+<input type="checkbox" name="groups[]" value="MIConfirmCB"> <a href="/vicidial/admin.php?ADD=3111&group_id=MIConfirmCB">MIConfirmCB</a> - Michican Confirmation Callback - 99 <BR>
+<input type="checkbox" name="groups[]" value="MIXFER"> <a href="/vicidial/admin.php?ADD=3111&group_id=MIXFER">MIXFER</a> - MIXFER - 98 <BR>
+<input type="checkbox" name="groups[]" value="MIXFER_Failover"> <a href="/vicidial/admin.php?ADD=3111&group_id=MIXFER_Failover">MIXFER_Failover</a> - MIXFER_Failover - 98 <BR>
+<input type="checkbox" name="groups[]" value="NewJerseyXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=NewJerseyXfer">NewJerseyXfer</a> - NewJerseyXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="NorthDenverXfer" CHECKED> <a href="/vicidial/admin.php?ADD=3111&group_id=NorthDenverXfer">NorthDenverXfer</a> - NorthDenverXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="NVConfirmCB"> <a href="/vicidial/admin.php?ADD=3111&group_id=NVConfirmCB">NVConfirmCB</a> - Nevada Confirmation Callback - 99 <BR>
+<input type="checkbox" name="groups[]" value="OklahomaCallbackOGE"> <a href="/vicidial/admin.php?ADD=3111&group_id=OklahomaCallbackOGE">OklahomaCallbackOGE</a> - OklahomaCallbackOGE - 99 <BR>
+<input type="checkbox" name="groups[]" value="OklahomaXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=OklahomaXfer">OklahomaXfer</a> - OklahomaXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="OklahomaXfer_FO"> <a href="/vicidial/admin.php?ADD=3111&group_id=OklahomaXfer_FO">OklahomaXfer_FO</a> - OklahomaXfer_Failover - 98 <BR>
+<input type="checkbox" name="groups[]" value="PAXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=PAXfer">PAXfer</a> - PAXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="PittsburghXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=PittsburghXfer">PittsburghXfer</a> - PittsburghXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="QAXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=QAXfer">QAXfer</a> - Quality Air Transfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="RemoteXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=RemoteXfer">RemoteXfer</a> - Remote Transfer Inbound - 99 <BR>
+<input type="checkbox" name="groups[]" value="SanDiegoXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=SanDiegoXfer">SanDiegoXfer</a> - San Antonio - 98 <BR>
+<input type="checkbox" name="groups[]" value="spanishvegas"> <a href="/vicidial/admin.php?ADD=3111&group_id=spanishvegas">spanishvegas</a> - spanishvegas - 98 <BR>
+<input type="checkbox" name="groups[]" value="StLouisXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=StLouisXfer">StLouisXfer</a> - StLouisXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="StLouisXfer_FO"> <a href="/vicidial/admin.php?ADD=3111&group_id=StLouisXfer_FO">StLouisXfer_FO</a> - StLouisXfer_Failover - 98 <BR>
+<input type="checkbox" name="groups[]" value="TampaSPXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=TampaSPXfer">TampaSPXfer</a> - Tampa Spanish Transfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="TampaXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=TampaXfer">TampaXfer</a> - Tampa Transfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="TEST"> <a href="/vicidial/admin.php?ADD=3111&group_id=TEST">TEST</a> - TESTCAMPAIGN - 98 <BR>
+<input type="checkbox" name="groups[]" value="ToddIllinoisCallback"> <a href="/vicidial/admin.php?ADD=3111&group_id=ToddIllinoisCallback">ToddIllinoisCallback</a> - ToddIllinoisCallback - 99 <BR>
+<input type="checkbox" name="groups[]" value="TodMiciganCallback"> <a href="/vicidial/admin.php?ADD=3111&group_id=TodMiciganCallback">TodMiciganCallback</a> - TodMiciganCallback - 99 <BR>
+<input type="checkbox" name="groups[]" value="TXConfirmCB"> <a href="/vicidial/admin.php?ADD=3111&group_id=TXConfirmCB">TXConfirmCB</a> - Texas Confirmation Callback - 99 <BR>
+<input type="checkbox" name="groups[]" value="VegasXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=VegasXfer">VegasXfer</a> - VegasXfer - 98 <BR>
+<input type="checkbox" name="groups[]" value="Verifier"> <a href="/vicidial/admin.php?ADD=3111&group_id=Verifier">Verifier</a> - Verifier - 99 <BR>
+<input type="checkbox" name="groups[]" value="VivoXfer"> <a href="/vicidial/admin.php?ADD=3111&group_id=VivoXfer">VivoXfer</a> - VivoXfer - 99 <BR>
+<input type="checkbox" name="groups[]" value="Watts_Up_Solar"> <a href="/vicidial/admin.php?ADD=3111&group_id=Watts_Up_Solar">Watts_Up_Solar</a> - Watts_Up_Solar - 98 <BR>
+</td></tr>
+<tr bgcolor=#AEC866><td align=center colspan=2><input style='background-color:#EFEFEF' type=submit name=SUBMIT value='SUBMIT'></td></tr>
+</TABLE></center>
+NOTE: It can take up to 30 seconds for changes submitted on this screen to go live
+<br><br><a href="/vicidial/admin.php?ADD=51111&remote_agent_id=13">DELETE THIS REMOTE AGENT</a>
+<br><br><a href="/vicidial/admin.php?ADD=720000000000000&category=REMOTEAGENTS&stage=13">Click here to see Admin changes to this remote agent</FONT>
+</TD></TR></TABLE></center>
+</TD></TR></TABLE></center>
+</TD></TR>
+<TR><TD bgcolor=#333333 ALIGN=CENTER>
+<FONT STYLE="font-family:HELVETICA;font-size:9;color:white;"><br><br><!-- RUNTIME: 0 seconds<BR> -->VERSION: 2.14-858a<BR>BUILD: 220513-0819
+<BR><a href="/vicidial/admin.php?ADD=999995"><font color=white>&copy; 2022 ViciDial Group</font></a><BR><img src="images/pixel.gif"></FONT>
+
+</TD><TD BGCOLOR=#D6E3B2>
+</TD></TR><TABLE>
+</body>
+<script language="Javascript">
+if (!window.A_TCALSIDX)
+	{
+	if (document.addEventListener)
+		window.removeEventListener('scroll', f_tcalHideAll);
+	if (window.attachEvent)
+		window.detachEvent('onscroll', f_tcalHideAll);
+	}
+</script>
+</html>

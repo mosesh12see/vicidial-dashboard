@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VICIdial White Label Implementation Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            zoom: 0.65;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            font-size: 3em;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-tab {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-tab:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-tab.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card h3 {
+            font-size: 1.3em;
+            margin: 20px 0 10px 0;
+            color: #667eea;
+        }
+
+        .card ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .card li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        .difficulty-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .difficulty-easy {
+            background: #10b981;
+            color: white;
+        }
+
+        .difficulty-medium {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .difficulty-hard {
+            background: #ef4444;
+            color: white;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -33px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #667eea;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #667eea;
+        }
+
+        .timeline-item h4 {
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .comparison-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 600;
+        }
+
+        .comparison-table tr:hover {
+            background: #f9fafb;
+        }
+
+        .checkmark {
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        .crossmark {
+            color: #ef4444;
+            font-weight: bold;
+        }
+
+        .code-block {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 10px 10px 10px 0;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .stat-box h3 {
+            font-size: 3em;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        .stat-box p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature-item h4 {
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+
+        .vendor-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+
+        .vendor-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.2);
+        }
+
+        .vendor-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .price-tag {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-tabs {
+                flex-direction: column;
+            }
+
+            .nav-tab {
+                width: 100%;
+            }
+        }
+
+        .alert {
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid;
+        }
+
+        .alert-info {
+            background: #dbeafe;
+            border-color: #3b82f6;
+            color: #1e40af;
+        }
+
+        .alert-warning {
+            background: #fef3c7;
+            border-color: #f59e0b;
+            color: #92400e;
+        }
+
+        .alert-success {
+            background: #d1fae5;
+            border-color: #10b981;
+            color: #065f46;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background: #e5e7eb;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            transition: width 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>VICIdial White Label Guide</h1>
+            <p class="subtitle">Complete implementation guide for transforming VICIdial into your branded call center solution</p>
+        </div>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showTab('overview')">Overview</button>
+            <button class="nav-tab" onclick="showTab('options')">Implementation Options</button>
+            <button class="nav-tab" onclick="showTab('technical')">Technical Guide</button>
+            <button class="nav-tab" onclick="showTab('vendors')">Vendor Comparison</button>
+            <button class="nav-tab" onclick="showTab('timeline')">Timeline & Cost</button>
+            <button class="nav-tab" onclick="showTab('resources')">Resources</button>
+        </div>
+
+        <!-- Overview Tab -->
+        <div id="overview" class="content-section active">
+            <div class="card-grid">
+                <div class="stat-box">
+                    <h3>14,000+</h3>
+                    <p>VICIdial Installations Worldwide</p>
+                </div>
+                <div class="stat-box">
+                    <h3>100+</h3>
+                    <p>Countries Using VICIdial</p>
+                </div>
+                <div class="stat-box">
+                    <h3>1M+</h3>
+                    <p>Calls Per Day (Large Installations)</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>What is VICIdial White Labeling?</h2>
+                <p>White labeling VICIdial allows you to rebrand the open-source call center software with your own company identity, removing all VICIdial references and presenting it as your proprietary solution.</p>
+
+                <h3>Key Benefits</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h4>Brand Control</h4>
+                        <p>Complete control over visual identity and branding</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Revenue Opportunity</h4>
+                        <p>Sell as your own SaaS or hosted solution</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Customization</h4>
+                        <p>Tailor features to your specific needs</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Competitive Edge</h4>
+                        <p>Differentiate from standard VICIdial offerings</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Your Current Setup Analysis</h2>
+                <div class="alert alert-success">
+                    <strong>Great News!</strong> Your existing VICIdial setup is already well-integrated and ready for white labeling.
+                </div>
+
+                <h3>Current Strengths</h3>
+                <ul>
+                    <li>Database access with 108M+ call records</li>
+                    <li>Custom Python reporting tools already developed</li>
+                    <li>Multiple active campaigns running in production</li>
+                    <li>Proven technical capability with system integration</li>
+                    <li>Existing custom dashboards (deep-analysis.html)</li>
+                </ul>
+
+                <h3>Next Steps</h3>
+                <ol>
+                    <li>Verify SSH/filesystem access to web server</li>
+                    <li>Choose implementation approach (basic, professional, or custom)</li>
+                    <li>Allocate budget and timeline</li>
+                    <li>Begin implementation</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h2>Quick Difficulty Assessment</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Approach</th>
+                            <th>Difficulty</th>
+                            <th>Timeline</th>
+                            <th>Cost</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Basic Branding</strong></td>
+                            <td><span class="difficulty-badge difficulty-easy">Easy</span></td>
+                            <td>2 weeks</td>
+                            <td>$5K</td>
+                            <td>Internal use</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Professional Theme</strong></td>
+                            <td><span class="difficulty-badge difficulty-medium">Medium</span></td>
+                            <td>3-4 weeks</td>
+                            <td>$10K</td>
+                            <td>Client-facing</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Custom Build</strong></td>
+                            <td><span class="difficulty-badge difficulty-hard">Hard</span></td>
+                            <td>3-6 months</td>
+                            <td>$50-100K</td>
+                            <td>SaaS offering</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Implementation Options Tab -->
+        <div id="options" class="content-section">
+            <div class="card-grid">
+                <div class="card">
+                    <span class="difficulty-badge difficulty-easy">OPTION 1: EASY</span>
+                    <h2>Basic Cosmetic Branding</h2>
+                    <div class="price-tag">$5,000 | 2 weeks</div>
+
+                    <h3>What You'll Change</h3>
+                    <ul>
+                        <li>Replace logo images (2 files)</li>
+                        <li>Modify CSS color schemes</li>
+                        <li>Change page titles and headers</li>
+                        <li>Customize footer text</li>
+                    </ul>
+
+                    <h3>Technical Requirements</h3>
+                    <ul>
+                        <li>Basic HTML/CSS knowledge</li>
+                        <li>FTP/SSH file access</li>
+                        <li>Image editing tools</li>
+                        <li>1-2 hours/day for 2 weeks</li>
+                    </ul>
+
+                    <h3>Key Files Modified</h3>
+                    <div class="code-block">vdc_tab_vicidial.gif (220x60px)
+vicidial_admin_web_logo.gif (220x60px)
+custom.css (colors, fonts)
+options.php (configuration)</div>
+
+                    <h3>Limitations</h3>
+                    <ul>
+                        <li>VICIdial references may remain in code</li>
+                        <li>Limited functional changes</li>
+                        <li>Some admin pages retain branding</li>
+                    </ul>
+
+                    <a href="#" class="cta-button">View Implementation Steps</a>
+                </div>
+
+                <div class="card">
+                    <span class="difficulty-badge difficulty-medium">OPTION 2: MEDIUM</span>
+                    <h2>Professional Theme Package</h2>
+                    <div class="price-tag">$6,000-10,000 | 3-4 weeks</div>
+
+                    <h3>Available Solutions</h3>
+                    <ul>
+                        <li><strong>CyburDial 2025:</strong> Full white label theme with modern UI</li>
+                        <li><strong>KingAsterisk:</strong> Custom skin development and branding</li>
+                        <li><strong>DialerKing:</strong> Modern GUI skins with responsive design</li>
+                    </ul>
+
+                    <h3>What You Get</h3>
+                    <ul>
+                        <li>Professional appearance</li>
+                        <li>Complete visual rebrand</li>
+                        <li>Tested and stable</li>
+                        <li>Vendor support included</li>
+                        <li>Regular updates</li>
+                        <li>Multiple color schemes</li>
+                    </ul>
+
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Admin and agent interface rebrand</li>
+                        <li>Custom color schemes (4-6 options)</li>
+                        <li>Enhanced agent features</li>
+                        <li>Multi-language support</li>
+                        <li>Professional installation</li>
+                    </ul>
+
+                    <a href="#" class="cta-button">Compare Vendors</a>
+                </div>
+
+                <div class="card">
+                    <span class="difficulty-badge difficulty-hard">OPTION 3: ADVANCED</span>
+                    <h2>Complete White Label Solution</h2>
+                    <div class="price-tag">$50,000-100,000 | 3-6 months</div>
+
+                    <h3>Full Scope Includes</h3>
+                    <ul>
+                        <li><strong>Code-Level Modifications:</strong> Remove all VICIdial references</li>
+                        <li><strong>UI/UX Overhaul:</strong> Complete interface redesign</li>
+                        <li><strong>Infrastructure:</strong> Custom domain, SSL, CDN</li>
+                        <li><strong>Features:</strong> Proprietary functionality</li>
+                    </ul>
+
+                    <h3>Development Team</h3>
+                    <ul>
+                        <li>Solution Architect</li>
+                        <li>Senior PHP/Perl Developers (2-3)</li>
+                        <li>UI/UX Designer</li>
+                        <li>Database Administrator</li>
+                        <li>QA Team</li>
+                        <li>Project Manager</li>
+                    </ul>
+
+                    <h3>Benefits</h3>
+                    <ul>
+                        <li>100% your brand everywhere</li>
+                        <li>No VICIdial references anywhere</li>
+                        <li>Custom features and integrations</li>
+                        <li>Competitive advantage</li>
+                        <li>Full control over roadmap</li>
+                    </ul>
+
+                    <h3>Challenges</h3>
+                    <ul>
+                        <li>Very time-consuming (3-6 months)</li>
+                        <li>Requires expert developers</li>
+                        <li>Ongoing maintenance burden</li>
+                        <li>Complex upgrade path</li>
+                        <li>High initial investment</li>
+                    </ul>
+
+                    <a href="#" class="cta-button">Request Proposal</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Guide Tab -->
+        <div id="technical" class="content-section">
+            <div class="card">
+                <h2>VICIdial Architecture</h2>
+                <p>Understanding the architecture is crucial for successful white labeling:</p>
+
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h4>Frontend (PHP + JS)</h4>
+                        <p>Agent and admin web interfaces</p>
+                        <p><strong>Location:</strong> /srv/www/htdocs/</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Backend (Perl)</h4>
+                        <p>AGI scripts, cron jobs, processing</p>
+                        <p><strong>Location:</strong> /usr/share/astguiclient/</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Database (MySQL)</h4>
+                        <p>Call logs, campaigns, agents, leads</p>
+                        <p><strong>Database:</strong> asterisk</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>PBX (Asterisk)</h4>
+                        <p>Telephony platform, call control</p>
+                        <p><strong>Location:</strong> /etc/asterisk/</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Critical Files for Branding</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>File Path</th>
+                            <th>Purpose</th>
+                            <th>Difficulty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>/agc/images/vdc_tab_vicidial.gif</td>
+                            <td>Agent interface logo</td>
+                            <td><span class="difficulty-badge difficulty-easy">Easy</span></td>
+                        </tr>
+                        <tr>
+                            <td>/vicidial/vicidial_admin_web_logo.gif</td>
+                            <td>Admin interface logo</td>
+                            <td><span class="difficulty-badge difficulty-easy">Easy</span></td>
+                        </tr>
+                        <tr>
+                            <td>/agc/css/custom.css</td>
+                            <td>Custom styles</td>
+                            <td><span class="difficulty-badge difficulty-medium">Medium</span></td>
+                        </tr>
+                        <tr>
+                            <td>/agc/options.php</td>
+                            <td>Agent configuration</td>
+                            <td><span class="difficulty-badge difficulty-medium">Medium</span></td>
+                        </tr>
+                        <tr>
+                            <td>/vicidial/admin_header.php</td>
+                            <td>Admin page header</td>
+                            <td><span class="difficulty-badge difficulty-medium">Medium</span></td>
+                        </tr>
+                        <tr>
+                            <td>/agc/vicidial.php</td>
+                            <td>Core agent interface</td>
+                            <td><span class="difficulty-badge difficulty-hard">Hard</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h2>Step 1: Logo Replacement</h2>
+                <p>The easiest and most visible change - replace the VICIdial logos with your own.</p>
+
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Logo dimensions: Exactly 220 x 60 pixels</li>
+                    <li>Format: GIF (required for compatibility)</li>
+                    <li>File access: SSH or FTP to web server</li>
+                </ul>
+
+                <h3>Commands</h3>
+                <div class="code-block"># Backup original logos
+cp /srv/www/htdocs/agc/images/vdc_tab_vicidial.gif \
+   /srv/www/htdocs/agc/images/vdc_tab_vicidial.gif.backup
+
+cp /srv/www/htdocs/vicidial/vicidial_admin_web_logo.gif \
+   /srv/www/htdocs/vicidial/vicidial_admin_web_logo.gif.backup
+
+# Replace with your logos
+cp your_agent_logo.gif /srv/www/htdocs/agc/images/vdc_tab_vicidial.gif
+cp your_admin_logo.gif /srv/www/htdocs/vicidial/vicidial_admin_web_logo.gif
+
+# Set correct permissions
+chmod 644 /srv/www/htdocs/agc/images/vdc_tab_vicidial.gif
+chmod 644 /srv/www/htdocs/vicidial/vicidial_admin_web_logo.gif</div>
+            </div>
+
+            <div class="card">
+                <h2>Step 2: Custom CSS</h2>
+                <p>Apply your brand colors and styling across the interface.</p>
+
+                <h3>Create Custom CSS File</h3>
+                <div class="code-block">/* /srv/www/htdocs/agc/css/custom.css */
+
+:root {
+    --primary-color: #0066CC;      /* Your brand blue */
+    --secondary-color: #FF6600;    /* Your brand orange */
+    --accent-color: #00CC66;       /* Your brand green */
+}
+
+#vicidial_header {
+    background: linear-gradient(135deg,
+        var(--primary-color) 0%,
+        var(--secondary-color) 100%) !important;
+}
+
+.button, input[type="submit"] {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+table.vicidial_table th {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}</div>
+
+                <div class="alert alert-info">
+                    <strong>Pro Tip:</strong> Use !important to override existing VICIdial styles.
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Step 3: Configuration</h2>
+                <p>Customize system settings and behavior.</p>
+
+                <h3>Database Updates</h3>
+                <div class="code-block">-- Update system branding
+UPDATE system_settings
+SET sounds_web_server = 'https://yourcompany.com',
+    outbound_email_from = 'noreply@yourcompany.com';
+
+-- Update campaign descriptions
+UPDATE vicidial_campaigns
+SET campaign_description = CONCAT(
+    'Your Company - ',
+    campaign_description
+);</div>
+            </div>
+        </div>
+
+        <!-- Vendors Tab -->
+        <div id="vendors" class="content-section">
+            <div class="card">
+                <h2>Professional Theme Vendors</h2>
+                <p>Compare leading VICIdial white label theme providers:</p>
+            </div>
+
+            <div class="vendor-card">
+                <h3>CyburDial 2025 Edition</h3>
+                <div class="price-tag">Est. $2,000-3,000</div>
+
+                <h4>Features</h4>
+                <ul>
+                    <li>Full white label theme for 2025</li>
+                    <li>Multiple color schemes (melon, green, dark, white)</li>
+                    <li>Agent interface enhancements</li>
+                    <li>Manual dial buttons for agents</li>
+                    <li>Disable leads directly from interface</li>
+                    <li>Multi-language support (new in 2025)</li>
+                    <li>Bug fixes and performance improvements</li>
+                </ul>
+
+                <h4>Best For</h4>
+                <p>Organizations wanting the latest features with modern UI improvements.</p>
+
+                <h4>Website</h4>
+                <p>dialer.one/product/white-label-cyburdial-theme-2025/</p>
+            </div>
+
+            <div class="vendor-card">
+                <h3>KingAsterisk Technologies</h3>
+                <div class="price-tag">Custom Pricing</div>
+
+                <h4>Features</h4>
+                <ul>
+                    <li>Custom VICIdial theme development</li>
+                    <li>White label branding solutions</li>
+                    <li>Complete skin customization</li>
+                    <li>Logo and color integration</li>
+                    <li>Admin and agent portal theming</li>
+                    <li>Ongoing support and updates</li>
+                    <li>CRM integration assistance</li>
+                </ul>
+
+                <h4>Best For</h4>
+                <p>Businesses needing fully customized solutions with dedicated support.</p>
+
+                <h4>Website</h4>
+                <p>kingasterisk.com/white-label-vicidial-agent-theme</p>
+            </div>
+
+            <div class="vendor-card">
+                <h3>DialerKing</h3>
+                <div class="price-tag">Est. $1,500-2,500</div>
+
+                <h4>Features</h4>
+                <ul>
+                    <li>Modern agent UI themes</li>
+                    <li>Sleek custom GUI skins</li>
+                    <li>Responsive design</li>
+                    <li>Customizable layouts</li>
+                    <li>Logo and color customization</li>
+                    <li>Quick deployment</li>
+                    <li>Documentation included</li>
+                </ul>
+
+                <h4>Best For</h4>
+                <p>Quick deployment with modern, mobile-friendly interface.</p>
+
+                <h4>Website</h4>
+                <p>dialerking.com/vicidial-customization</p>
+            </div>
+
+            <div class="card">
+                <h2>Vendor Comparison Matrix</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>CyburDial</th>
+                            <th>KingAsterisk</th>
+                            <th>DialerKing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Est. Cost</td>
+                            <td>$2,000-3,000</td>
+                            <td>Custom</td>
+                            <td>$1,500-2,500</td>
+                        </tr>
+                        <tr>
+                            <td>Setup Time</td>
+                            <td>1-2 weeks</td>
+                            <td>2-4 weeks</td>
+                            <td>1 week</td>
+                        </tr>
+                        <tr>
+                            <td>Color Schemes</td>
+                            <td><span class="checkmark">✓</span> 4+</td>
+                            <td><span class="checkmark">✓</span> Custom</td>
+                            <td><span class="checkmark">✓</span> Custom</td>
+                        </tr>
+                        <tr>
+                            <td>Agent Features</td>
+                            <td><span class="checkmark">✓✓</span> Enhanced</td>
+                            <td><span class="checkmark">✓</span> Standard</td>
+                            <td><span class="checkmark">✓</span> Standard</td>
+                        </tr>
+                        <tr>
+                            <td>Multi-Language</td>
+                            <td><span class="checkmark">✓</span> Yes</td>
+                            <td><span class="checkmark">✓</span> Yes</td>
+                            <td><span class="crossmark">✗</span> No</td>
+                        </tr>
+                        <tr>
+                            <td>Support</td>
+                            <td><span class="checkmark">✓</span> Included</td>
+                            <td><span class="checkmark">✓✓</span> Dedicated</td>
+                            <td><span class="checkmark">✓</span> Standard</td>
+                        </tr>
+                        <tr>
+                            <td>Updates</td>
+                            <td><span class="checkmark">✓✓</span> Regular</td>
+                            <td><span class="checkmark">✓</span> Quarterly</td>
+                            <td><span class="checkmark">✓</span> As needed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Timeline & Cost Tab -->
+        <div id="timeline" class="content-section">
+            <div class="card">
+                <h2>Implementation Timeline Comparison</h2>
+
+                <h3>Option A: Basic Branding (2 Weeks)</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 25%">2 weeks</div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Week 1: Preparation & Changes</h4>
+                        <p>System audit, backups, logo replacement, CSS customization, configuration</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Week 2: Testing & Deployment</h4>
+                        <p>Comprehensive testing, documentation, training, go-live</p>
+                    </div>
+                </div>
+
+                <h3>Option B: Professional Theme (3-4 Weeks)</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 40%">3-4 weeks</div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Week 1-2: Vendor Selection</h4>
+                        <p>Research vendors, evaluate demos, purchase theme, schedule installation</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Week 3: Installation & Customization</h4>
+                        <p>Theme installation, branding customization, integration testing</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Week 4: Testing & Training</h4>
+                        <p>UAT, final adjustments, deployment, staff training</p>
+                    </div>
+                </div>
+
+                <h3>Option C: Custom Build (3-6 Months)</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%">3-6 months</div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Month 1: Requirements & Design</h4>
+                        <p>Requirements gathering, architecture design, UI/UX mockups, approval</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Months 2-4: Development</h4>
+                        <p>Core modifications, custom features, API development, integration</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Month 5: Testing</h4>
+                        <p>QA testing, UAT, performance testing, security audit, bug fixes</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Month 6: Deployment</h4>
+                        <p>Staging deployment, training, production cutover, stabilization</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Cost Breakdown</h2>
+
+                <h3>Option A: Basic Branding - $5,600</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Role</th>
+                            <th>Hours</th>
+                            <th>Rate</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>System Administrator</td>
+                            <td>20</td>
+                            <td>$100/hr</td>
+                            <td>$2,000</td>
+                        </tr>
+                        <tr>
+                            <td>Web Developer</td>
+                            <td>20</td>
+                            <td>$100/hr</td>
+                            <td>$2,000</td>
+                        </tr>
+                        <tr>
+                            <td>QA Tester</td>
+                            <td>8</td>
+                            <td>$75/hr</td>
+                            <td>$600</td>
+                        </tr>
+                        <tr>
+                            <td>Project Manager</td>
+                            <td>8</td>
+                            <td>$125/hr</td>
+                            <td>$1,000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><strong>TOTAL</strong></td>
+                            <td><strong>$5,600</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Option B: Professional Theme - $10,200</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Hours</th>
+                            <th>Rate</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Theme Purchase</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>$2,500</td>
+                        </tr>
+                        <tr>
+                            <td>System Administrator</td>
+                            <td>30</td>
+                            <td>$100/hr</td>
+                            <td>$3,000</td>
+                        </tr>
+                        <tr>
+                            <td>Web Developer</td>
+                            <td>20</td>
+                            <td>$100/hr</td>
+                            <td>$2,000</td>
+                        </tr>
+                        <tr>
+                            <td>QA Tester</td>
+                            <td>16</td>
+                            <td>$75/hr</td>
+                            <td>$1,200</td>
+                        </tr>
+                        <tr>
+                            <td>Project Manager</td>
+                            <td>12</td>
+                            <td>$125/hr</td>
+                            <td>$1,500</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><strong>TOTAL</strong></td>
+                            <td><strong>$10,200</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Option C: Custom Build - $132,000</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Role</th>
+                            <th>Hours</th>
+                            <th>Rate</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Solution Architect</td>
+                            <td>80</td>
+                            <td>$150/hr</td>
+                            <td>$12,000</td>
+                        </tr>
+                        <tr>
+                            <td>Senior Developer</td>
+                            <td>400</td>
+                            <td>$125/hr</td>
+                            <td>$50,000</td>
+                        </tr>
+                        <tr>
+                            <td>Junior Developer</td>
+                            <td>400</td>
+                            <td>$75/hr</td>
+                            <td>$30,000</td>
+                        </tr>
+                        <tr>
+                            <td>UI/UX Designer</td>
+                            <td>80</td>
+                            <td>$100/hr</td>
+                            <td>$8,000</td>
+                        </tr>
+                        <tr>
+                            <td>QA Team</td>
+                            <td>160</td>
+                            <td>$75/hr</td>
+                            <td>$12,000</td>
+                        </tr>
+                        <tr>
+                            <td>Project Manager</td>
+                            <td>160</td>
+                            <td>$125/hr</td>
+                            <td>$20,000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><strong>TOTAL</strong></td>
+                            <td><strong>$132,000</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h2>Total Cost of Ownership (Year 1)</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Approach</th>
+                            <th>Upfront</th>
+                            <th>Monthly</th>
+                            <th>Total Year 1</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Basic Branding</td>
+                            <td>$5,600</td>
+                            <td>$1,200</td>
+                            <td>$20,000</td>
+                        </tr>
+                        <tr>
+                            <td>Professional Theme</td>
+                            <td>$10,200</td>
+                            <td>$1,100</td>
+                            <td>$23,400</td>
+                        </tr>
+                        <tr>
+                            <td>Custom Build</td>
+                            <td>$132,000</td>
+                            <td>$10,000</td>
+                            <td>$252,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="alert alert-warning">
+                    <strong>Note:</strong> Monthly costs include hosting ($400-1,000), maintenance, support, and theme updates where applicable.
+                </div>
+            </div>
+        </div>
+
+        <!-- Resources Tab -->
+        <div id="resources" class="content-section">
+            <div class="card">
+                <h2>Documentation Resources</h2>
+                <p>All documentation is available in the White Label Vici folder:</p>
+
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h4>01_EXECUTIVE_OVERVIEW.md</h4>
+                        <p>Complete overview, market analysis, and feasibility study</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>02_TECHNICAL_IMPLEMENTATION.md</h4>
+                        <p>Technical deep-dive with code examples and step-by-step guides</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>03_IMPLEMENTATION_PLAN.md</h4>
+                        <p>Project timeline, resource allocation, and risk management</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>White_Label_Dashboard.html</h4>
+                        <p>This interactive guide you're viewing now</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Quick Start Guide</h2>
+                <ol style="line-height: 2;">
+                    <li>Read the <strong>Executive Overview</strong> to understand options</li>
+                    <li>Review <strong>Implementation Plan</strong> to estimate timeline and costs</li>
+                    <li>Choose your approach (Basic, Professional, or Custom)</li>
+                    <li>If buying a theme, compare vendors and request demos</li>
+                    <li>If doing DIY, review <strong>Technical Implementation</strong> guide</li>
+                    <li>Verify you have required server access (SSH, database)</li>
+                    <li>Create complete backup before making any changes</li>
+                    <li>Start with staging/test environment first</li>
+                    <li>Test thoroughly before deploying to production</li>
+                    <li>Document all changes made for future reference</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h2>External Resources</h2>
+
+                <h3>VICIdial Official</h3>
+                <ul>
+                    <li><strong>Website:</strong> vicidial.org</li>
+                    <li><strong>Forums:</strong> vicidial.org/VICIDIALforum/</li>
+                    <li><strong>Documentation:</strong> vicidial.org/docs/</li>
+                    <li><strong>GitHub:</strong> github.com/inktel/Vicidial</li>
+                </ul>
+
+                <h3>Theme Vendors</h3>
+                <ul>
+                    <li><strong>CyburDial:</strong> dialer.one</li>
+                    <li><strong>KingAsterisk:</strong> kingasterisk.com</li>
+                    <li><strong>DialerKing:</strong> dialerking.com</li>
+                </ul>
+
+                <h3>Community Resources</h3>
+                <ul>
+                    <li>VICIdial Forums (active community)</li>
+                    <li>GitHub repositories with themes</li>
+                    <li>YouTube tutorials</li>
+                    <li>Stack Overflow (tagged: vicidial)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Need Help?</h2>
+
+                <div class="alert alert-info">
+                    <strong>Next Steps:</strong>
+                    <ol>
+                        <li>Review all documentation in this folder</li>
+                        <li>Determine your budget and timeline</li>
+                        <li>Verify server access requirements</li>
+                        <li>Choose implementation approach</li>
+                        <li>Contact vendors if going with professional theme</li>
+                        <li>Create backup and testing plan</li>
+                        <li>Schedule implementation kickoff</li>
+                    </ol>
+                </div>
+
+                <a href="#" class="cta-button">Schedule Planning Meeting</a>
+                <a href="#" class="cta-button">Request Vendor Demos</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all content sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.nav-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected content section
+            document.getElementById(tabName).classList.add('active');
+
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Animate progress bars when visible
+        window.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const fill = entry.target.querySelector('.progress-fill');
+                        if (fill) {
+                            const width = fill.style.width;
+                            fill.style.width = '0%';
+                            setTimeout(() => {
+                                fill.style.width = width;
+                            }, 100);
+                        }
+                    }
+                });
+            });
+
+            document.querySelectorAll('.progress-bar').forEach(bar => {
+                observer.observe(bar);
+            });
+        });
+    </script>
+</body>
+</html>

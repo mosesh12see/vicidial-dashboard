@@ -1,0 +1,433 @@
+/**
+ * VICIdial Custom White Label CSS
+ * Place this file at: /srv/www/htdocs/agc/css/custom.css
+ *
+ * This CSS file overrides default VICIdial styles with your brand colors
+ */
+
+/* ============================================
+   BRAND COLOR VARIABLES
+   ============================================ */
+:root {
+    /* Primary Colors - Replace with your brand colors */
+    --brand-primary: #0066CC;        /* Main brand color (blue) */
+    --brand-secondary: #FF6600;      /* Secondary color (orange) */
+    --brand-accent: #00CC66;         /* Accent color (green) */
+
+    /* Neutral Colors */
+    --text-primary: #333333;         /* Main text */
+    --text-secondary: #666666;       /* Secondary text */
+    --text-light: #999999;           /* Light text */
+
+    /* Background Colors */
+    --bg-primary: #FFFFFF;           /* Main background */
+    --bg-secondary: #F5F5F5;         /* Secondary background */
+    --bg-dark: #1A1A1A;             /* Dark background */
+
+    /* State Colors */
+    --color-success: #10B981;        /* Success/positive */
+    --color-warning: #F59E0B;        /* Warning */
+    --color-error: #EF4444;          /* Error/danger */
+    --color-info: #3B82F6;          /* Information */
+}
+
+/* ============================================
+   HEADER STYLING
+   ============================================ */
+#vicidial_header,
+.vicidial_header,
+#header_row {
+    background: linear-gradient(135deg,
+        var(--brand-primary) 0%,
+        var(--brand-secondary) 100%) !important;
+    color: white !important;
+    padding: 15px !important;
+    border: none !important;
+}
+
+#header_text {
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 1.2em !important;
+}
+
+/* Hide VICIdial logo if you want to remove it completely */
+#header_logo {
+    /* Uncomment to hide: */
+    /* display: none !important; */
+}
+
+/* ============================================
+   BUTTON STYLING
+   ============================================ */
+.button,
+input[type="button"],
+input[type="submit"],
+button {
+    background: var(--brand-primary) !important;
+    background: linear-gradient(180deg,
+        var(--brand-primary) 0%,
+        color-mix(in srgb, var(--brand-primary) 80%, black) 100%) !important;
+    border: 2px solid var(--brand-primary) !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover {
+    background: var(--brand-secondary) !important;
+    border-color: var(--brand-secondary) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+.button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+button:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ============================================
+   TABLE STYLING
+   ============================================ */
+table.vicidial_table,
+table.data_table {
+    border: 2px solid var(--brand-primary) !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+table.vicidial_table th,
+table.data_table th {
+    background: var(--brand-primary) !important;
+    background: linear-gradient(180deg,
+        var(--brand-primary) 0%,
+        color-mix(in srgb, var(--brand-primary) 90%, black) 100%) !important;
+    color: white !important;
+    padding: 12px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    font-size: 0.9em !important;
+    letter-spacing: 0.5px !important;
+}
+
+table.vicidial_table td,
+table.data_table td {
+    padding: 10px !important;
+    border-bottom: 1px solid #E5E7EB !important;
+}
+
+table.vicidial_table tr:hover,
+table.data_table tr:hover {
+    background: rgba(0, 102, 204, 0.05) !important;
+}
+
+/* Alternating row colors */
+table.vicidial_table tr:nth-child(even),
+table.data_table tr:nth-child(even) {
+    background: var(--bg-secondary) !important;
+}
+
+/* ============================================
+   FORM STYLING
+   ============================================ */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    border: 2px solid #E5E7EB !important;
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+    font-size: 1em !important;
+    transition: all 0.3s ease !important;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--brand-primary) !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1) !important;
+}
+
+/* ============================================
+   NAVIGATION / TABS
+   ============================================ */
+.tab_button,
+.nav_tab {
+    background: white !important;
+    border: 2px solid var(--brand-primary) !important;
+    color: var(--brand-primary) !important;
+    padding: 10px 20px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+.tab_button:hover,
+.nav_tab:hover,
+.tab_button.active,
+.nav_tab.active {
+    background: var(--brand-primary) !important;
+    color: white !important;
+}
+
+/* ============================================
+   STATUS INDICATORS
+   ============================================ */
+.status_success,
+.success_message {
+    background: var(--color-success) !important;
+    color: white !important;
+    padding: 10px 15px !important;
+    border-radius: 6px !important;
+    border-left: 4px solid color-mix(in srgb, var(--color-success) 70%, black) !important;
+}
+
+.status_warning,
+.warning_message {
+    background: var(--color-warning) !important;
+    color: white !important;
+    padding: 10px 15px !important;
+    border-radius: 6px !important;
+    border-left: 4px solid color-mix(in srgb, var(--color-warning) 70%, black) !important;
+}
+
+.status_error,
+.error_message {
+    background: var(--color-error) !important;
+    color: white !important;
+    padding: 10px 15px !important;
+    border-radius: 6px !important;
+    border-left: 4px solid color-mix(in srgb, var(--color-error) 70%, black) !important;
+}
+
+.status_info,
+.info_message {
+    background: var(--color-info) !important;
+    color: white !important;
+    padding: 10px 15px !important;
+    border-radius: 6px !important;
+    border-left: 4px solid color-mix(in srgb, var(--color-info) 70%, black) !important;
+}
+
+/* ============================================
+   AGENT INTERFACE SPECIFIC
+   ============================================ */
+#AgentStatusSpan {
+    background: var(--brand-primary) !important;
+    color: white !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+}
+
+#MainStatuSSpan {
+    color: var(--brand-primary) !important;
+    font-weight: 600 !important;
+}
+
+/* Call status boxes */
+.call_status_box {
+    border: 2px solid var(--brand-primary) !important;
+    border-radius: 8px !important;
+    padding: 15px !important;
+    background: white !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ============================================
+   ADMIN INTERFACE SPECIFIC
+   ============================================ */
+.admin_menu {
+    background: var(--bg-dark) !important;
+    padding: 10px !important;
+}
+
+.admin_menu a {
+    color: white !important;
+    padding: 8px 16px !important;
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+}
+
+.admin_menu a:hover {
+    background: var(--brand-primary) !important;
+    text-decoration: none !important;
+}
+
+/* ============================================
+   FOOTER STYLING
+   ============================================ */
+#footer_row,
+.vicidial_footer {
+    background: var(--bg-dark) !important;
+    color: white !important;
+    padding: 20px !important;
+    text-align: center !important;
+    border-top: 4px solid var(--brand-primary) !important;
+}
+
+#footer_logo {
+    /* Hide VICIdial footer logo */
+    display: none !important;
+}
+
+#custom_footer {
+    color: var(--text-light) !important;
+    font-size: 0.9em !important;
+}
+
+/* Add custom footer text */
+#footer_row::after {
+    content: "© 2025 Your Company Name. All Rights Reserved. | Powered by Your Brand" !important;
+    display: block !important;
+    margin-top: 10px !important;
+    color: var(--text-light) !important;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 768px) {
+    #vicidial_header {
+        padding: 10px !important;
+    }
+
+    .button,
+    input[type="button"],
+    input[type="submit"] {
+        padding: 8px 16px !important;
+        font-size: 0.9em !important;
+    }
+
+    table.vicidial_table,
+    table.data_table {
+        font-size: 0.9em !important;
+    }
+}
+
+/* ============================================
+   CUSTOM ANIMATIONS
+   ============================================ */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out !important;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.brand-text {
+    color: var(--brand-primary) !important;
+}
+
+.brand-bg {
+    background: var(--brand-primary) !important;
+    color: white !important;
+}
+
+.brand-border {
+    border-color: var(--brand-primary) !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.bold {
+    font-weight: 600 !important;
+}
+
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+/* ============================================
+   LOADING SPINNER (BRANDED)
+   ============================================ */
+.loading_spinner {
+    border: 4px solid rgba(0, 102, 204, 0.1) !important;
+    border-top: 4px solid var(--brand-primary) !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    animation: spin 1s linear infinite !important;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR (OPTIONAL)
+   ============================================ */
+::-webkit-scrollbar {
+    width: 12px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--brand-primary) !important;
+    border-radius: 6px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-secondary) !important;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    #header_row,
+    #footer_row,
+    .admin_menu {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+    }
+}
+
+/**
+ * END OF CUSTOM STYLES
+ *
+ * USAGE NOTES:
+ * 1. Replace all color variables at the top with your brand colors
+ * 2. Test in a staging environment first
+ * 3. Clear browser cache after deploying (Ctrl+Shift+R)
+ * 4. Verify all pages look correct
+ * 5. Test in multiple browsers (Chrome, Firefox, Edge, Safari)
+ *
+ * MAINTENANCE:
+ * - Keep a backup of this file
+ * - Document any changes made
+ * - Re-apply after VICIdial updates
+ * - Version control recommended
+ */

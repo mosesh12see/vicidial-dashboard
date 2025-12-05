@@ -1,0 +1,48 @@
+SOLAR REBATES SCRIPT
+====================
+
+REBATES:
+---------AUSTIN ENERGY $2500 NO MATTER HOW MANY PANELS---------
+---------PERDINALES, ETC. BETWEEN $500 AND $4000 DEPENDING ON HOW MANY PANELS----------
+---------ONCOR ELECTRIC BETWEEN $1,000 AND $8,000 DEPENDING ON HOW MANY PANELS----------
+
+
+OPENING:
+--------
+Good afternoon/morning this is ________ with the Solar Rebate program... Go ahead and verify your zip code for me please!
+
+Ok give me a moment while I look this up, how is your day so far?
+
+Ok great so your area does qualify for the program. There are tax credits and rebates eligible for you to switch to solar. What electric company are you with? (Austin Energy, Oncor, Perdenales? for example)
+
+
+IF AUSTIN ENERGY:
+-----------------
+Ok great so you will receive $2,500 just for switching to solar, which is basically going to eliminate your electric bill and replace it with the payment for the solar panels. This payment is right around what you spend anyway, so it won't be any different, AND it will be fixed and locked in so you won't be subject to rate increases. What is the highest electric bill you have had, maybe in the summertime?
+
+
+IF OTHER (Oncor, Perdenales, etc.):
+-----------------------------------
+Ok great so you will receive between $500 and $4,000 just for switching to solar, which is basically going to eliminate your electric bill and replace it with the payment for the solar panels. This payment is right around what you spend anyway, so it won't be any different, AND it will be fixed and locked in so you won't be subject to rate increases. What is the highest electric bill you have had, maybe in the summertime?
+
+
+CREDIT QUALIFICATION:
+---------------------
+Okay great and this is an ownership program so it requires a minimum of 620 credit score, would that be an issue for you?
+
+
+SCHEDULING THE EVALUATION:
+--------------------------
+Okay great so you are a perfect candidate for solar, now we need to see if your house qualifies for solar. All I do on my end is schedule out a totally free 60-90 minute energy evaluation where they will show you how everything works and most importantly see if your house qualifies. We will need everyone on the title of the home (all the homeowners) to be there. Would mornings or afternoons work better for you for this free evaluation?
+
+
+SET THE APPOINTMENT:
+--------------------
+Okay would Thursday be good or Friday be better?
+
+AVAILABLE TIME SLOTS:
+- 10am
+- 2pm
+- 5pm
+
+(available each day)

@@ -1,0 +1,267 @@
+#!/usr/bin/env python3
+"""
+Real-time SMS notifications for opt-ins and transfers
+Sends text to 972-469-1106 whenever an opt-in or transfer happens
+"""
+
+import pymysql
+import time
+from datetime import datetime
+from twilio.rest import Client
+
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
+
+# Database config
+DB_CONFIG = {
+    'host': '67.198.205.116',
+    'user': 'cron',
+    'password': 'byt3w0rt4',
+    'database': 'asterisk',
+    'port': 3306
+}
+
+# Twilio config - CONFIGURED FROM YOUR API INFO!
+TWILIO_ACCOUNT_SID = 'AC52926a1358b76dee0e35cc86ae0aa98c'
+TWILIO_AUTH_TOKEN = '1ffc3205c0a8b3dba9035a5fa1c43ee1'
+TWILIO_FROM_NUMBER = '+1XXXXXXXXXX'           # Run setup_twilio.py to get this
+MY_PHONE = '+19724691106'                     # Your phone number (972-469-1106)
+
+# Monitor remote agents (2001-2005)?
+MONITOR_REMOTE_AGENTS_ONLY = True
+
+# Check interval (seconds)
+CHECK_INTERVAL = 5
+
+# ============================================================================
+# SCRIPT
+# ============================================================================
+
+class OptinNotifier:
+    def __init__(self):
+        self.twilio_client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
+        self.last_check_time = datetime.now()
+        self.startup_complete = False
+
+    def send_sms(self, message):
+        """Send SMS via Twilio"""
+        try:
+            msg = self.twilio_client.messages.create(
+                body=message,
+                from_=TWILIO_FROM_NUMBER,
+                to=MY_PHONE
+            )
+            print(f"✅ SMS sent: {msg.sid}")
+            return True
+        except Exception as e:
+            print(f"❌ Failed to send SMS: {e}")
+            return False
+
+    def check_new_optins(self):
+        """Check for new opt-ins since last check"""
+        conn = pymysql.connect(**DB_CONFIG)
+        cursor = conn.cursor(pymysql.cursors.DictCursor)
+
+        # Build WHERE clause for remote agents
+        remote_filter = ""
+        if MONITOR_REMOTE_AGENTS_ONLY:
+            remote_filter = 'AND vl.user IN ("2001", "2002", "2003", "2004", "2005")'
+
+        query = f"""
+        SELECT
+            vl.uniqueid,
+            vl.call_date,
+            vl.campaign_id,
+            vl.user,
+            vl.phone_number,
+            vl.status,
+            vl.length_in_sec,
+            vla.extension,
+            vlist.state,
+            vc.campaign_name
+        FROM vicidial_log vl
+        LEFT JOIN vicidial_live_agents vla
+            ON vl.user = vla.user AND vla.campaign_id = vl.campaign_id
+        LEFT JOIN vicidial_list vlist
+            ON vl.lead_id = vlist.lead_id
+        LEFT JOIN vicidial_campaigns vc
+            ON vl.campaign_id = vc.campaign_id
+        WHERE vl.status = 'SVYCLM'
+        AND vl.call_date > %s
+        {remote_filter}
+        ORDER BY vl.call_date DESC
+        """
+
+        cursor.execute(query, (self.last_check_time,))
+        new_optins = cursor.fetchall()
+
+        cursor.close()
+        conn.close()
+
+        return new_optins
+
+    def check_new_transfers(self):
+        """Check for new transfers to remote agents"""
+        conn = pymysql.connect(**DB_CONFIG)
+        cursor = conn.cursor(pymysql.cursors.DictCursor)
+
+        query = """
+        SELECT
+            vxl.xfercallid,
+            vxl.call_date,
+            vxl.campaign_id,
+            vxl.user,
+            vxl.closer,
+            vxl.phone_number,
+            vxl.lead_id,
+            vc.campaign_name,
+            vlist.state
+        FROM vicidial_xfer_log vxl
+        LEFT JOIN vicidial_campaigns vc
+            ON vxl.campaign_id = vc.campaign_id
+        LEFT JOIN vicidial_list vlist
+            ON vxl.lead_id = vlist.lead_id
+        WHERE vxl.closer IN ("2001", "2002", "2003", "2004", "2005")
+        AND vxl.call_date > %s
+        ORDER BY vxl.call_date DESC
+        """
+
+        cursor.execute(query, (self.last_check_time,))
+        new_transfers = cursor.fetchall()
+
+        cursor.close()
+        conn.close()
+
+        return new_transfers
+
+    def format_optin_message(self, optin):
+        """Format opt-in data into SMS message"""
+        campaign = optin['campaign_name'] or optin['campaign_id']
+        agent = optin['user']
+        extension = optin['extension'] or 'N/A'
+        state = optin['state'] or 'N/A'
+        phone = optin['phone_number']
+        time_str = optin['call_date'].strftime('%I:%M %p')
+
+        is_remote = '🏠' if extension.startswith('R/') else ''
+
+        msg = f"""🎯 NEW OPT-IN!
+
+{is_remote} Agent {agent} (Ext: {extension})
+Campaign: {campaign}
+Lead State: {state}
+Phone: {phone}
+Time: {time_str}"""
+
+        return msg
+
+    def format_transfer_message(self, transfer):
+        """Format transfer data into SMS message"""
+        campaign = transfer['campaign_name'] or transfer['campaign_id']
+        from_agent = transfer['user']
+        to_agent = transfer['closer']
+        state = transfer['state'] or 'N/A'
+        phone = transfer['phone_number']
+        time_str = transfer['call_date'].strftime('%I:%M %p')
+
+        msg = f"""🔄 NEW TRANSFER!
+
+From Agent: {from_agent}
+→ To Agent: {to_agent} 🏠
+Campaign: {campaign}
+Lead State: {state}
+Phone: {phone}
+Time: {time_str}"""
+
+        return msg
+
+    def monitor(self):
+        """Main monitoring loop"""
+        print("="*60)
+        print("OPT-IN SMS NOTIFIER")
+        print("="*60)
+        print(f"Monitoring for opt-ins and transfers...")
+        print(f"Will send SMS to: {MY_PHONE}")
+        print(f"Check interval: {CHECK_INTERVAL} seconds")
+
+        if MONITOR_REMOTE_AGENTS_ONLY:
+            print("Filter: Remote agents only (2001-2005)")
+        else:
+            print("Filter: All agents")
+
+        print()
+        print("Starting in 3 seconds...")
+        time.sleep(3)
+
+        # First check - just set baseline, don't send notifications
+        print("\n⏳ Initial check (establishing baseline)...")
+        self.check_new_optins()
+        self.check_new_transfers()
+        self.last_check_time = datetime.now()
+        self.startup_complete = True
+        print("✅ Baseline established. Now monitoring for new activity...\n")
+
+        try:
+            while True:
+                # Check for new opt-ins
+                new_optins = self.check_new_optins()
+
+                if new_optins:
+                    print(f"\n🎯 Found {len(new_optins)} new opt-in(s)!")
+
+                    for optin in reversed(new_optins):  # Send oldest first
+                        message = self.format_optin_message(optin)
+                        print(f"\n{message}")
+                        print("-" * 60)
+
+                        if self.send_sms(message):
+                            time.sleep(1)  # Rate limit
+
+                # Check for new transfers
+                new_transfers = self.check_new_transfers()
+
+                if new_transfers:
+                    print(f"\n🔄 Found {len(new_transfers)} new transfer(s)!")
+
+                    for transfer in reversed(new_transfers):  # Send oldest first
+                        message = self.format_transfer_message(transfer)
+                        print(f"\n{message}")
+                        print("-" * 60)
+
+                        if self.send_sms(message):
+                            time.sleep(1)  # Rate limit
+
+                # Update last check time
+                self.last_check_time = datetime.now()
+
+                # Show status
+                if not new_optins and not new_transfers:
+                    print(f"✓ {datetime.now().strftime('%H:%M:%S')} - No new activity", end='\r')
+
+                # Wait before next check
+                time.sleep(CHECK_INTERVAL)
+
+        except KeyboardInterrupt:
+            print("\n\n⏹️  Monitoring stopped by user")
+            print("="*60)
+
+def main():
+    # Validate Twilio config
+    if TWILIO_ACCOUNT_SID == 'your_account_sid_here':
+        print("❌ ERROR: Please configure your Twilio credentials first!")
+        print()
+        print("Edit this file and fill in:")
+        print("  - TWILIO_ACCOUNT_SID")
+        print("  - TWILIO_AUTH_TOKEN")
+        print("  - TWILIO_FROM_NUMBER")
+        print()
+        print("Get these from: https://www.twilio.com/console")
+        print()
+        return
+
+    notifier = OptinNotifier()
+    notifier.monitor()
+
+if __name__ == "__main__":
+    main()
