@@ -2858,3 +2858,63 @@ VICIDIAL AUTO-UPDATE - December 05, 2025 03:30 PM
 🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
 ============================================================
 ⏭️  No changes to commit
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 05, 2025 05:00 PM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-05)...
+  ✅ GA: 166,497 calls
+  ✅ MO: 171,378 calls
+  ✅ KY: 157,850 calls
+
+📊 Fetching YESTERDAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 495,725
+   Opt-ins: 257
+   Sales: 14
+
+📝 Regenerating ENTIRE HTML dashboard with fresh data...
+  ✅ HTML fully regenerated with today's data
+
+🚀 Pushing to GitHub...
+  Trying gh CLI fallback...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 05, 2025 at 05:25 PM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+============================================================
+VICIDIAL AUTO-UPDATE - December 05, 2025 05:30 PM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-05)...
+  ✅ GA: 166,497 calls
+  ✅ MO: 171,618 calls
+  ✅ KY: 157,850 calls
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Read timed out. (read timeout=60)
+
+📊 Fetching YESTERDAY's data (2025-12-04)...
+  ✅ GA: 273,860 calls
+  ✅ MO: 4,009 calls
+  ✅ KY: 140,262 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 495,965
+   Opt-ins: 258
+   Sales: 14
+
+📝 Regenerating ENTIRE HTML dashboard with fresh data...
+  ✅ HTML fully regenerated with today's data
+
+🚀 Pushing to GitHub...
+  Trying gh CLI fallback...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 05, 2025 at 05:39 PM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
