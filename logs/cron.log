@@ -2918,3 +2918,72 @@ VICIDIAL AUTO-UPDATE - December 05, 2025 05:30 PM
 ✅ DONE! Dashboard updated at December 05, 2025 at 05:39 PM
 🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
 ============================================================
+============================================================
+VICIDIAL AUTO-UPDATE - December 06, 2025 11:00 AM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-06)...
+  ✅ KY: 2 calls
+
+📊 Fetching YESTERDAY's data (2025-12-05)...
+  ✅ GA: 166,497 calls
+  ✅ MO: 171,618 calls
+  ✅ KY: 157,850 calls
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 2
+   Opt-ins: 0
+   Sales: 1
+
+📝 Regenerating ENTIRE HTML dashboard with fresh data...
+  ✅ HTML fully regenerated with today's data
+
+🚀 Pushing to GitHub...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 06, 2025 at 11:01 AM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
+============================================================
+VICIDIAL AUTO-UPDATE - December 06, 2025 12:31 PM
+============================================================
+
+📊 Fetching TODAY's data (2025-12-06)...
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x102d19e80>, 'Connection to dialpower.team timed out. (connect timeout=60)'))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d31e50>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d32850>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d32ad0>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d32d50>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d32fd0>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d33250>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d334d0>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d33750>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+
+📊 Fetching YESTERDAY's data (2025-12-05)...
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d339d0>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d33c50>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d33ed0>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d982d0>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d98550>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d987d0>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d98a50>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d98190>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+  Error fetching stats: HTTPSConnectionPool(host='dialpower.team', port=443): Max retries exceeded with url: /vicidial/AST_VDADstats.php (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x102d98e10>: Failed to resolve 'dialpower.team' ([Errno 8] nodename nor servname provided, or not known)"))
+
+📈 TODAY'S SUMMARY:
+   Total Calls: 0
+   Opt-ins: 0
+   Sales: 0
+
+📝 Regenerating ENTIRE HTML dashboard with fresh data...
+  ✅ HTML fully regenerated with today's data
+
+🚀 Pushing to GitHub...
+  Trying gh CLI fallback...
+  ✅ Pushed to GitHub!
+
+✅ DONE! Dashboard updated at December 06, 2025 at 12:47 PM
+🌐 View at: https://mosesh12see.github.io/vicidial-dashboard/deep-analysis-2.html
+============================================================
+⏭️  No changes to commit
